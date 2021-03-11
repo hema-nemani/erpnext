@@ -245,3 +245,17 @@ pymysql.err.InternalError: Packet sequence number wrong - got 98 expected 1
 [2021-03-11 12:28:08 +0000] [1843] [INFO] Worker exiting (pid: 1843)
 [2021-03-11 12:28:08 +0000] [3449] [INFO] Booting worker with pid: 3449
 [2021-03-11 12:28:08 +0000] [3450] [INFO] Booting worker with pid: 3450
+[2021-03-11 15:30:49 +0000] [6472] [INFO] Starting gunicorn 19.10.0
+[2021-03-11 15:30:49 +0000] [6472] [INFO] Listening at: http://127.0.0.1:8000 (6472)
+[2021-03-11 15:30:49 +0000] [6472] [INFO] Using worker: sync
+[2021-03-11 15:30:49 +0000] [6518] [INFO] Booting worker with pid: 6518
+[2021-03-11 15:30:49 +0000] [6519] [INFO] Booting worker with pid: 6519
+[2021-03-11 15:31:55 +0000] [6472] [INFO] Handling signal: term
+[2021-03-11 15:31:55 +0000] [6519] [INFO] Worker exiting (pid: 6519)
+[2021-03-11 15:31:55 +0000] [6518] [INFO] Worker exiting (pid: 6518)
+[2021-03-11 15:31:55 +0000] [6472] [INFO] Shutting down: Master
+[2021-03-11 15:32:07 +0000] [6717] [INFO] Starting gunicorn 19.10.0
+[2021-03-11 15:32:07 +0000] [6717] [INFO] Listening at: http://127.0.0.1:8000 (6717)
+[2021-03-11 15:32:07 +0000] [6717] [INFO] Using worker: sync
+[2021-03-11 15:32:07 +0000] [6763] [INFO] Booting worker with pid: 6763
+[2021-03-11 15:32:07 +0000] [6764] [INFO] Booting worker with pid: 6764
