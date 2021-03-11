@@ -1,0 +1,368 @@
+{
+ "allow_rename": 1,
+ "creation": "2021-03-09 19:28:51.153317",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "item_name",
+  "item_tax_percentage",
+  "qty",
+  "location",
+  "column_break_5",
+  "bay_number",
+  "hsn_code",
+  "mrp",
+  "enter_qty",
+  "total_amount",
+  "section_break_15",
+  "image",
+  "image_view",
+  "amended_from",
+  "quantity_and_rate",
+  "stock_uom",
+  "col_break2",
+  "uom",
+  "conversion_factor",
+  "stock_qty",
+  "section_break_16",
+  "price_list_rate",
+  "base_price_list_rate",
+  "discount_and_margin",
+  "margin_type",
+  "margin_rate_or_amount",
+  "rate_with_margin",
+  "column_break_18",
+  "discount_percentage",
+  "discount_amount",
+  "base_rate_with_margin",
+  "section_break1",
+  "rate",
+  "net_rate",
+  "amount",
+  "net_amount",
+  "base_rate",
+  "base_net_rate",
+  "base_amount",
+  "base_net_amount",
+  "pricing_rules",
+  "is_free_item",
+  "prevdoc_doctype",
+  "prevdoc_docname",
+  "item_tax_rate"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "item_tax_percentage",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Tax percentage"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Available Quantity"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mrp",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "MRP"
+  },
+  {
+   "fieldname": "hsn_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "HSN Code"
+  },
+  {
+   "fieldname": "enter_qty",
+   "fieldtype": "Data",
+   "label": "Enter Quantity"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Data",
+   "label": "Total Amount"
+  },
+  {
+   "fieldname": "pricing_rules",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "Pricing Rules"
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach",
+   "label": "Image"
+  },
+  {
+   "fieldname": "image_view",
+   "fieldtype": "Image",
+   "label": "Image View",
+   "options": "image"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Item Quotation",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "quantity_and_rate",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Quantity and Rate"
+  },
+  {
+   "fieldname": "stock_uom",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Stock UOM",
+   "options": "UOM",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "col_break2",
+   "fieldtype": "Column Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "UOM",
+   "options": "UOM",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "conversion_factor",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "UOM Conversion Factor",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "stock_qty",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Qty as per Stock UOM",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "price_list_rate",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Price List Rate",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "base_price_list_rate",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Price List Rate (Company Currency)",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "discount_and_margin",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Discount and Margin"
+  },
+  {
+   "fieldname": "margin_type",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Margin Type"
+  },
+  {
+   "fieldname": "margin_rate_or_amount",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Margin Rate or Amount",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "rate_with_margin",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Rate With Margin",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "discount_percentage",
+   "fieldtype": "Percent",
+   "label": "Discount (%) on Price List Rate with Margin"
+  },
+  {
+   "fieldname": "discount_amount",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Discount Amount",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "base_rate_with_margin",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Rate With Margin (Company Currency)",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "section_break1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "item_tax_rate",
+   "fieldtype": "Code",
+   "hidden": 1,
+   "label": "Item Tax Rate",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "prevdoc_doctype",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Against Doctype",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "prevdoc_docname",
+   "fieldtype": "Dynamic Link",
+   "hidden": 1,
+   "label": "Against Docname",
+   "options": "prevdoc_doctype"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_free_item",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Is Free Item"
+  },
+  {
+   "fieldname": "base_rate",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Rate (Company Currency)",
+   "options": "Company:company:default_currency",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "base_net_rate",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Net Rate (Company Currency)",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "base_amount",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Amount (Company Currency)",
+   "options": "Company:company:default_currency",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "base_net_amount",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Net Amount (Company Currency)",
+   "options": "Company:company:default_currency",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Rate",
+   "options": "currency",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "net_rate",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Net Rate",
+   "options": "currency",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Amount",
+   "options": "currency",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "net_amount",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Net Amount",
+   "options": "currency",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "bay_number",
+   "fieldtype": "Data",
+   "label": "Bay Number"
+  }
+ ],
+ "is_submittable": 1,
+ "istable": 1,
+ "modified": "2021-03-11 17:49:41.032843",
+ "modified_by": "Administrator",
+ "module": "Custom",
+ "name": "Item Quotation",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

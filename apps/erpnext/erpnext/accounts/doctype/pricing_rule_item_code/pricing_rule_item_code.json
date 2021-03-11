@@ -1,0 +1,113 @@
+{
+ "creation": "2019-03-24 14:48:59.649168",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "uom",
+  "basic_price",
+  "tax_percentage",
+  "cost_price",
+  "pm_upwards",
+  "column_break_7",
+  "pm_downwards",
+  "selling_price_without_tax",
+  "tax_amount",
+  "selling_price_with_tax"
+ ],
+ "fields": [
+  {
+   "depends_on": "eval:parent.apply_on == 'Item Code'",
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Item",
+   "search_index": 1
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "UOM",
+   "options": "UOM",
+   "print_hide": 1
+  },
+  {
+   "fetch_from": "item_code.basic_price",
+   "fieldname": "basic_price",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Basic Price",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "item_code.buying_tax",
+   "fieldname": "tax_percentage",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Tax Percentage",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "item_code.cost_price",
+   "fieldname": "cost_price",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Cost Price",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "item_code.profit_margin",
+   "fieldname": "pm_upwards",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "PM Upwards",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "item_code.mrp_pm_downwards",
+   "fieldname": "pm_downwards",
+   "fieldtype": "Data",
+   "label": "PM Downwards",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "item_code.selling_price_without_tax",
+   "fieldname": "selling_price_without_tax",
+   "fieldtype": "Data",
+   "label": "Selling Price Without Tax",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "item_code.selling1_tax_amount",
+   "fieldname": "tax_amount",
+   "fieldtype": "Data",
+   "label": "Tax Amount",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "item_code.selling_price_with_tax",
+   "fieldname": "selling_price_with_tax",
+   "fieldtype": "Data",
+   "label": "Selling Price With Tax",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-03-11 16:42:45.819289",
+ "modified_by": "Administrator",
+ "module": "Accounts",
+ "name": "Pricing Rule Item Code",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

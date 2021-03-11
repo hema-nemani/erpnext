@@ -1,0 +1,38 @@
+{
+ "creation": "2021-03-06 13:54:13.567136",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "description",
+  "timeperiod"
+ ],
+ "fields": [
+  {
+   "description": "timeperiod",
+   "fieldname": "description",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Description",
+   "options": "Body\nMachine"
+  },
+  {
+   "fieldname": "timeperiod",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Time Period",
+   "options": "12\n24\n36\n48\n72"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-03-06 13:55:48.039237",
+ "modified_by": "Administrator",
+ "module": "Custom",
+ "name": "At Sales",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

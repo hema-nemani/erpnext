@@ -1,0 +1,76 @@
+{
+ "creation": "2021-03-09 16:00:22.229572",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "item_name",
+  "qty",
+  "standard_rate",
+  "location",
+  "bay_number",
+  "print_barcodes",
+  "no_of_barcode_qty"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Item"
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Description "
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Qty"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Location"
+  },
+  {
+   "fieldname": "bay_number",
+   "fieldtype": "Data",
+   "label": "Bay Number Or Shelf Number"
+  },
+  {
+   "fieldname": "print_barcodes",
+   "fieldtype": "Select",
+   "label": "Print Barcode Yes Or NO",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "no_of_barcode_qty",
+   "fieldtype": "Data",
+   "label": "No.of Barcode Qty"
+  },
+  {
+   "fieldname": "standard_rate",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "MRP"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-03-09 17:12:19.099407",
+ "modified_by": "Administrator",
+ "module": "Custom",
+ "name": "GRN Items",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

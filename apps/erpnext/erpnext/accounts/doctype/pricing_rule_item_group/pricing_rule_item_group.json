@@ -1,0 +1,200 @@
+{
+ "creation": "2019-03-24 14:48:59.649168",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_group",
+  "uom",
+  "item_sub_sub_group_kitchen_appliances",
+  "item_sub_sub_group_home_appliances",
+  "item_sub_group_metail_utensils",
+  "item_sub_sub_group_stainless_steel",
+  "item_sub_sub_group_hindalium",
+  "item_sub_sub_group_for_copper_ware",
+  "item_sub_group_for_aluminium",
+  "item_sub_group_for_iron",
+  "item_sub_group_for_brassware",
+  "item_sub_sub_group_for_commercial_items",
+  "item_sub_group_for_crockery",
+  "item_sub_sub_group_for_fagile",
+  "item_sub_sub_group_for_un_fagile",
+  "item_sub_sub_group_for_commercial_spares",
+  "item_sub_sub_group_for_cleaning_hygiene_and_bath_accessories",
+  "item_sub_sub_group_for_stack_and_storage",
+  "item_sub_sub_group_for_bakery_equipments",
+  "item_sub_sub_group_for_home_organizing_tools",
+  "item_sub_sub_group_for_home_textiles",
+  "item_sub_sub_group_for_kitchen_tools"
+ ],
+ "fields": [
+  {
+   "depends_on": "eval:parent.apply_on == 'Item Group'",
+   "fieldname": "item_group",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Group",
+   "options": "Item Group",
+   "search_index": 1
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "UOM",
+   "options": "UOM",
+   "print_hide": 1
+  },
+  {
+   "depends_on": "eval:doc.item_group == 'Kitchen Appliances'",
+   "fieldname": "item_sub_sub_group_kitchen_appliances",
+   "fieldtype": "Link",
+   "label": "Item Sub Sub Group For Kitchen Appliances",
+   "options": "Item Sub Sub Group For Kitchen Appliances"
+  },
+  {
+   "depends_on": "eval:doc.item_group == 'Home Appliances'",
+   "fieldname": "item_sub_sub_group_home_appliances",
+   "fieldtype": "Link",
+   "label": "Item Sub Sub Group For Home Appliances",
+   "options": "Item Sub Sub Group For Home Appliances"
+  },
+  {
+   "depends_on": "eval:doc.item_group == 'Metail Utensils'",
+   "fieldname": "item_sub_group_metail_utensils",
+   "fieldtype": "Link",
+   "label": "Item Sub Group For Metail Utensils",
+   "options": "Item Sub Group For Metail Utensils"
+  },
+  {
+   "depends_on": "eval:doc.item_sub_group_metail_utensils == 'Stainless Steel' && doc.item_group == 'Metail Utensils'",
+   "fieldname": "item_sub_sub_group_stainless_steel",
+   "fieldtype": "Link",
+   "label": "Item Sub Sub Group For Stainless Steel",
+   "options": "Item Sub Sub Group For Stainless Steel"
+  },
+  {
+   "depends_on": "eval:doc.item_sub_group_metail_utensils == 'Hindalium' && doc.item_group == 'Metail Utensils'",
+   "fieldname": "item_sub_sub_group_hindalium",
+   "fieldtype": "Link",
+   "label": "Item Sub Sub Group For Hindalium",
+   "options": "Item Sub Sub Group For Hindalium"
+  },
+  {
+   "depends_on": "eval:doc.item_sub_group_metail_utensils == 'Copper Ware' && doc.item_group == 'Metail Utensils'",
+   "fieldname": "item_sub_sub_group_for_copper_ware",
+   "fieldtype": "Link",
+   "label": "Item Sub Sub Group For Copper ware",
+   "options": "Item Sub Sub Group For Copper ware"
+  },
+  {
+   "depends_on": "eval:doc.item_sub_group_metail_utensils == 'Aluminium' && doc.item_group == 'Metail Utensils'",
+   "fieldname": "item_sub_group_for_aluminium",
+   "fieldtype": "Link",
+   "label": "Item Sub Sub Group For Aluminium",
+   "options": "Item Sub Sub Group For Aluminium"
+  },
+  {
+   "depends_on": "eval:doc.item_sub_group_metail_utensils == 'Iron' && doc.item_group == 'Metail Utensils'",
+   "fieldname": "item_sub_group_for_iron",
+   "fieldtype": "Link",
+   "label": "Item Sub Sub Group For Iron",
+   "options": "Item Sub Sub Group For Iron"
+  },
+  {
+   "depends_on": "eval:doc.item_sub_group_metail_utensils == 'Brass Ware' && doc.item_group == 'Metail Utensils'",
+   "fieldname": "item_sub_group_for_brassware",
+   "fieldtype": "Link",
+   "label": "Item Sub Sub Group For Brass Ware",
+   "options": "Item Sub Sub Group For Brass Ware"
+  },
+  {
+   "depends_on": "eval:doc.item_group == 'Commercial Items'",
+   "fieldname": "item_sub_sub_group_for_commercial_items",
+   "fieldtype": "Link",
+   "label": "Item Sub Sub Group For Commercial Items",
+   "options": "Item Sub Sub Group For Commercial Items"
+  },
+  {
+   "depends_on": "eval:doc.item_group == 'Crockery'",
+   "fieldname": "item_sub_group_for_crockery",
+   "fieldtype": "Link",
+   "label": "Item Sub Group For Crockery",
+   "options": "Item Sub Group For Crockery"
+  },
+  {
+   "depends_on": "eval:doc.item_sub_group_for_crockery == 'Fragile' && doc.item_group == 'Crockery'",
+   "fieldname": "item_sub_sub_group_for_fagile",
+   "fieldtype": "Link",
+   "label": "Item Sub Sub Group For Fragile",
+   "options": "Item Sub Sub Group For Fragile"
+  },
+  {
+   "depends_on": "eval:doc.item_sub_group_for_crockery == 'Un Fragile' && doc.item_group == 'Crockery'",
+   "fieldname": "item_sub_sub_group_for_un_fagile",
+   "fieldtype": "Link",
+   "label": "Item Sub Sub Group For Un Fragile",
+   "options": "Item Sub Sub Group For Un Fragile"
+  },
+  {
+   "depends_on": "eval:doc.item_group == 'Commercial Spares'",
+   "fieldname": "item_sub_sub_group_for_commercial_spares",
+   "fieldtype": "Link",
+   "label": "Item Sub Sub Group For Commercial Spares",
+   "options": "Item Sub Sub Group For Commercial Spares"
+  },
+  {
+   "depends_on": "eval:doc.item_group == 'Cleaning Hygiene And Bath Accessories'",
+   "fieldname": "item_sub_sub_group_for_cleaning_hygiene_and_bath_accessories",
+   "fieldtype": "Link",
+   "label": "Item Sub Sub Group For Cleaning Hygiene And Bath Accessories",
+   "options": "Item Sub Sub Group For Cleaning Hygiene And Bath Accessories"
+  },
+  {
+   "depends_on": "eval:doc.item_group == 'Stack And Storage'",
+   "fieldname": "item_sub_sub_group_for_stack_and_storage",
+   "fieldtype": "Link",
+   "label": "Item Sub Sub Group For Stack And Storage",
+   "options": "Item Sub Sub Group For Stack And Storage"
+  },
+  {
+   "depends_on": "eval:doc.item_group == 'Bakery Equipments'",
+   "fieldname": "item_sub_sub_group_for_bakery_equipments",
+   "fieldtype": "Link",
+   "label": "Item Sub Sub Group For Bakery Equipments",
+   "options": "Item Sub Sub Group For Bakery Equipments"
+  },
+  {
+   "depends_on": "eval:doc.item_group == 'Home Organizing Tools'",
+   "fieldname": "item_sub_sub_group_for_home_organizing_tools",
+   "fieldtype": "Link",
+   "label": "Item Sub Sub Group For Home Organizing Tools",
+   "options": "Item Sub Sub Group For Home Organizing Tools"
+  },
+  {
+   "depends_on": "eval:doc.item_group == 'Home Text Tiles'",
+   "fieldname": "item_sub_sub_group_for_home_textiles",
+   "fieldtype": "Link",
+   "label": "Item Sub Sub Group For Home Textiles",
+   "options": "Item Sub Sub Group For Home Textiles"
+  },
+  {
+   "depends_on": "eval:doc.item_group == 'Kitchen Tools'",
+   "fieldname": "item_sub_sub_group_for_kitchen_tools",
+   "fieldtype": "Link",
+   "label": "Item Sub Sub Group For Kitchen Tools",
+   "options": "Item Sub Sub Group For Kitchen Tools"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-03-11 16:59:34.567269",
+ "modified_by": "Administrator",
+ "module": "Accounts",
+ "name": "Pricing Rule Item Group",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

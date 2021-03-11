@@ -1,0 +1,51 @@
+{
+ "creation": "2021-03-06 13:59:08.189600",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "no_of_qty",
+  "manufacturing_date",
+  "time_left_for_expiry",
+  "expiry_time"
+ ],
+ "fields": [
+  {
+   "fieldname": "no_of_qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "No of Qty"
+  },
+  {
+   "fieldname": "manufacturing_date",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Manufacturing Date",
+   "options": "2020\n2021\n2022\n2023"
+  },
+  {
+   "fieldname": "time_left_for_expiry",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Time Left (For Expiry)",
+   "options": "12\n24\n36\n48"
+  },
+  {
+   "fieldname": "expiry_time",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Expiry Time"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-03-06 14:00:37.414623",
+ "modified_by": "Administrator",
+ "module": "Custom",
+ "name": "At Purchase",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

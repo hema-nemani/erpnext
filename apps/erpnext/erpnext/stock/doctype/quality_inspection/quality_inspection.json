@@ -1,0 +1,371 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2013-04-30 13:13:03",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "report_date",
+  "column_break_4",
+  "inspection_type",
+  "select_item_damage",
+  "techinician_from",
+  "value_for_rectification",
+  "description",
+  "time_to_complete",
+  "items",
+  "qi_items",
+  "section_break_12",
+  "supplier_address",
+  "address_display",
+  "issue_description",
+  "section_break_16",
+  "quality_issue_supplier_address",
+  "quality_issue_address_display",
+  "reference_type",
+  "reference_name",
+  "section_break_7",
+  "item_code",
+  "item_serial_no",
+  "batch_no",
+  "sample_size",
+  "column_break1",
+  "item_name",
+  "status",
+  "section_break_14",
+  "inspected_by",
+  "verified_by",
+  "bom_no",
+  "column_break_17",
+  "remarks",
+  "amended_from",
+  "specification_details",
+  "quality_inspection_template",
+  "readings"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "no_copy": 1,
+   "options": "BGLQI.-.YY.-.MM.-.DD.###",
+   "set_only_once": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "report_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Report Date",
+   "oldfieldname": "report_date",
+   "oldfieldtype": "Date",
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "inspection_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Inspection Type",
+   "oldfieldname": "inspection_type",
+   "oldfieldtype": "Select",
+   "options": "\nItem Damage\nQuality Issue"
+  },
+  {
+   "fieldname": "reference_type",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Reference Type",
+   "options": "\nPurchase Receipt\nPurchase Invoice\nDelivery Note\nSales Invoice\nStock Entry"
+  },
+  {
+   "fieldname": "reference_name",
+   "fieldtype": "Dynamic Link",
+   "hidden": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Reference Name",
+   "oldfieldname": "purchase_receipt_no",
+   "oldfieldtype": "Link",
+   "options": "reference_type"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Item Code",
+   "oldfieldname": "item_code",
+   "oldfieldtype": "Link",
+   "options": "Item",
+   "search_index": 1
+  },
+  {
+   "fieldname": "item_serial_no",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Item Serial No",
+   "oldfieldname": "item_serial_no",
+   "oldfieldtype": "Link",
+   "options": "Serial No"
+  },
+  {
+   "fieldname": "batch_no",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Batch No",
+   "oldfieldname": "batch_no",
+   "oldfieldtype": "Link",
+   "options": "Batch"
+  },
+  {
+   "fieldname": "sample_size",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Sample Size",
+   "oldfieldname": "sample_size",
+   "oldfieldtype": "Currency"
+  },
+  {
+   "fieldname": "column_break1",
+   "fieldtype": "Column Break",
+   "hidden": 1,
+   "oldfieldtype": "Column Break",
+   "width": "50%"
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_global_search": 1,
+   "label": "Item Name",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.select_item_damage == 'Resolve at Store';",
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description",
+   "oldfieldname": "description",
+   "oldfieldtype": "Small Text",
+   "width": "300px"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "default": "user",
+   "fieldname": "inspected_by",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Inspected By",
+   "oldfieldname": "inspected_by",
+   "oldfieldtype": "Data",
+   "options": "User"
+  },
+  {
+   "fieldname": "verified_by",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Verified By",
+   "oldfieldname": "verified_by",
+   "oldfieldtype": "Data"
+  },
+  {
+   "fieldname": "bom_no",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "BOM No",
+   "options": "BOM",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Text",
+   "hidden": 1,
+   "label": "Remarks",
+   "no_copy": 1,
+   "oldfieldname": "remarks",
+   "oldfieldtype": "Text"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "ignore_user_permissions": 1,
+   "label": "Amended From",
+   "no_copy": 1,
+   "oldfieldname": "amended_from",
+   "oldfieldtype": "Data",
+   "options": "Quality Inspection",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "specification_details",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "oldfieldtype": "Section Break",
+   "options": "Simple"
+  },
+  {
+   "fieldname": "quality_inspection_template",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Quality Inspection Template",
+   "options": "Quality Inspection Template"
+  },
+  {
+   "fieldname": "readings",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Readings",
+   "oldfieldname": "qa_specification_details",
+   "oldfieldtype": "Table",
+   "options": "Quality Inspection Reading"
+  },
+  {
+   "default": "Accepted",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Status",
+   "options": "\nAccepted\nRejected"
+  },
+  {
+   "depends_on": "eval:doc.inspection_type == 'Item Damage';",
+   "fieldname": "select_item_damage",
+   "fieldtype": "Select",
+   "label": "Select Item Damage",
+   "options": "\nResolve at Store\nReturn Back to Supplier\nQuality Issue"
+  },
+  {
+   "depends_on": "eval:doc.select_item_damage == 'Resolve at Store';",
+   "fieldname": "techinician_from",
+   "fieldtype": "Select",
+   "label": "Technician from",
+   "options": "Out side\nwithin the Store"
+  },
+  {
+   "depends_on": "eval:doc.select_item_damage == 'Resolve at Store';",
+   "fieldname": "value_for_rectification",
+   "fieldtype": "Data",
+   "label": "Value for Rectification"
+  },
+  {
+   "depends_on": "eval:doc.select_item_damage == 'Resolve at Store';",
+   "fieldname": "time_to_complete",
+   "fieldtype": "Datetime",
+   "label": "Time to Complete "
+  },
+  {
+   "depends_on": "eval:doc.select_item_damage == 'Resolve at Store';",
+   "fieldname": "items",
+   "fieldtype": "Section Break",
+   "label": "Items"
+  },
+  {
+   "depends_on": "eval:doc.select_item_damage == 'Resolve at Store';",
+   "fieldname": "qi_items",
+   "fieldtype": "Table",
+   "label": "QI Items",
+   "options": "QI Items"
+  },
+  {
+   "depends_on": "eval:doc.select_item_damage == 'Return Back to Supplier';",
+   "fieldname": "supplier_address",
+   "fieldtype": "Link",
+   "label": "Supplier Name",
+   "options": "Address"
+  },
+  {
+   "depends_on": "eval:doc.select_item_damage == 'Return Back to Supplier';",
+   "fieldname": "issue_description",
+   "fieldtype": "Data",
+   "label": "Issue Description"
+  },
+  {
+   "depends_on": "eval:doc.select_item_damage == 'Return Back to Supplier';",
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.select_item_damage=='Quality Issue';",
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.select_item_damage == 'Return Back to Supplier';",
+   "fieldname": "address_display",
+   "fieldtype": "Small Text",
+   "label": "Supplier Address",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.select_item_damage=='Quality Issue';",
+   "fieldname": "quality_issue_supplier_address",
+   "fieldtype": "Link",
+   "label": "QI Supplier",
+   "options": "Address"
+  },
+  {
+   "depends_on": "eval:doc.select_item_damage =='Quality Issue';",
+   "fieldname": "quality_issue_address_display",
+   "fieldtype": "Small Text",
+   "label": "QI Supplier Address",
+   "read_only": 1
+  }
+ ],
+ "icon": "fa fa-search",
+ "idx": 1,
+ "is_submittable": 1,
+ "modified": "2021-03-09 14:51:51.057484",
+ "modified_by": "Administrator",
+ "module": "Stock",
+ "name": "Quality Inspection",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Quality Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "item_code, report_date, reference_name",
+ "show_name_in_global_search": 1,
+ "sort_field": "modified",
+ "sort_order": "ASC"
+}

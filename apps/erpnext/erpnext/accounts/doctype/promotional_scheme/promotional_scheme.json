@@ -1,0 +1,504 @@
+{
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "Prompt",
+ "creation": "2019-02-08 17:10:36.077402",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_1",
+  "apply_on",
+  "disable",
+  "section_break_3",
+  "items",
+  "item_groups",
+  "brands",
+  "mixed_conditions",
+  "is_cumulative",
+  "section_break_10",
+  "apply_rule_on_other",
+  "column_break_11",
+  "other_item_code",
+  "item_group",
+  "item_sub_sub_group_kitchen_appliances",
+  "item_sub_sub_group_home_appliances",
+  "item_sub_group_metail_utensils",
+  "item_sub_sub_group_stainless_steel",
+  "item_sub_sub_group_hindalium",
+  "item_sub_sub_group_for_copper_ware",
+  "item_sub_group_for_aluminium",
+  "item_sub_group_for_iron",
+  "item_sub_group_for_brassware",
+  "item_sub_sub_group_for_commercial_items",
+  "item_sub_group_for_crockery",
+  "item_sub_sub_group_for_fagile",
+  "item_sub_sub_group_for_un_fagile",
+  "item_sub_sub_group_for_commercial_spares",
+  "item_sub_sub_group_for_cleaning_hygiene_and_bath_accessories",
+  "item_sub_sub_group_for_stack_and_storage",
+  "item_sub_sub_group_for_bakery_equipments",
+  "item_sub_sub_group_for_home_organizing_tools",
+  "item_sub_sub_group_for_home_textiles",
+  "item_sub_sub_group_for_kitchen_tools",
+  "other_brand",
+  "section_break_8",
+  "selling",
+  "buying",
+  "column_break_12",
+  "applicable_for",
+  "customer",
+  "customer_group",
+  "territory",
+  "sales_partner",
+  "campaign",
+  "supplier",
+  "supplier_group",
+  "period_settings_section",
+  "valid_from",
+  "valid_upto",
+  "column_break_26",
+  "company",
+  "currency",
+  "section_break_14",
+  "price_discount_slabs",
+  "section_break_15",
+  "product_discount_slabs"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Item Code",
+   "fieldname": "apply_on",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Apply On",
+   "options": "\nItem Code\nItem Group\nBrand\nTransaction",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "disable",
+   "fieldtype": "Check",
+   "label": "Disable"
+  },
+  {
+   "depends_on": "eval:doc.apply_on == 'Item Code'",
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Pricing Rule Item Code",
+   "options": "Pricing Rule Item Code"
+  },
+  {
+   "depends_on": "eval:doc.apply_on == 'Item Group'",
+   "fieldname": "item_groups",
+   "fieldtype": "Table",
+   "label": "Pricing Rule Item Group",
+   "options": "Pricing Rule Item Group"
+  },
+  {
+   "depends_on": "eval:doc.apply_on == 'Brand'",
+   "fieldname": "brands",
+   "fieldtype": "Table",
+   "label": "Pricing Rule Brand",
+   "options": "Pricing Rule Brand"
+  },
+  {
+   "default": "0",
+   "fieldname": "mixed_conditions",
+   "fieldtype": "Check",
+   "label": "Mixed Conditions"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_cumulative",
+   "fieldtype": "Check",
+   "label": "Is Cumulative"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break",
+   "label": "Apply on Other Item"
+  },
+  {
+   "fieldname": "apply_rule_on_other",
+   "fieldtype": "Select",
+   "label": "Apply Rule On Other",
+   "options": "\nItem Code\nItem Group\nBrand",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.apply_rule_on_other == 'Item Code'",
+   "fieldname": "other_item_code",
+   "fieldtype": "Link",
+   "label": "Item Code",
+   "options": "Item"
+  },
+  {
+   "depends_on": "eval:doc.apply_rule_on_other == 'Brand'",
+   "fieldname": "other_brand",
+   "fieldtype": "Link",
+   "label": "Brand",
+   "options": "Brand"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break",
+   "label": "Party Information",
+   "print_hide": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "selling",
+   "fieldtype": "Check",
+   "label": "Selling",
+   "print_hide": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "buying",
+   "fieldtype": "Check",
+   "label": "Buying",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval: doc.buying || doc.selling",
+   "fieldname": "applicable_for",
+   "fieldtype": "Select",
+   "label": "Applicable For",
+   "options": "\nCustomer\nCustomer Group\nTerritory\nSales Partner\nCampaign\nSupplier\nSupplier Group"
+  },
+  {
+   "depends_on": "eval:doc.applicable_for=='Customer'",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "depends_on": "eval:doc.applicable_for==\"Customer Group\"",
+   "fieldname": "customer_group",
+   "fieldtype": "Link",
+   "label": "Customer Group",
+   "options": "Customer Group"
+  },
+  {
+   "depends_on": "eval:doc.applicable_for==\"Territory\"",
+   "fieldname": "territory",
+   "fieldtype": "Link",
+   "label": "Territory",
+   "options": "Territory"
+  },
+  {
+   "depends_on": "eval:doc.applicable_for==\"Sales Partner\"",
+   "fieldname": "sales_partner",
+   "fieldtype": "Link",
+   "label": "Sales Partner",
+   "options": "Sales Partner"
+  },
+  {
+   "depends_on": "eval:doc.applicable_for==\"Campaign\"",
+   "fieldname": "campaign",
+   "fieldtype": "Link",
+   "label": "Campaign",
+   "options": "Campaign"
+  },
+  {
+   "depends_on": "eval:doc.applicable_for=='Supplier'",
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "Supplier"
+  },
+  {
+   "depends_on": "eval:doc.applicable_for==\"Supplier Group\"",
+   "fieldname": "supplier_group",
+   "fieldtype": "Link",
+   "label": "Supplier Group",
+   "options": "Supplier Group"
+  },
+  {
+   "fieldname": "period_settings_section",
+   "fieldtype": "Section Break",
+   "label": "Period Settings"
+  },
+  {
+   "default": "Today",
+   "fieldname": "valid_from",
+   "fieldtype": "Date",
+   "label": "Valid From"
+  },
+  {
+   "fieldname": "valid_upto",
+   "fieldtype": "Date",
+   "label": "Valid Upto"
+  },
+  {
+   "fieldname": "column_break_26",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Currency",
+   "options": "Currency",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break",
+   "label": "Price Discount Slabs"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "price_discount_slabs",
+   "fieldtype": "Table",
+   "label": "Promotional Scheme Price Discount",
+   "options": "Promotional Scheme Price Discount"
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break",
+   "label": "Product Discount Slabs"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "product_discount_slabs",
+   "fieldtype": "Table",
+   "label": "Promotional Scheme Product Discount",
+   "options": "Promotional Scheme Product Discount"
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.item_group == 'Kitchen Appliances'",
+   "fieldname": "item_sub_sub_group_kitchen_appliances",
+   "fieldtype": "Link",
+   "label": "Item Sub Sub Group For Kitchen Appliances",
+   "options": "Item Sub Sub Group For Kitchen Appliances"
+  },
+  {
+   "depends_on": "eval:doc.item_group == 'Home Appliances'",
+   "fieldname": "item_sub_sub_group_home_appliances",
+   "fieldtype": "Link",
+   "label": "Item Sub Sub Group For Home Appliances",
+   "options": "Item Sub Sub Group For Home Appliances"
+  },
+  {
+   "depends_on": "eval:doc.item_group == 'Metail Utensils'",
+   "fieldname": "item_sub_group_metail_utensils",
+   "fieldtype": "Link",
+   "label": "Item Sub Group For Metail Utensils",
+   "options": "Item Sub Group For Metail Utensils"
+  },
+  {
+   "depends_on": "eval:doc.item_sub_group_metail_utensils == 'Stainless Steel' && doc.item_group == 'Metail Utensils'",
+   "fieldname": "item_sub_sub_group_stainless_steel",
+   "fieldtype": "Link",
+   "label": "Item Sub Sub Group For Stainless Steel",
+   "options": "Item Sub Sub Group For Stainless Steel"
+  },
+  {
+   "depends_on": "eval:doc.item_sub_group_metail_utensils == 'Hindalium' && doc.item_group == 'Metail Utensils'",
+   "fieldname": "item_sub_sub_group_hindalium",
+   "fieldtype": "Link",
+   "label": "Item Sub Sub Group For Hindalium",
+   "options": "Item Sub Sub Group For Hindalium"
+  },
+  {
+   "depends_on": "eval:doc.item_sub_group_metail_utensils == 'Copper Ware' && doc.item_group == 'Metail Utensils'",
+   "fieldname": "item_sub_sub_group_for_copper_ware",
+   "fieldtype": "Link",
+   "label": "Item Sub Sub Group For Copper ware",
+   "options": "Item Sub Sub Group For Copper ware"
+  },
+  {
+   "depends_on": "eval:doc.item_sub_group_metail_utensils == 'Aluminium' && doc.item_group == 'Metail Utensils'",
+   "fieldname": "item_sub_group_for_aluminium",
+   "fieldtype": "Link",
+   "label": "Item Sub Sub Group For Aluminium",
+   "options": "Item Sub Sub Group For Aluminium"
+  },
+  {
+   "depends_on": "eval:doc.item_sub_group_metail_utensils == 'Iron' && doc.item_group == 'Metail Utensils'",
+   "fieldname": "item_sub_group_for_iron",
+   "fieldtype": "Link",
+   "label": "Item Sub Sub Group For Iron",
+   "options": "Item Sub Sub Group For Iron"
+  },
+  {
+   "depends_on": "eval:doc.item_sub_group_metail_utensils == 'Brass Ware' && doc.item_group == 'Metail Utensils'",
+   "fieldname": "item_sub_group_for_brassware",
+   "fieldtype": "Link",
+   "label": "Item Sub Sub Group For Brass Ware",
+   "options": "Item Sub Sub Group For Brass Ware"
+  },
+  {
+   "depends_on": "eval:doc.item_group == 'Commercial Items'",
+   "fieldname": "item_sub_sub_group_for_commercial_items",
+   "fieldtype": "Link",
+   "label": "Item Sub Sub Group For Commercial Items",
+   "options": "Item Sub Sub Group For Commercial Items"
+  },
+  {
+   "depends_on": "eval:doc.item_group == 'Crockery'",
+   "fieldname": "item_sub_group_for_crockery",
+   "fieldtype": "Link",
+   "label": "Item Sub Group For Crockery",
+   "options": "Item Sub Group For Crockery"
+  },
+  {
+   "depends_on": "eval:doc.item_sub_group_for_crockery == 'Fragile' && doc.item_group == 'Crockery'",
+   "fieldname": "item_sub_sub_group_for_fagile",
+   "fieldtype": "Link",
+   "label": "Item Sub Sub Group For Fragile",
+   "options": "Item Sub Sub Group For Fragile"
+  },
+  {
+   "depends_on": "eval:doc.item_sub_group_for_crockery == 'Un Fragile' && doc.item_group == 'Crockery'",
+   "fieldname": "item_sub_sub_group_for_un_fagile",
+   "fieldtype": "Link",
+   "label": "Item Sub Sub Group For Un Fragile",
+   "options": "Item Sub Sub Group For Un Fragile"
+  },
+  {
+   "depends_on": "eval:doc.item_group == 'Commercial Spares'",
+   "fieldname": "item_sub_sub_group_for_commercial_spares",
+   "fieldtype": "Link",
+   "label": "Item Sub Sub Group For Commercial Spares",
+   "options": "Item Sub Sub Group For Commercial Spares"
+  },
+  {
+   "depends_on": "eval:doc.item_group == 'Cleaning Hygiene And Bath Accessories'",
+   "fieldname": "item_sub_sub_group_for_cleaning_hygiene_and_bath_accessories",
+   "fieldtype": "Link",
+   "label": "Item Sub Sub Group For Cleaning Hygiene And Bath Accessories",
+   "options": "Item Sub Sub Group For Cleaning Hygiene And Bath Accessories"
+  },
+  {
+   "depends_on": "eval:doc.item_group == 'Stack And Storage'",
+   "fieldname": "item_sub_sub_group_for_stack_and_storage",
+   "fieldtype": "Link",
+   "label": "Item Sub Sub Group For Stack And Storage",
+   "options": "Item Sub Sub Group For Stack And Storage"
+  },
+  {
+   "depends_on": "eval:doc.item_group == 'Bakery Equipments'",
+   "fieldname": "item_sub_sub_group_for_bakery_equipments",
+   "fieldtype": "Link",
+   "label": "Item Sub Sub Group For Bakery Equipments",
+   "options": "Item Sub Sub Group For Bakery Equipments"
+  },
+  {
+   "depends_on": "eval:doc.item_group == 'Home Organizing Tools'",
+   "fieldname": "item_sub_sub_group_for_home_organizing_tools",
+   "fieldtype": "Link",
+   "label": "Item Sub Sub Group For Home Organizing Tools",
+   "options": "Item Sub Sub Group For Home Organizing Tools"
+  },
+  {
+   "depends_on": "eval:doc.item_group == 'Home Text Tiles'",
+   "fieldname": "item_sub_sub_group_for_home_textiles",
+   "fieldtype": "Link",
+   "label": "Item Sub Sub Group For Home Textiles",
+   "options": "Item Sub Sub Group For Home Textiles"
+  },
+  {
+   "depends_on": "eval:doc.item_group == 'Kitchen Tools'",
+   "fieldname": "item_sub_sub_group_for_kitchen_tools",
+   "fieldtype": "Link",
+   "label": "Item Sub Sub Group For Kitchen Tools",
+   "options": "Item Sub Sub Group For Kitchen Tools"
+  },
+  {
+   "depends_on": "eval:doc.apply_rule_on_other == 'Item Group'",
+   "fieldname": "item_group",
+   "fieldtype": "Link",
+   "label": "Item Group",
+   "options": "Item Group"
+  }
+ ],
+ "modified": "2021-03-11 17:19:01.416615",
+ "modified_by": "Administrator",
+ "module": "Accounts",
+ "name": "Promotional Scheme",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

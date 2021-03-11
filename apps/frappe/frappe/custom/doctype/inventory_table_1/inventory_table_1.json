@@ -1,0 +1,43 @@
+{
+ "creation": "2021-03-06 13:27:50.408836",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "qty",
+  "location",
+  "bay_number"
+ ],
+ "fields": [
+  {
+   "fieldname": "qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Qty"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Location",
+   "options": "WH01\nWH02\nWH03"
+  },
+  {
+   "fieldname": "bay_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bay Number"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-03-06 13:29:46.711861",
+ "modified_by": "Administrator",
+ "module": "Custom",
+ "name": "Inventory Table 1",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

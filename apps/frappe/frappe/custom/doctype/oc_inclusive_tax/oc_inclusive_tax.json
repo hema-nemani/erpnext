@@ -1,0 +1,50 @@
+{
+ "creation": "2021-03-09 10:42:25.097908",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "description",
+  "oc_tax_percentage",
+  "oc_inc_amount",
+  "oc_inc_total_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Description"
+  },
+  {
+   "fieldname": "oc_tax_percentage",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Tax Percent",
+   "options": "5\n12\n18\n24"
+  },
+  {
+   "fieldname": "oc_inc_amount",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Amount"
+  },
+  {
+   "fieldname": "oc_inc_total_amount",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Total Amount"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-03-09 10:50:08.990027",
+ "modified_by": "Administrator",
+ "module": "Custom",
+ "name": "OC Inclusive Tax",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

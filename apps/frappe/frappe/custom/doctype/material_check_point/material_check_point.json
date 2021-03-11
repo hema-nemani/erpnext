@@ -1,0 +1,76 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2021-03-09 11:35:25.200714",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "transportation_type",
+  "purchase_order_items",
+  "mcp_items",
+  "supplier_location",
+  "invoice_number"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "MCP Number",
+   "options": "BGLMCP.-.YY.-.MM.-.DD.-.###"
+  },
+  {
+   "fieldname": "transportation_type",
+   "fieldtype": "Select",
+   "label": "Transportation Type",
+   "options": "Local\nOutstation"
+  },
+  {
+   "fetch_from": "purchase_order_series.supplier_location",
+   "fieldname": "supplier_location",
+   "fieldtype": "Data",
+   "label": "Supplier Location"
+  },
+  {
+   "fetch_from": "purchase_order_series.invoice_number",
+   "fieldname": "invoice_number",
+   "fieldtype": "Data",
+   "label": "Invoice Number"
+  },
+  {
+   "fieldname": "mcp_items",
+   "fieldtype": "Table",
+   "label": "MCP Items",
+   "options": "MCP Items"
+  },
+  {
+   "fieldname": "purchase_order_items",
+   "fieldtype": "Link",
+   "label": "Purchase Order Series",
+   "options": "Purchase Order"
+  }
+ ],
+ "modified": "2021-03-09 12:16:03.613156",
+ "modified_by": "Administrator",
+ "module": "Custom",
+ "name": "Material Check Point",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
