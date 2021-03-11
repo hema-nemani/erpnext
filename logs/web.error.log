@@ -1,0 +1,247 @@
+[2021-01-15 12:29:04 +0000] [21574] [INFO] Starting gunicorn 19.10.0
+[2021-01-15 12:29:04 +0000] [21574] [INFO] Listening at: http://127.0.0.1:8000 (21574)
+[2021-01-15 12:29:04 +0000] [21574] [INFO] Using worker: sync
+[2021-01-15 12:29:04 +0000] [21749] [INFO] Booting worker with pid: 21749
+[2021-01-15 12:29:04 +0000] [21750] [INFO] Booting worker with pid: 21750
+[2021-01-15 12:29:05 +0000] [21574] [INFO] Handling signal: term
+[2021-01-15 12:29:05 +0000] [21750] [INFO] Worker exiting (pid: 21750)
+[2021-01-15 12:29:05 +0000] [21749] [INFO] Worker exiting (pid: 21749)
+[2021-01-15 12:29:05 +0000] [21574] [INFO] Shutting down: Master
+[2021-01-15 12:29:12 +0000] [21785] [INFO] Starting gunicorn 19.10.0
+[2021-01-15 12:29:12 +0000] [21785] [INFO] Listening at: http://127.0.0.1:8000 (21785)
+[2021-01-15 12:29:12 +0000] [21785] [INFO] Using worker: sync
+[2021-01-15 12:29:12 +0000] [21821] [INFO] Booting worker with pid: 21821
+[2021-01-15 12:29:12 +0000] [21822] [INFO] Booting worker with pid: 21822
+[2021-01-15 12:39:34 +0000] [21785] [INFO] Handling signal: term
+[2021-01-15 12:39:34 +0000] [21821] [INFO] Worker exiting (pid: 21821)
+[2021-01-15 12:39:34 +0000] [21822] [INFO] Worker exiting (pid: 21822)
+[2021-01-15 12:39:35 +0000] [21785] [INFO] Shutting down: Master
+[2021-03-01 06:51:56 +0000] [1962] [INFO] Starting gunicorn 19.10.0
+[2021-03-01 06:51:56 +0000] [1962] [INFO] Listening at: http://127.0.0.1:8000 (1962)
+[2021-03-01 06:51:56 +0000] [1962] [INFO] Using worker: sync
+[2021-03-01 06:51:56 +0000] [2113] [INFO] Booting worker with pid: 2113
+[2021-03-01 06:51:56 +0000] [2114] [INFO] Booting worker with pid: 2114
+[2021-03-01 07:16:00 +0000] [1962] [INFO] Handling signal: term
+[2021-03-01 07:16:00 +0000] [2113] [INFO] Worker exiting (pid: 2113)
+[2021-03-01 07:16:00 +0000] [2114] [INFO] Worker exiting (pid: 2114)
+[2021-03-01 07:16:00 +0000] [1962] [INFO] Shutting down: Master
+[2021-03-01 07:16:18 +0000] [3172] [INFO] Starting gunicorn 19.10.0
+[2021-03-01 07:16:18 +0000] [3172] [INFO] Listening at: http://127.0.0.1:8000 (3172)
+[2021-03-01 07:16:18 +0000] [3172] [INFO] Using worker: sync
+[2021-03-01 07:16:18 +0000] [3218] [INFO] Booting worker with pid: 3218
+[2021-03-01 07:16:18 +0000] [3219] [INFO] Booting worker with pid: 3219
+[2021-03-01 07:46:55 +0000] [3172] [CRITICAL] WORKER TIMEOUT (pid:3218)
+[2021-03-01 07:46:55 +0000] [3218] [ERROR] Error handling request /api/method/frappe.desk.page.setup_wizard.setup_wizard.setup_complete
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1071, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/page/setup_wizard/setup_wizard.py", line 72, in setup_complete
+    task.get('fn')(task.get('args'))
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/setup/setup_wizard/setup_wizard.py", line 95, in setup_company
+    fixtures.install_company(args)
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/setup/setup_wizard/operations/install_fixtures.py", line 396, in install_company
+    make_records(records)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/page/setup_wizard/setup_wizard.py", line 392, in make_records
+    doc.insert(ignore_permissions=True)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 260, in insert
+    self.run_post_save_methods()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 927, in run_post_save_methods
+    self.run_method("on_update")
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 797, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 1073, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 1056, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 791, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/setup/doctype/company/company.py", line 107, in on_update
+    install_country_fixtures(self.name)
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/setup/doctype/company/company.py", line 419, in install_country_fixtures
+    frappe.get_attr(module_name)(company_doc, False)
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/regional/india/setup.py", line 14, in setup
+    setup_company_independent_fixtures()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/regional/india/setup.py", line 21, in setup_company_independent_fixtures
+    make_custom_fields()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/regional/india/setup.py", line 548, in make_custom_fields
+    create_custom_fields(custom_fields, update=update)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/custom/doctype/custom_field/custom_field.py", line 143, in create_custom_fields
+    create_custom_field(doctype, df, ignore_validate=ignore_validate)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/custom/doctype/custom_field/custom_field.py", line 127, in create_custom_field
+    custom_field.insert()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 260, in insert
+    self.run_post_save_methods()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 927, in run_post_save_methods
+    self.run_method("on_update")
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 797, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 1073, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 1056, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 791, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/custom/doctype/custom_field/custom_field.py", line 65, in on_update
+    frappe.db.updatedb(self.dt)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 291, in updatedb
+    db_table.sync()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/schema.py", line 33, in sync
+    if self.is_new():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/schema.py", line 152, in is_new
+    return self.table_name not in frappe.db.get_tables()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 772, in get_tables
+    return [d[0] for d in self.sql("select table_name from information_schema.tables where table_schema not in ('pg_catalog', 'information_schema')")]
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 171, in sql
+    self._cursor.execute(query)
+  File "/home/frappe/frappe-bench/env/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/frappe/frappe-bench/env/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/frappe/frappe-bench/env/lib/python3.6/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/frappe/frappe-bench/env/lib/python3.6/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/home/frappe/frappe-bench/env/lib/python3.6/site-packages/pymysql/connections.py", line 1082, in read
+    self._read_result_packet(first_packet)
+  File "/home/frappe/frappe-bench/env/lib/python3.6/site-packages/pymysql/connections.py", line 1152, in _read_result_packet
+    self._read_rowdata_packet()
+  File "/home/frappe/frappe-bench/env/lib/python3.6/site-packages/pymysql/connections.py", line 1186, in _read_rowdata_packet
+    packet = self.connection._read_packet()
+  File "/home/frappe/frappe-bench/env/lib/python3.6/site-packages/pymysql/connections.py", line 662, in _read_packet
+    if packet_number != self._next_seq_id:
+  File "/home/frappe/frappe-bench/env/lib/python3.6/site-packages/gunicorn/workers/base.py", line 202, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/frappe/frappe-bench/env/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 176, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/home/frappe/frappe-bench/env/lib/python3.6/site-packages/werkzeug/local.py", line 231, in application
+    return ClosingIterator(app(environ, start_response), self.cleanup)
+  File "/home/frappe/frappe-bench/env/lib/python3.6/site-packages/werkzeug/wrappers/base_request.py", line 237, in application
+    resp = f(*args[:-2] + (request,))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 95, in application
+    frappe.db.rollback()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 753, in rollback
+    self.sql("rollback")
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 171, in sql
+    self._cursor.execute(query)
+  File "/home/frappe/frappe-bench/env/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/frappe/frappe-bench/env/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/frappe/frappe-bench/env/lib/python3.6/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/frappe/frappe-bench/env/lib/python3.6/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/home/frappe/frappe-bench/env/lib/python3.6/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/home/frappe/frappe-bench/env/lib/python3.6/site-packages/pymysql/connections.py", line 671, in _read_packet
+    % (packet_number, self._next_seq_id))
+pymysql.err.InternalError: Packet sequence number wrong - got 98 expected 1
+[2021-03-01 07:46:55 +0000] [3218] [INFO] Worker exiting (pid: 3218)
+[2021-03-01 07:46:56 +0000] [3265] [INFO] Booting worker with pid: 3265
+[2021-03-04 04:48:37 +0000] [1941] [INFO] Starting gunicorn 19.10.0
+[2021-03-04 04:48:37 +0000] [1941] [INFO] Listening at: http://127.0.0.1:8000 (1941)
+[2021-03-04 04:48:37 +0000] [1941] [INFO] Using worker: sync
+[2021-03-04 04:48:37 +0000] [1999] [INFO] Booting worker with pid: 1999
+[2021-03-04 04:48:37 +0000] [2000] [INFO] Booting worker with pid: 2000
+[2021-03-04 05:04:37 +0000] [1941] [INFO] Handling signal: term
+[2021-03-04 05:04:37 +0000] [2000] [INFO] Worker exiting (pid: 2000)
+[2021-03-04 05:04:37 +0000] [1999] [INFO] Worker exiting (pid: 1999)
+[2021-03-04 05:04:37 +0000] [1941] [INFO] Shutting down: Master
+[2021-03-04 05:04:48 +0000] [3142] [INFO] Starting gunicorn 19.10.0
+[2021-03-04 05:04:48 +0000] [3142] [INFO] Listening at: http://127.0.0.1:8000 (3142)
+[2021-03-04 05:04:48 +0000] [3142] [INFO] Using worker: sync
+[2021-03-04 05:04:48 +0000] [3196] [INFO] Booting worker with pid: 3196
+[2021-03-04 05:04:48 +0000] [3197] [INFO] Booting worker with pid: 3197
+[2021-03-04 05:15:28 +0000] [3142] [INFO] Handling signal: term
+[2021-03-04 05:15:28 +0000] [3197] [INFO] Worker exiting (pid: 3197)
+[2021-03-04 05:15:28 +0000] [3196] [INFO] Worker exiting (pid: 3196)
+[2021-03-04 05:15:28 +0000] [3142] [INFO] Shutting down: Master
+[2021-03-04 05:15:39 +0000] [3868] [INFO] Starting gunicorn 19.10.0
+[2021-03-04 05:15:39 +0000] [3868] [INFO] Listening at: http://127.0.0.1:8000 (3868)
+[2021-03-04 05:15:39 +0000] [3868] [INFO] Using worker: sync
+[2021-03-04 05:15:39 +0000] [3914] [INFO] Booting worker with pid: 3914
+[2021-03-04 05:15:39 +0000] [3915] [INFO] Booting worker with pid: 3915
+[2021-03-04 05:23:42 +0000] [3868] [INFO] Handling signal: term
+[2021-03-04 05:23:42 +0000] [3914] [INFO] Worker exiting (pid: 3914)
+[2021-03-04 05:23:42 +0000] [3915] [INFO] Worker exiting (pid: 3915)
+[2021-03-04 05:23:42 +0000] [3868] [INFO] Shutting down: Master
+[2021-03-04 05:23:52 +0000] [4298] [INFO] Starting gunicorn 19.10.0
+[2021-03-04 05:23:52 +0000] [4298] [INFO] Listening at: http://127.0.0.1:8000 (4298)
+[2021-03-04 05:23:52 +0000] [4298] [INFO] Using worker: sync
+[2021-03-04 05:23:52 +0000] [4345] [INFO] Booting worker with pid: 4345
+[2021-03-04 05:23:52 +0000] [4344] [INFO] Booting worker with pid: 4344
+[2021-03-04 10:23:27 +0000] [4298] [INFO] Handling signal: term
+[2021-03-04 10:23:27 +0000] [4345] [INFO] Worker exiting (pid: 4345)
+[2021-03-04 10:23:27 +0000] [4344] [INFO] Worker exiting (pid: 4344)
+[2021-03-04 10:23:27 +0000] [4298] [INFO] Shutting down: Master
+[2021-03-04 10:23:40 +0000] [28007] [INFO] Starting gunicorn 19.10.0
+[2021-03-04 10:23:40 +0000] [28007] [INFO] Listening at: http://127.0.0.1:8000 (28007)
+[2021-03-04 10:23:40 +0000] [28007] [INFO] Using worker: sync
+[2021-03-04 10:23:40 +0000] [28053] [INFO] Booting worker with pid: 28053
+[2021-03-04 10:23:40 +0000] [28054] [INFO] Booting worker with pid: 28054
+[2021-03-06 06:44:13 +0000] [1280] [INFO] Starting gunicorn 19.10.0
+[2021-03-06 06:44:13 +0000] [1280] [INFO] Listening at: http://127.0.0.1:8000 (1280)
+[2021-03-06 06:44:13 +0000] [1280] [INFO] Using worker: sync
+[2021-03-06 06:44:13 +0000] [1343] [INFO] Booting worker with pid: 1343
+[2021-03-06 06:44:13 +0000] [1344] [INFO] Booting worker with pid: 1344
+[2021-03-08 10:16:25 +0000] [1036] [INFO] Starting gunicorn 19.10.0
+[2021-03-08 10:16:25 +0000] [1036] [INFO] Listening at: http://127.0.0.1:8000 (1036)
+[2021-03-08 10:16:25 +0000] [1036] [INFO] Using worker: sync
+[2021-03-08 10:16:25 +0000] [1731] [INFO] Booting worker with pid: 1731
+[2021-03-08 10:16:25 +0000] [1734] [INFO] Booting worker with pid: 1734
+[2021-03-08 10:16:28 +0000] [1036] [INFO] Handling signal: term
+[2021-03-08 10:16:28 +0000] [1731] [INFO] Worker exiting (pid: 1731)
+[2021-03-08 10:16:28 +0000] [1734] [INFO] Worker exiting (pid: 1734)
+[2021-03-08 10:16:29 +0000] [1036] [INFO] Shutting down: Master
+[2021-03-08 10:16:41 +0000] [1776] [INFO] Starting gunicorn 19.10.0
+[2021-03-08 10:16:41 +0000] [1776] [INFO] Listening at: http://127.0.0.1:8000 (1776)
+[2021-03-08 10:16:41 +0000] [1776] [INFO] Using worker: sync
+[2021-03-08 10:16:41 +0000] [1917] [INFO] Booting worker with pid: 1917
+[2021-03-08 10:16:41 +0000] [1918] [INFO] Booting worker with pid: 1918
+[2021-03-08 11:34:04 +0000] [1776] [CRITICAL] WORKER TIMEOUT (pid:1917)
+[2021-03-08 11:34:04 +0000] [1776] [CRITICAL] WORKER TIMEOUT (pid:1918)
+[2021-03-08 11:34:04 +0000] [1917] [INFO] Worker exiting (pid: 1917)
+[2021-03-08 11:34:04 +0000] [1918] [INFO] Worker exiting (pid: 1918)
+[2021-03-08 11:34:05 +0000] [2784] [INFO] Booting worker with pid: 2784
+[2021-03-08 11:34:05 +0000] [2785] [INFO] Booting worker with pid: 2785
+[2021-03-08 12:40:47 +0000] [1779] [INFO] Starting gunicorn 19.10.0
+[2021-03-08 12:40:47 +0000] [1779] [INFO] Listening at: http://127.0.0.1:8000 (1779)
+[2021-03-08 12:40:47 +0000] [1779] [INFO] Using worker: sync
+[2021-03-08 12:40:47 +0000] [1862] [INFO] Booting worker with pid: 1862
+[2021-03-08 12:40:47 +0000] [1863] [INFO] Booting worker with pid: 1863
+[2021-03-09 05:02:36 +0000] [1789] [INFO] Starting gunicorn 19.10.0
+[2021-03-09 05:02:36 +0000] [1789] [INFO] Listening at: http://127.0.0.1:8000 (1789)
+[2021-03-09 05:02:36 +0000] [1789] [INFO] Using worker: sync
+[2021-03-09 05:02:36 +0000] [1850] [INFO] Booting worker with pid: 1850
+[2021-03-09 05:02:36 +0000] [1851] [INFO] Booting worker with pid: 1851
+[2021-03-09 06:00:06 +0000] [1767] [INFO] Starting gunicorn 19.10.0
+[2021-03-09 06:00:06 +0000] [1767] [INFO] Listening at: http://127.0.0.1:8000 (1767)
+[2021-03-09 06:00:06 +0000] [1767] [INFO] Using worker: sync
+[2021-03-09 06:00:06 +0000] [1836] [INFO] Booting worker with pid: 1836
+[2021-03-09 06:00:06 +0000] [1837] [INFO] Booting worker with pid: 1837
+[2021-03-11 10:56:32 +0000] [1710] [INFO] Starting gunicorn 19.10.0
+[2021-03-11 10:56:32 +0000] [1710] [INFO] Listening at: http://127.0.0.1:8000 (1710)
+[2021-03-11 10:56:32 +0000] [1710] [INFO] Using worker: sync
+[2021-03-11 10:56:32 +0000] [1843] [INFO] Booting worker with pid: 1843
+[2021-03-11 10:56:32 +0000] [1842] [INFO] Booting worker with pid: 1842
+[2021-03-11 12:28:08 +0000] [1710] [CRITICAL] WORKER TIMEOUT (pid:1842)
+[2021-03-11 12:28:08 +0000] [1842] [INFO] Worker exiting (pid: 1842)
+[2021-03-11 12:28:08 +0000] [1710] [CRITICAL] WORKER TIMEOUT (pid:1843)
+[2021-03-11 12:28:08 +0000] [1843] [INFO] Worker exiting (pid: 1843)
+[2021-03-11 12:28:08 +0000] [3449] [INFO] Booting worker with pid: 3449
+[2021-03-11 12:28:08 +0000] [3450] [INFO] Booting worker with pid: 3450

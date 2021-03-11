@@ -1,0 +1,1710 @@
+[ERROR] 2021-03-01 07:40:10,700 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: site1.local
+Form Dict: {
+ "cmd": "frappe.core.doctype.user.user.sign_up",
+ "email": "works@f9tech.com",
+ "full_name": "Ananya",
+ "redirect_to": ""
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 64, in application
+    response = frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1071, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/user/user.py", line 774, in sign_up
+    user.insert()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 260, in insert
+    self.run_post_save_methods()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 927, in run_post_save_methods
+    self.run_method("on_update")
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 797, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 1073, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 1056, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 791, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/user/user.py", line 100, in on_update
+    self.send_password_notification(self.__new_password)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/user/user.py", line 204, in send_password_notification
+    self.send_welcome_mail_to_user()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/user/user.py", line 270, in send_welcome_mail_to_user
+    site_url=get_url(),
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/user/user.py", line 296, in send_login_mail
+    delayed=(not now) if now!=None else self.flags.delay_emails, retry=3)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 489, in sendmail
+    inline_images=inline_images, header=header, print_letterhead=print_letterhead)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/email/queue.py", line 79, in send
+    sender = email_account.default_sender
+AttributeError: 'NoneType' object has no attribute 'default_sender'
+[ERROR] 2021-03-01 07:40:11,071 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-03-01 07:40:10.701807-10.0.2.2-dd0
+[ERROR] 2021-03-01 07:41:44,205 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: site1.local
+Form Dict: {
+ "cmd": "frappe.core.doctype.user.user.reset_password",
+ "user": "works@f9tech.com"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 64, in application
+    response = frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1071, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/user/user.py", line 800, in reset_password
+    user.reset_password(send_email=True)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/user/user.py", line 232, in reset_password
+    self.password_reset_mail(link)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/user/user.py", line 251, in password_reset_mail
+    "password_reset", {"link": link}, now=True)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/user/user.py", line 296, in send_login_mail
+    delayed=(not now) if now!=None else self.flags.delay_emails, retry=3)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 489, in sendmail
+    inline_images=inline_images, header=header, print_letterhead=print_letterhead)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/email/queue.py", line 79, in send
+    sender = email_account.default_sender
+AttributeError: 'NoneType' object has no attribute 'default_sender'
+[ERROR] 2021-03-01 07:41:44,219 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-03-01 07:41:44.206339-10.0.2.2-c4b
+[DEBUG] 2021-03-01 07:46:42,304 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 07:47:43,667 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 07:48:44,843 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 07:49:45,583 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 07:50:45,938 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 07:51:46,394 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 07:52:47,286 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 07:53:47,677 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 07:54:48,500 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 07:55:48,993 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 07:56:49,227 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 07:57:49,769 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 07:58:50,475 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 07:59:50,933 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:00:51,473 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:01:51,767 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:02:52,167 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:03:52,580 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:04:53,169 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:05:53,513 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:06:53,879 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:07:54,181 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:08:54,436 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:09:54,910 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:10:55,486 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:11:56,115 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:12:57,204 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:13:58,155 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:14:59,049 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:15:59,546 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:17:00,215 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:18:00,702 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:19:01,337 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:20:02,153 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:21:02,699 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:22:03,329 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:23:03,857 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:24:04,059 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:25:04,614 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:26:05,317 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:27:05,586 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:28:05,899 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:29:06,238 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:30:06,957 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:31:07,159 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:32:07,595 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:33:07,876 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:34:08,528 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:35:08,833 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:36:09,141 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:37:09,721 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:38:10,602 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:39:10,818 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:40:11,126 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:41:12,004 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:42:12,486 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:43:12,890 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:44:13,201 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:45:13,562 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:46:13,714 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:47:14,473 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:48:14,917 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:49:15,451 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:50:16,326 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:51:16,872 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:52:17,642 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:53:18,056 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:54:18,727 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:55:19,695 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:56:20,096 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:57:20,473 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:58:20,853 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 08:59:21,570 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 09:00:22,244 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 09:01:22,675 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 09:02:23,336 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 09:03:23,856 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 09:04:24,644 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 09:05:25,041 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 09:06:25,478 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 09:07:25,845 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 09:08:26,179 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 09:09:26,407 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 09:10:26,987 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 09:11:27,223 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 09:12:27,527 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 09:13:28,037 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 09:14:28,854 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 09:15:29,387 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 09:16:30,044 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 09:17:30,429 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 09:18:31,713 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 09:19:32,316 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 09:20:32,601 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 09:21:33,015 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 09:22:33,396 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 09:23:34,012 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 09:24:34,417 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 09:25:35,081 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 09:26:35,541 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 09:27:36,042 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 09:28:36,826 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 09:29:37,334 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 09:30:38,050 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 09:31:38,634 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 09:32:39,215 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 09:33:39,647 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 09:34:39,968 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 09:35:40,534 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 09:36:41,098 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 09:37:42,070 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 09:38:42,518 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 09:39:43,139 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 09:40:43,606 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-01 09:41:44,091 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 05:24:59,309 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 05:25:59,633 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 05:27:00,528 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 05:28:01,011 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 05:29:01,508 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 05:30:02,123 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 05:31:02,689 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 05:32:03,350 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 05:33:03,893 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 05:34:04,687 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 05:35:05,150 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 05:36:05,564 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 05:37:05,853 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 05:38:06,258 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 05:39:07,180 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 05:40:07,975 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 05:41:08,691 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 05:42:09,245 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 05:43:10,005 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 05:44:10,640 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 05:45:11,012 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[ERROR] 2021-03-04 05:45:44,132 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: site1.local
+Form Dict: {
+ "cached_timestamp": "",
+ "cmd": "frappe.desk.form.load.getdoctype",
+ "doctype": "Item Sub Sub Group For Stainless Steel",
+ "with_parent": "1"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 836, in get_module
+    return importlib.import_module(modulename)
+  File "/home/frappe/frappe-bench/env/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'frappe.custom.doctype.item_sub_sub_group_for_stainless_steel.item_sub_sub_group_for_stainless_steel'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1071, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 70, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 80, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 29, in get_meta
+    meta = FormMeta(doctype)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 39, in __init__
+    self.load_assets()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 53, in load_assets
+    self.load_templates()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 179, in load_templates
+    module = load_doctype_module(self.name)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/modules/utils.py", line 206, in load_doctype_module
+    raise ImportError('Module import failed for {0} ({1})'.format(doctype, module_name + ' Error: ' + str(e)))
+ImportError: Module import failed for Item Sub Sub Group For Stainless Steel (frappe.custom.doctype.item_sub_sub_group_for_stainless_steel.item_sub_sub_group_for_stainless_steel Error: No module named 'frappe.custom.doctype.item_sub_sub_group_for_stainless_steel.item_sub_sub_group_for_stainless_steel')
+[ERROR] 2021-03-04 05:45:44,728 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-03-04 05:45:44.134403-10.0.2.2-d0e
+[ERROR] 2021-03-04 05:45:45,210 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: site1.local
+Form Dict: {
+ "cached_timestamp": "",
+ "cmd": "frappe.desk.form.load.getdoctype",
+ "doctype": "Item Sub Sub Group For Stainless Steel",
+ "with_parent": "1"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 836, in get_module
+    return importlib.import_module(modulename)
+  File "/home/frappe/frappe-bench/env/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'frappe.custom.doctype.item_sub_sub_group_for_stainless_steel.item_sub_sub_group_for_stainless_steel'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1071, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 70, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 80, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 29, in get_meta
+    meta = FormMeta(doctype)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 39, in __init__
+    self.load_assets()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 53, in load_assets
+    self.load_templates()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 179, in load_templates
+    module = load_doctype_module(self.name)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/modules/utils.py", line 206, in load_doctype_module
+    raise ImportError('Module import failed for {0} ({1})'.format(doctype, module_name + ' Error: ' + str(e)))
+ImportError: Module import failed for Item Sub Sub Group For Stainless Steel (frappe.custom.doctype.item_sub_sub_group_for_stainless_steel.item_sub_sub_group_for_stainless_steel Error: No module named 'frappe.custom.doctype.item_sub_sub_group_for_stainless_steel.item_sub_sub_group_for_stainless_steel')
+[ERROR] 2021-03-04 05:45:45,233 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-03-04 05:45:45.212293-10.0.2.2-574
+[ERROR] 2021-03-04 05:45:58,336 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: site1.local
+Form Dict: {
+ "cached_timestamp": "",
+ "cmd": "frappe.desk.form.load.getdoctype",
+ "doctype": "Item Sub Sub Group For Stainless Steel",
+ "with_parent": "1"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 836, in get_module
+    return importlib.import_module(modulename)
+  File "/home/frappe/frappe-bench/env/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'frappe.custom.doctype.item_sub_sub_group_for_stainless_steel.item_sub_sub_group_for_stainless_steel'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1071, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 70, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 80, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 29, in get_meta
+    meta = FormMeta(doctype)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 39, in __init__
+    self.load_assets()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 53, in load_assets
+    self.load_templates()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 179, in load_templates
+    module = load_doctype_module(self.name)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/modules/utils.py", line 206, in load_doctype_module
+    raise ImportError('Module import failed for {0} ({1})'.format(doctype, module_name + ' Error: ' + str(e)))
+ImportError: Module import failed for Item Sub Sub Group For Stainless Steel (frappe.custom.doctype.item_sub_sub_group_for_stainless_steel.item_sub_sub_group_for_stainless_steel Error: No module named 'frappe.custom.doctype.item_sub_sub_group_for_stainless_steel.item_sub_sub_group_for_stainless_steel')
+[ERROR] 2021-03-04 05:45:58,357 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-03-04 05:45:58.338911-10.0.2.2-c04
+[ERROR] 2021-03-04 05:45:58,446 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: site1.local
+Form Dict: {
+ "cached_timestamp": "",
+ "cmd": "frappe.desk.form.load.getdoctype",
+ "doctype": "Item Sub Sub Group For Stainless Steel",
+ "with_parent": "1"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 836, in get_module
+    return importlib.import_module(modulename)
+  File "/home/frappe/frappe-bench/env/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'frappe.custom.doctype.item_sub_sub_group_for_stainless_steel.item_sub_sub_group_for_stainless_steel'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1071, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 70, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 80, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 29, in get_meta
+    meta = FormMeta(doctype)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 39, in __init__
+    self.load_assets()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 53, in load_assets
+    self.load_templates()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 179, in load_templates
+    module = load_doctype_module(self.name)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/modules/utils.py", line 206, in load_doctype_module
+    raise ImportError('Module import failed for {0} ({1})'.format(doctype, module_name + ' Error: ' + str(e)))
+ImportError: Module import failed for Item Sub Sub Group For Stainless Steel (frappe.custom.doctype.item_sub_sub_group_for_stainless_steel.item_sub_sub_group_for_stainless_steel Error: No module named 'frappe.custom.doctype.item_sub_sub_group_for_stainless_steel.item_sub_sub_group_for_stainless_steel')
+[ERROR] 2021-03-04 05:45:59,091 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-03-04 05:45:58.448348-10.0.2.2-bd8
+[ERROR] 2021-03-04 05:46:08,485 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: site1.local
+Form Dict: {
+ "cached_timestamp": "",
+ "cmd": "frappe.desk.form.load.getdoctype",
+ "doctype": "Item Sub Sub Group For Stainless Steel",
+ "with_parent": "1"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 836, in get_module
+    return importlib.import_module(modulename)
+  File "/home/frappe/frappe-bench/env/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'frappe.custom.doctype.item_sub_sub_group_for_stainless_steel.item_sub_sub_group_for_stainless_steel'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1071, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 70, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 80, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 29, in get_meta
+    meta = FormMeta(doctype)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 39, in __init__
+    self.load_assets()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 53, in load_assets
+    self.load_templates()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 179, in load_templates
+    module = load_doctype_module(self.name)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/modules/utils.py", line 206, in load_doctype_module
+    raise ImportError('Module import failed for {0} ({1})'.format(doctype, module_name + ' Error: ' + str(e)))
+ImportError: Module import failed for Item Sub Sub Group For Stainless Steel (frappe.custom.doctype.item_sub_sub_group_for_stainless_steel.item_sub_sub_group_for_stainless_steel Error: No module named 'frappe.custom.doctype.item_sub_sub_group_for_stainless_steel.item_sub_sub_group_for_stainless_steel')
+[ERROR] 2021-03-04 05:46:08,502 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-03-04 05:46:08.487787-10.0.2.2-0ba
+[DEBUG] 2021-03-04 05:46:11,915 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 05:47:12,518 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 05:48:12,902 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 05:49:13,465 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 05:50:13,995 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 05:51:14,674 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 05:52:15,419 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 05:53:15,736 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[ERROR] 2021-03-04 05:53:47,470 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: site1.local
+Form Dict: {
+ "cached_timestamp": "",
+ "cmd": "frappe.desk.form.load.getdoctype",
+ "doctype": "Item Sub Sub Group For Brass ware",
+ "with_parent": "1"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 836, in get_module
+    return importlib.import_module(modulename)
+  File "/home/frappe/frappe-bench/env/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'frappe.custom.doctype.item_sub_sub_group_for_brass_ware.item_sub_sub_group_for_brass_ware'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1071, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 70, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 80, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 29, in get_meta
+    meta = FormMeta(doctype)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 39, in __init__
+    self.load_assets()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 53, in load_assets
+    self.load_templates()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 179, in load_templates
+    module = load_doctype_module(self.name)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/modules/utils.py", line 206, in load_doctype_module
+    raise ImportError('Module import failed for {0} ({1})'.format(doctype, module_name + ' Error: ' + str(e)))
+ImportError: Module import failed for Item Sub Sub Group For Brass ware (frappe.custom.doctype.item_sub_sub_group_for_brass_ware.item_sub_sub_group_for_brass_ware Error: No module named 'frappe.custom.doctype.item_sub_sub_group_for_brass_ware.item_sub_sub_group_for_brass_ware')
+[ERROR] 2021-03-04 05:53:47,513 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-03-04 05:53:47.472364-10.0.2.2-616
+[ERROR] 2021-03-04 05:53:48,014 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: site1.local
+Form Dict: {
+ "cached_timestamp": "",
+ "cmd": "frappe.desk.form.load.getdoctype",
+ "doctype": "Item Sub Sub Group For Brass ware",
+ "with_parent": "1"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 836, in get_module
+    return importlib.import_module(modulename)
+  File "/home/frappe/frappe-bench/env/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'frappe.custom.doctype.item_sub_sub_group_for_brass_ware.item_sub_sub_group_for_brass_ware'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1071, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 70, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 80, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 29, in get_meta
+    meta = FormMeta(doctype)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 39, in __init__
+    self.load_assets()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 53, in load_assets
+    self.load_templates()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 179, in load_templates
+    module = load_doctype_module(self.name)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/modules/utils.py", line 206, in load_doctype_module
+    raise ImportError('Module import failed for {0} ({1})'.format(doctype, module_name + ' Error: ' + str(e)))
+ImportError: Module import failed for Item Sub Sub Group For Brass ware (frappe.custom.doctype.item_sub_sub_group_for_brass_ware.item_sub_sub_group_for_brass_ware Error: No module named 'frappe.custom.doctype.item_sub_sub_group_for_brass_ware.item_sub_sub_group_for_brass_ware')
+[ERROR] 2021-03-04 05:53:48,033 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-03-04 05:53:48.016108-10.0.2.2-a48
+[ERROR] 2021-03-04 05:53:51,318 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: site1.local
+Form Dict: {
+ "cached_timestamp": "",
+ "cmd": "frappe.desk.form.load.getdoctype",
+ "doctype": "Item Sub Sub Group For Brass ware",
+ "with_parent": "1"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 836, in get_module
+    return importlib.import_module(modulename)
+  File "/home/frappe/frappe-bench/env/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'frappe.custom.doctype.item_sub_sub_group_for_brass_ware.item_sub_sub_group_for_brass_ware'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1071, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 70, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 80, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 29, in get_meta
+    meta = FormMeta(doctype)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 39, in __init__
+    self.load_assets()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 53, in load_assets
+    self.load_templates()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 179, in load_templates
+    module = load_doctype_module(self.name)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/modules/utils.py", line 206, in load_doctype_module
+    raise ImportError('Module import failed for {0} ({1})'.format(doctype, module_name + ' Error: ' + str(e)))
+ImportError: Module import failed for Item Sub Sub Group For Brass ware (frappe.custom.doctype.item_sub_sub_group_for_brass_ware.item_sub_sub_group_for_brass_ware Error: No module named 'frappe.custom.doctype.item_sub_sub_group_for_brass_ware.item_sub_sub_group_for_brass_ware')
+[ERROR] 2021-03-04 05:53:51,342 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-03-04 05:53:51.320321-10.0.2.2-9f0
+[ERROR] 2021-03-04 05:53:51,410 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: site1.local
+Form Dict: {
+ "cached_timestamp": "",
+ "cmd": "frappe.desk.form.load.getdoctype",
+ "doctype": "Item Sub Sub Group For Brass ware",
+ "with_parent": "1"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 836, in get_module
+    return importlib.import_module(modulename)
+  File "/home/frappe/frappe-bench/env/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'frappe.custom.doctype.item_sub_sub_group_for_brass_ware.item_sub_sub_group_for_brass_ware'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1071, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 70, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 80, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 29, in get_meta
+    meta = FormMeta(doctype)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 39, in __init__
+    self.load_assets()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 53, in load_assets
+    self.load_templates()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 179, in load_templates
+    module = load_doctype_module(self.name)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/modules/utils.py", line 206, in load_doctype_module
+    raise ImportError('Module import failed for {0} ({1})'.format(doctype, module_name + ' Error: ' + str(e)))
+ImportError: Module import failed for Item Sub Sub Group For Brass ware (frappe.custom.doctype.item_sub_sub_group_for_brass_ware.item_sub_sub_group_for_brass_ware Error: No module named 'frappe.custom.doctype.item_sub_sub_group_for_brass_ware.item_sub_sub_group_for_brass_ware')
+[ERROR] 2021-03-04 05:53:51,429 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-03-04 05:53:51.412194-10.0.2.2-74e
+[ERROR] 2021-03-04 05:54:05,237 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: site1.local
+Form Dict: {
+ "cached_timestamp": "",
+ "cmd": "frappe.desk.form.load.getdoctype",
+ "doctype": "Item Sub Sub Group For Brass ware",
+ "with_parent": "1"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 836, in get_module
+    return importlib.import_module(modulename)
+  File "/home/frappe/frappe-bench/env/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'frappe.custom.doctype.item_sub_sub_group_for_brass_ware.item_sub_sub_group_for_brass_ware'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1071, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 70, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 80, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 29, in get_meta
+    meta = FormMeta(doctype)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 39, in __init__
+    self.load_assets()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 53, in load_assets
+    self.load_templates()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 179, in load_templates
+    module = load_doctype_module(self.name)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/modules/utils.py", line 206, in load_doctype_module
+    raise ImportError('Module import failed for {0} ({1})'.format(doctype, module_name + ' Error: ' + str(e)))
+ImportError: Module import failed for Item Sub Sub Group For Brass ware (frappe.custom.doctype.item_sub_sub_group_for_brass_ware.item_sub_sub_group_for_brass_ware Error: No module named 'frappe.custom.doctype.item_sub_sub_group_for_brass_ware.item_sub_sub_group_for_brass_ware')
+[ERROR] 2021-03-04 05:54:05,259 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-03-04 05:54:05.239528-10.0.2.2-b7c
+[DEBUG] 2021-03-04 05:54:16,108 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[ERROR] 2021-03-04 05:54:39,729 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: site1.local
+Form Dict: {
+ "cached_timestamp": "",
+ "cmd": "frappe.desk.form.load.getdoctype",
+ "doctype": "Item Sub Sub Group For Brass ware",
+ "with_parent": "1"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 836, in get_module
+    return importlib.import_module(modulename)
+  File "/home/frappe/frappe-bench/env/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'frappe.custom.doctype.item_sub_sub_group_for_brass_ware.item_sub_sub_group_for_brass_ware'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1071, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 70, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 80, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 29, in get_meta
+    meta = FormMeta(doctype)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 39, in __init__
+    self.load_assets()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 53, in load_assets
+    self.load_templates()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 179, in load_templates
+    module = load_doctype_module(self.name)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/modules/utils.py", line 206, in load_doctype_module
+    raise ImportError('Module import failed for {0} ({1})'.format(doctype, module_name + ' Error: ' + str(e)))
+ImportError: Module import failed for Item Sub Sub Group For Brass ware (frappe.custom.doctype.item_sub_sub_group_for_brass_ware.item_sub_sub_group_for_brass_ware Error: No module named 'frappe.custom.doctype.item_sub_sub_group_for_brass_ware.item_sub_sub_group_for_brass_ware')
+[ERROR] 2021-03-04 05:54:39,745 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-03-04 05:54:39.731325-10.0.2.2-80b
+[ERROR] 2021-03-04 05:54:56,254 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: site1.local
+Form Dict: {
+ "cached_timestamp": "",
+ "cmd": "frappe.desk.form.load.getdoctype",
+ "doctype": "Item Sub Sub Group For Brass ware",
+ "with_parent": "1"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 836, in get_module
+    return importlib.import_module(modulename)
+  File "/home/frappe/frappe-bench/env/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'frappe.custom.doctype.item_sub_sub_group_for_brass_ware.item_sub_sub_group_for_brass_ware'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1071, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 70, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 80, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 29, in get_meta
+    meta = FormMeta(doctype)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 39, in __init__
+    self.load_assets()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 53, in load_assets
+    self.load_templates()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 179, in load_templates
+    module = load_doctype_module(self.name)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/modules/utils.py", line 206, in load_doctype_module
+    raise ImportError('Module import failed for {0} ({1})'.format(doctype, module_name + ' Error: ' + str(e)))
+ImportError: Module import failed for Item Sub Sub Group For Brass ware (frappe.custom.doctype.item_sub_sub_group_for_brass_ware.item_sub_sub_group_for_brass_ware Error: No module named 'frappe.custom.doctype.item_sub_sub_group_for_brass_ware.item_sub_sub_group_for_brass_ware')
+[ERROR] 2021-03-04 05:54:56,281 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-03-04 05:54:56.258324-10.0.2.2-49d
+[ERROR] 2021-03-04 05:55:13,737 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: site1.local
+Form Dict: {
+ "cached_timestamp": "",
+ "cmd": "frappe.desk.form.load.getdoctype",
+ "doctype": "Item Sub Sub Group For Brass ware",
+ "with_parent": "1"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 836, in get_module
+    return importlib.import_module(modulename)
+  File "/home/frappe/frappe-bench/env/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'frappe.custom.doctype.item_sub_sub_group_for_brass_ware.item_sub_sub_group_for_brass_ware'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1071, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 70, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 80, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 29, in get_meta
+    meta = FormMeta(doctype)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 39, in __init__
+    self.load_assets()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 53, in load_assets
+    self.load_templates()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 179, in load_templates
+    module = load_doctype_module(self.name)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/modules/utils.py", line 206, in load_doctype_module
+    raise ImportError('Module import failed for {0} ({1})'.format(doctype, module_name + ' Error: ' + str(e)))
+ImportError: Module import failed for Item Sub Sub Group For Brass ware (frappe.custom.doctype.item_sub_sub_group_for_brass_ware.item_sub_sub_group_for_brass_ware Error: No module named 'frappe.custom.doctype.item_sub_sub_group_for_brass_ware.item_sub_sub_group_for_brass_ware')
+[ERROR] 2021-03-04 05:55:13,755 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-03-04 05:55:13.738980-10.0.2.2-0b8
+[DEBUG] 2021-03-04 05:55:16,411 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 05:56:16,855 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 05:57:17,567 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[ERROR] 2021-03-04 05:57:49,265 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: site1.local
+Form Dict: {
+ "cached_timestamp": "",
+ "cmd": "frappe.desk.form.load.getdoctype",
+ "doctype": "Item Sub Sub Group For Brass ware",
+ "with_parent": "1"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 836, in get_module
+    return importlib.import_module(modulename)
+  File "/home/frappe/frappe-bench/env/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'frappe.custom.doctype.item_sub_sub_group_for_brass_ware.item_sub_sub_group_for_brass_ware'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1071, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 70, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 80, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 29, in get_meta
+    meta = FormMeta(doctype)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 39, in __init__
+    self.load_assets()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 53, in load_assets
+    self.load_templates()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 179, in load_templates
+    module = load_doctype_module(self.name)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/modules/utils.py", line 206, in load_doctype_module
+    raise ImportError('Module import failed for {0} ({1})'.format(doctype, module_name + ' Error: ' + str(e)))
+ImportError: Module import failed for Item Sub Sub Group For Brass ware (frappe.custom.doctype.item_sub_sub_group_for_brass_ware.item_sub_sub_group_for_brass_ware Error: No module named 'frappe.custom.doctype.item_sub_sub_group_for_brass_ware.item_sub_sub_group_for_brass_ware')
+[ERROR] 2021-03-04 05:57:49,288 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-03-04 05:57:49.267910-10.0.2.2-142
+[DEBUG] 2021-03-04 05:58:17,804 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[ERROR] 2021-03-04 05:58:53,201 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: site1.local
+Form Dict: {
+ "cached_timestamp": "",
+ "cmd": "frappe.desk.form.load.getdoctype",
+ "doctype": "Item Sub Sub Group For Brass ware",
+ "with_parent": "1"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 836, in get_module
+    return importlib.import_module(modulename)
+  File "/home/frappe/frappe-bench/env/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'frappe.custom.doctype.item_sub_sub_group_for_brass_ware.item_sub_sub_group_for_brass_ware'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1071, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 70, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 80, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 29, in get_meta
+    meta = FormMeta(doctype)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 39, in __init__
+    self.load_assets()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 53, in load_assets
+    self.load_templates()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 179, in load_templates
+    module = load_doctype_module(self.name)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/modules/utils.py", line 206, in load_doctype_module
+    raise ImportError('Module import failed for {0} ({1})'.format(doctype, module_name + ' Error: ' + str(e)))
+ImportError: Module import failed for Item Sub Sub Group For Brass ware (frappe.custom.doctype.item_sub_sub_group_for_brass_ware.item_sub_sub_group_for_brass_ware Error: No module named 'frappe.custom.doctype.item_sub_sub_group_for_brass_ware.item_sub_sub_group_for_brass_ware')
+[ERROR] 2021-03-04 05:58:53,224 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-03-04 05:58:53.203041-10.0.2.2-38a
+[DEBUG] 2021-03-04 05:59:19,393 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:00:19,848 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:01:20,367 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:02:20,855 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[ERROR] 2021-03-04 06:03:08,706 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: site1.local
+Form Dict: {
+ "cached_timestamp": "",
+ "cmd": "frappe.desk.form.load.getdoctype",
+ "doctype": "Item Sub Sub Group For Brass ware",
+ "with_parent": "1"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 836, in get_module
+    return importlib.import_module(modulename)
+  File "/home/frappe/frappe-bench/env/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'frappe.custom.doctype.item_sub_sub_group_for_brass_ware.item_sub_sub_group_for_brass_ware'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1071, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 70, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 80, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 29, in get_meta
+    meta = FormMeta(doctype)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 39, in __init__
+    self.load_assets()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 53, in load_assets
+    self.load_templates()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 179, in load_templates
+    module = load_doctype_module(self.name)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/modules/utils.py", line 206, in load_doctype_module
+    raise ImportError('Module import failed for {0} ({1})'.format(doctype, module_name + ' Error: ' + str(e)))
+ImportError: Module import failed for Item Sub Sub Group For Brass ware (frappe.custom.doctype.item_sub_sub_group_for_brass_ware.item_sub_sub_group_for_brass_ware Error: No module named 'frappe.custom.doctype.item_sub_sub_group_for_brass_ware.item_sub_sub_group_for_brass_ware')
+[ERROR] 2021-03-04 06:03:08,724 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-03-04 06:03:08.708291-10.0.2.2-682
+[ERROR] 2021-03-04 06:03:09,290 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: site1.local
+Form Dict: {
+ "cached_timestamp": "",
+ "cmd": "frappe.desk.form.load.getdoctype",
+ "doctype": "Item Sub Sub Group For Brass ware",
+ "with_parent": "1"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 836, in get_module
+    return importlib.import_module(modulename)
+  File "/home/frappe/frappe-bench/env/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'frappe.custom.doctype.item_sub_sub_group_for_brass_ware.item_sub_sub_group_for_brass_ware'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1071, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 70, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 80, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 29, in get_meta
+    meta = FormMeta(doctype)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 39, in __init__
+    self.load_assets()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 53, in load_assets
+    self.load_templates()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 179, in load_templates
+    module = load_doctype_module(self.name)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/modules/utils.py", line 206, in load_doctype_module
+    raise ImportError('Module import failed for {0} ({1})'.format(doctype, module_name + ' Error: ' + str(e)))
+ImportError: Module import failed for Item Sub Sub Group For Brass ware (frappe.custom.doctype.item_sub_sub_group_for_brass_ware.item_sub_sub_group_for_brass_ware Error: No module named 'frappe.custom.doctype.item_sub_sub_group_for_brass_ware.item_sub_sub_group_for_brass_ware')
+[ERROR] 2021-03-04 06:03:09,306 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-03-04 06:03:09.291242-10.0.2.2-19d
+[DEBUG] 2021-03-04 06:03:21,614 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:04:22,118 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:05:22,477 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:06:23,401 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:07:23,632 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:08:24,025 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:09:24,393 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:10:25,032 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:11:26,059 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:12:26,835 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:13:27,232 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:14:28,237 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:15:28,561 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:16:29,206 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:17:29,995 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:18:30,520 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:19:31,050 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:20:31,558 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:21:31,949 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:22:32,340 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:23:32,981 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:24:33,413 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:25:33,982 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:26:34,348 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:27:34,512 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:28:34,867 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:29:35,470 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:30:35,909 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:31:36,243 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:32:36,563 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:33:36,870 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:34:37,462 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:35:37,950 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:36:38,562 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:37:39,089 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:38:39,623 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:39:39,933 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:40:40,257 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:41:40,932 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:42:41,296 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:43:41,685 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:44:41,992 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:45:42,528 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:46:43,058 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:47:43,654 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:48:43,982 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:49:44,564 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:50:45,844 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:51:46,099 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:52:46,320 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:53:46,909 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:54:47,481 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:55:47,857 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:56:48,550 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:57:49,133 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:58:50,050 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 06:59:50,557 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 07:00:51,345 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 07:01:51,868 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 07:02:52,299 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 07:03:52,858 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 07:04:53,515 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 07:05:53,970 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 07:06:54,718 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 07:07:55,195 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 07:08:55,997 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 07:09:56,705 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 07:10:57,457 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 07:11:57,946 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 07:12:58,259 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 07:13:58,773 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 07:14:59,230 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 07:15:59,715 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 07:17:00,094 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 07:18:00,649 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 07:19:01,056 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 07:20:01,421 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 07:21:01,841 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 07:22:02,519 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 07:23:02,987 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 07:24:03,689 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 07:25:04,453 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 07:26:05,142 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 07:27:05,804 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 07:28:06,704 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 07:29:07,059 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 07:30:07,872 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 07:31:08,259 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 07:32:08,897 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 07:33:09,481 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 07:34:09,971 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 07:35:10,303 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 07:36:10,737 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 07:37:11,428 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 07:38:11,970 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 07:39:12,498 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 07:40:13,234 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 07:41:13,622 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 07:42:14,065 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 07:43:14,507 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 07:44:15,180 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2021-03-04 07:45:15,634 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
