@@ -17799,3 +17799,36 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 14:42:06 short: frappe.utils.background_jobs.execute_job(event='all', is_async=True, job_name='erpnext.healthcare.doctype.patient_appointment.patient_appointment.set_appointment_reminder', kwargs={}, method='erpnext.healthcare.doctype.patient_appointment.patient_appointment.set_appointment_reminder', site='site1.local', user='Administrator') (df592246-5d65-4fe2-becd-e834c0b6cfe8)
 14:42:06 short: Job OK (df592246-5d65-4fe2-becd-e834c0b6cfe8)
 14:42:06 Result is kept for 500 seconds
+14:46:05 short: frappe.utils.background_jobs.execute_job(event='all', is_async=True, job_name='frappe.email.queue.flush', kwargs={}, method='frappe.email.queue.flush', site='site1.local', user='Administrator') (0afd79db-ad83-4a9d-80a3-d1548565f428)
+14:46:06 short: Job OK (0afd79db-ad83-4a9d-80a3-d1548565f428)
+14:46:06 Result is kept for 500 seconds
+14:46:06 short: frappe.utils.background_jobs.execute_job(event='all', is_async=True, job_name='frappe.email.doctype.email_account.email_account.pull', kwargs={}, method='frappe.email.doctype.email_account.email_account.pull', site='site1.local', user='Administrator') (7008ed9d-3902-491b-b446-89c0720c14bb)
+14:46:06 short: Job OK (7008ed9d-3902-491b-b446-89c0720c14bb)
+14:46:06 Result is kept for 500 seconds
+14:46:06 short: frappe.utils.background_jobs.execute_job(event='all', is_async=True, job_name='frappe.email.doctype.email_account.email_account.notify_unreplied', kwargs={}, method='frappe.email.doctype.email_account.email_account.notify_unreplied', site='site1.local', user='Administrator') (2a526f34-b812-4e86-ad98-f1b29cbb22a6)
+14:46:06 short: Job OK (2a526f34-b812-4e86-ad98-f1b29cbb22a6)
+14:46:06 Result is kept for 500 seconds
+14:46:06 short: frappe.utils.background_jobs.execute_job(event='all', is_async=True, job_name='frappe.oauth.delete_oauth2_data', kwargs={}, method='frappe.oauth.delete_oauth2_data', site='site1.local', user='Administrator') (c14e2735-efd3-40de-9492-dd03281bebf4)
+14:46:06 short: Job OK (c14e2735-efd3-40de-9492-dd03281bebf4)
+14:46:06 Result is kept for 500 seconds
+14:46:06 short: frappe.utils.background_jobs.execute_job(event='all', is_async=True, job_name='frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment', kwargs={}, method='frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment', site='site1.local', user='Administrator') (2a1aae60-1a7b-48b9-8e9a-3b2445f473ad)
+14:46:06 short: Job OK (2a1aae60-1a7b-48b9-8e9a-3b2445f473ad)
+14:46:06 Result is kept for 500 seconds
+14:46:06 short: frappe.utils.background_jobs.execute_job(event='all', is_async=True, job_name='frappe.twofactor.delete_all_barcodes_for_users', kwargs={}, method='frappe.twofactor.delete_all_barcodes_for_users', site='site1.local', user='Administrator') (b4ada445-d05c-406d-acff-8b0ae8958d11)
+14:46:07 short: Job OK (b4ada445-d05c-406d-acff-8b0ae8958d11)
+14:46:07 Result is kept for 500 seconds
+14:46:07 short: frappe.utils.background_jobs.execute_job(event='all', is_async=True, job_name='frappe.website.doctype.web_page.web_page.check_publish_status', kwargs={}, method='frappe.website.doctype.web_page.web_page.check_publish_status', site='site1.local', user='Administrator') (9c91767c-e005-4392-90ae-9c2a792dcfd1)
+14:46:07 short: Job OK (9c91767c-e005-4392-90ae-9c2a792dcfd1)
+14:46:07 Result is kept for 500 seconds
+14:46:07 short: frappe.utils.background_jobs.execute_job(event='all', is_async=True, job_name='frappe.utils.global_search.sync_global_search', kwargs={}, method='frappe.utils.global_search.sync_global_search', site='site1.local', user='Administrator') (09dcb57b-1d30-4cfc-b02a-b38a5efcf6c7)
+14:46:07 short: Job OK (09dcb57b-1d30-4cfc-b02a-b38a5efcf6c7)
+14:46:07 Result is kept for 500 seconds
+14:46:07 short: frappe.utils.background_jobs.execute_job(event='all', is_async=True, job_name='frappe.monitor.flush', kwargs={}, method='frappe.monitor.flush', site='site1.local', user='Administrator') (10ddf1d5-9a9d-4b71-bd3a-f3f2ecbc5e52)
+14:46:07 short: Job OK (10ddf1d5-9a9d-4b71-bd3a-f3f2ecbc5e52)
+14:46:07 Result is kept for 500 seconds
+14:46:07 short: frappe.utils.background_jobs.execute_job(event='all', is_async=True, job_name='erpnext.projects.doctype.project.project.project_status_update_reminder', kwargs={}, method='erpnext.projects.doctype.project.project.project_status_update_reminder', site='site1.local', user='Administrator') (ebb19a62-bcb7-40d9-ba58-811ec0803eb4)
+14:46:07 short: Job OK (ebb19a62-bcb7-40d9-ba58-811ec0803eb4)
+14:46:07 Result is kept for 500 seconds
+14:46:07 short: frappe.utils.background_jobs.execute_job(event='all', is_async=True, job_name='erpnext.healthcare.doctype.patient_appointment.patient_appointment.set_appointment_reminder', kwargs={}, method='erpnext.healthcare.doctype.patient_appointment.patient_appointment.set_appointment_reminder', site='site1.local', user='Administrator') (c47ff043-ab0b-4b7a-aeea-8211337f9242)
+14:46:08 short: Job OK (c47ff043-ab0b-4b7a-aeea-8211337f9242)
+14:46:08 Result is kept for 500 seconds
