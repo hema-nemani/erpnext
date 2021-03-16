@@ -39,6 +39,7 @@
   "item_sub_sub_group_for_home_textiles",
   "item_sub_sub_group_for_kitchen_tools",
   "is_item_from_hub",
+  "column_break_30",
   "stock_uom",
   "make",
   "size",
@@ -103,7 +104,9 @@
   "barcodes",
   "inventory_section",
   "inventory_table_one",
+  "column_break_94",
   "inventory_table_two",
+  "section_break_96",
   "shelf_life_in_days",
   "end_of_life",
   "default_material_request_type",
@@ -226,7 +229,6 @@
    "label": "Item Code",
    "oldfieldname": "item_code",
    "oldfieldtype": "Data",
-   "reqd": 1,
    "unique": 1
   },
   {
@@ -269,6 +271,7 @@
    "default": "0",
    "fieldname": "is_item_from_hub",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Is Item from Hub",
    "read_only": 1
   },
@@ -279,8 +282,7 @@
    "label": "UOM",
    "oldfieldname": "stock_uom",
    "oldfieldtype": "Link",
-   "options": "UOM",
-   "reqd": 1
+   "options": "UOM"
   },
   {
    "fieldname": "column_break0",
@@ -290,12 +292,14 @@
    "default": "0",
    "fieldname": "disabled",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Disabled"
   },
   {
    "default": "0",
    "fieldname": "allow_alternative_item",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Allow Alternative Item"
   },
   {
@@ -303,6 +307,7 @@
    "default": "1",
    "fieldname": "is_stock_item",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Maintain Stock",
    "oldfieldname": "is_stock_item",
    "oldfieldtype": "Select"
@@ -311,6 +316,7 @@
    "default": "1",
    "fieldname": "include_item_in_manufacturing",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Include Item In Manufacturing"
   },
   {
@@ -324,18 +330,22 @@
    "depends_on": "is_stock_item",
    "fieldname": "valuation_rate",
    "fieldtype": "Currency",
-   "label": "Valuation Rate"
+   "hidden": 1,
+   "label": "Valuation Rate",
+   "print_hide": 1
   },
   {
    "bold": 1,
    "fieldname": "standard_rate",
    "fieldtype": "Currency",
-   "label": "MRP"
+   "label": "MRP",
+   "reqd": 1
   },
   {
    "default": "0",
    "fieldname": "is_fixed_asset",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Is Fixed Asset",
    "set_only_once": 1
   },
@@ -408,90 +418,114 @@
   {
    "fieldname": "shelf_life_in_days",
    "fieldtype": "Int",
-   "label": "Shelf Life In Day"
+   "hidden": 1,
+   "label": "Shelf Life In Day",
+   "print_hide": 1
   },
   {
    "default": "2099-12-31",
    "depends_on": "is_stock_item",
    "fieldname": "end_of_life",
    "fieldtype": "Date",
+   "hidden": 1,
    "label": "End of Life",
    "oldfieldname": "end_of_life",
-   "oldfieldtype": "Date"
+   "oldfieldtype": "Date",
+   "print_hide": 1
   },
   {
    "default": "Purchase",
    "fieldname": "default_material_request_type",
    "fieldtype": "Select",
+   "hidden": 1,
    "label": "Default Material Request Type",
-   "options": "Purchase\nMaterial Transfer\nMaterial Issue\nManufacture\nCustomer Provided"
+   "options": "Purchase\nMaterial Transfer\nMaterial Issue\nManufacture\nCustomer Provided",
+   "print_hide": 1
   },
   {
    "depends_on": "is_stock_item",
    "fieldname": "valuation_method",
    "fieldtype": "Select",
+   "hidden": 1,
    "label": "Valuation Method",
    "options": "\nFIFO\nMoving Average",
+   "print_hide": 1,
    "set_only_once": 1
   },
   {
    "depends_on": "is_stock_item",
    "fieldname": "column_break1",
    "fieldtype": "Column Break",
+   "hidden": 1,
    "oldfieldtype": "Column Break",
+   "print_hide": 1,
    "width": "50%"
   },
   {
    "depends_on": "eval:doc.is_stock_item",
    "fieldname": "warranty_period",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Warranty Period (in days)",
    "oldfieldname": "warranty_period",
-   "oldfieldtype": "Data"
+   "oldfieldtype": "Data",
+   "print_hide": 1
   },
   {
    "depends_on": "is_stock_item",
    "fieldname": "weight_per_unit",
    "fieldtype": "Float",
-   "label": "Weight Per Unit"
+   "hidden": 1,
+   "label": "Weight Per Unit",
+   "print_hide": 1
   },
   {
    "depends_on": "eval:doc.is_stock_item",
    "fieldname": "weight_uom",
    "fieldtype": "Link",
+   "hidden": 1,
    "ignore_user_permissions": 1,
    "label": "Weight UOM",
-   "options": "UOM"
+   "options": "UOM",
+   "print_hide": 1
   },
   {
    "collapsible": 1,
    "depends_on": "is_stock_item",
    "fieldname": "reorder_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Auto re-order",
-   "options": "fa fa-rss"
+   "options": "fa fa-rss",
+   "print_hide": 1
   },
   {
    "description": "Will also apply for variants unless overrridden",
    "fieldname": "reorder_levels",
    "fieldtype": "Table",
+   "hidden": 1,
    "label": "Reorder level based on Warehouse",
-   "options": "Item Reorder"
+   "options": "Item Reorder",
+   "print_hide": 1
   },
   {
    "collapsible": 1,
    "fieldname": "unit_of_measure_conversion",
    "fieldtype": "Section Break",
-   "label": "Units of Measure"
+   "hidden": 1,
+   "label": "Units of Measure",
+   "print_hide": 1
   },
   {
    "description": "Will also apply for variants",
    "fieldname": "uoms",
    "fieldtype": "Table",
+   "hidden": 1,
    "label": "UOMs",
    "oldfieldname": "uom_conversion_details",
    "oldfieldtype": "Table",
-   "options": "UOM Conversion Detail"
+   "options": "UOM Conversion Detail",
+   "print_hide": 1
   },
   {
    "collapsible": 1,
@@ -573,6 +607,7 @@
    "collapsible_depends_on": "attributes",
    "fieldname": "variants_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Variants"
   },
   {
@@ -581,17 +616,21 @@
    "description": "If this item has variants, then it cannot be selected in sales orders etc.",
    "fieldname": "has_variants",
    "fieldtype": "Check",
+   "hidden": 1,
    "in_standard_filter": 1,
    "label": "Has Variants",
-   "no_copy": 1
+   "no_copy": 1,
+   "print_hide": 1
   },
   {
    "default": "Item Attribute",
    "depends_on": "has_variants",
    "fieldname": "variant_based_on",
    "fieldtype": "Select",
+   "hidden": 1,
    "label": "Variant Based On",
-   "options": "Item Attribute\nManufacturer"
+   "options": "Item Attribute\nManufacturer",
+   "print_hide": 1
   },
   {
    "depends_on": "eval:(doc.has_variants || doc.variant_of) && doc.variant_based_on==='Item Attribute'",
@@ -600,38 +639,49 @@
    "hidden": 1,
    "label": "Attributes",
    "no_copy": 1,
-   "options": "Item Variant Attribute"
+   "options": "Item Variant Attribute",
+   "print_hide": 1
   },
   {
    "fieldname": "defaults",
    "fieldtype": "Section Break",
-   "label": "Sales, Purchase, Accounting Defaults"
+   "hidden": 1,
+   "label": "Sales, Purchase, Accounting Defaults",
+   "print_hide": 1
   },
   {
    "fieldname": "item_defaults",
    "fieldtype": "Table",
+   "hidden": 1,
    "label": "Item Defaults",
-   "options": "Item Default"
+   "options": "Item Default",
+   "print_hide": 1
   },
   {
    "collapsible": 1,
    "fieldname": "purchase_details",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Purchase, Replenishment Details",
    "oldfieldtype": "Section Break",
-   "options": "fa fa-shopping-cart"
+   "options": "fa fa-shopping-cart",
+   "print_hide": 1
   },
   {
    "default": "1",
    "fieldname": "is_purchase_item",
    "fieldtype": "Check",
-   "label": "Is Purchase Item"
+   "hidden": 1,
+   "label": "Is Purchase Item",
+   "print_hide": 1
   },
   {
    "fieldname": "purchase_uom",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Default Purchase Unit of Measure",
-   "options": "UOM"
+   "options": "UOM",
+   "print_hide": 1
   },
   {
    "default": "0.00",
@@ -639,34 +689,44 @@
    "description": "Minimum quantity should be as per Stock UOM",
    "fieldname": "min_order_qty",
    "fieldtype": "Float",
+   "hidden": 1,
    "label": "Minimum Order Qty",
    "oldfieldname": "min_order_qty",
-   "oldfieldtype": "Currency"
+   "oldfieldtype": "Currency",
+   "print_hide": 1
   },
   {
    "fieldname": "safety_stock",
    "fieldtype": "Float",
-   "label": "Safety Stock"
+   "hidden": 1,
+   "label": "Safety Stock",
+   "print_hide": 1
   },
   {
    "fieldname": "purchase_details_cb",
-   "fieldtype": "Column Break"
+   "fieldtype": "Column Break",
+   "hidden": 1,
+   "print_hide": 1
   },
   {
    "description": "Average time taken by the supplier to deliver",
    "fieldname": "lead_time_days",
    "fieldtype": "Int",
+   "hidden": 1,
    "label": "Lead Time in days",
    "oldfieldname": "lead_time_days",
-   "oldfieldtype": "Int"
+   "oldfieldtype": "Int",
+   "print_hide": 1
   },
   {
    "fieldname": "last_purchase_rate",
    "fieldtype": "Float",
+   "hidden": 1,
    "label": "Last Purchase Rate",
    "no_copy": 1,
    "oldfieldname": "last_purchase_rate",
    "oldfieldtype": "Currency",
+   "print_hide": 1,
    "read_only": 1
   },
   {
@@ -686,198 +746,257 @@
    "collapsible": 1,
    "fieldname": "supplier_details",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Supplier Details"
   },
   {
    "default": "0",
    "fieldname": "delivered_by_supplier",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Delivered by Supplier (Drop Ship)",
    "print_hide": 1
   },
   {
    "fieldname": "column_break2",
    "fieldtype": "Column Break",
+   "hidden": 1,
    "oldfieldtype": "Column Break",
+   "print_hide": 1,
    "width": "50%"
   },
   {
    "fieldname": "supplier_items",
    "fieldtype": "Table",
+   "hidden": 1,
    "label": "Supplier Items",
-   "options": "Item Supplier"
+   "options": "Item Supplier",
+   "print_hide": 1
   },
   {
    "collapsible": 1,
    "fieldname": "foreign_trade_details",
    "fieldtype": "Section Break",
-   "label": "Foreign Trade Details"
+   "hidden": 1,
+   "label": "Foreign Trade Details",
+   "print_hide": 1
   },
   {
    "fieldname": "country_of_origin",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Country of Origin",
-   "options": "Country"
+   "options": "Country",
+   "print_hide": 1
   },
   {
    "fieldname": "column_break_59",
-   "fieldtype": "Column Break"
+   "fieldtype": "Column Break",
+   "hidden": 1,
+   "print_hide": 1
   },
   {
    "fieldname": "customs_tariff_number",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Customs Tariff Number",
-   "options": "Customs Tariff Number"
+   "options": "Customs Tariff Number",
+   "print_hide": 1
   },
   {
    "collapsible": 1,
    "fieldname": "sales_details",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Sales Details",
    "oldfieldtype": "Section Break",
-   "options": "fa fa-tag"
+   "options": "fa fa-tag",
+   "print_hide": 1
   },
   {
    "fieldname": "sales_uom",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Default Sales Unit of Measure",
-   "options": "UOM"
+   "options": "UOM",
+   "print_hide": 1
   },
   {
    "default": "1",
    "fieldname": "is_sales_item",
    "fieldtype": "Check",
-   "label": "Is Sales Item"
+   "hidden": 1,
+   "label": "Is Sales Item",
+   "print_hide": 1
   },
   {
    "fieldname": "column_break3",
    "fieldtype": "Column Break",
+   "hidden": 1,
    "oldfieldtype": "Column Break",
+   "print_hide": 1,
    "width": "50%"
   },
   {
    "fieldname": "max_discount",
    "fieldtype": "Float",
+   "hidden": 1,
    "label": "Max Discount (%)",
    "oldfieldname": "max_discount",
-   "oldfieldtype": "Currency"
+   "oldfieldtype": "Currency",
+   "print_hide": 1
   },
   {
    "collapsible": 1,
    "fieldname": "deferred_revenue",
    "fieldtype": "Section Break",
-   "label": "Deferred Revenue"
+   "hidden": 1,
+   "label": "Deferred Revenue",
+   "print_hide": 1
   },
   {
    "depends_on": "enable_deferred_revenue",
    "fieldname": "deferred_revenue_account",
    "fieldtype": "Link",
+   "hidden": 1,
    "ignore_user_permissions": 1,
    "label": "Deferred Revenue Account",
-   "options": "Account"
+   "options": "Account",
+   "print_hide": 1
   },
   {
    "default": "0",
    "fieldname": "enable_deferred_revenue",
    "fieldtype": "Check",
-   "label": "Enable Deferred Revenue"
+   "hidden": 1,
+   "label": "Enable Deferred Revenue",
+   "print_hide": 1
   },
   {
    "fieldname": "column_break_85",
-   "fieldtype": "Column Break"
+   "fieldtype": "Column Break",
+   "hidden": 1,
+   "print_hide": 1
   },
   {
    "depends_on": "enable_deferred_revenue",
    "fieldname": "no_of_months",
    "fieldtype": "Int",
-   "label": "No of Months"
+   "hidden": 1,
+   "label": "No of Months",
+   "print_hide": 1
   },
   {
    "collapsible": 1,
    "fieldname": "deferred_expense_section",
    "fieldtype": "Section Break",
-   "label": "Deferred Expense"
+   "hidden": 1,
+   "label": "Deferred Expense",
+   "print_hide": 1
   },
   {
    "depends_on": "enable_deferred_expense",
    "fieldname": "deferred_expense_account",
    "fieldtype": "Link",
+   "hidden": 1,
    "ignore_user_permissions": 1,
    "label": "Deferred Expense Account",
-   "options": "Account"
+   "options": "Account",
+   "print_hide": 1
   },
   {
    "default": "0",
    "fieldname": "enable_deferred_expense",
    "fieldtype": "Check",
-   "label": "Enable Deferred Expense"
+   "hidden": 1,
+   "label": "Enable Deferred Expense",
+   "print_hide": 1
   },
   {
    "fieldname": "column_break_88",
-   "fieldtype": "Column Break"
+   "fieldtype": "Column Break",
+   "hidden": 1,
+   "print_hide": 1
   },
   {
    "depends_on": "enable_deferred_expense",
    "fieldname": "no_of_months_exp",
    "fieldtype": "Int",
-   "label": "No of Months"
+   "hidden": 1,
+   "label": "No of Months",
+   "print_hide": 1
   },
   {
    "collapsible": 1,
    "fieldname": "customer_details",
    "fieldtype": "Section Break",
-   "label": "Customer Details"
+   "hidden": 1,
+   "label": "Customer Details",
+   "print_hide": 1
   },
   {
    "fieldname": "customer_items",
    "fieldtype": "Table",
+   "hidden": 1,
    "label": "Customer Items",
-   "options": "Item Customer Detail"
+   "options": "Item Customer Detail",
+   "print_hide": 1
   },
   {
    "collapsible": 1,
    "collapsible_depends_on": "taxes",
    "fieldname": "item_tax_section_break",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Item Tax",
    "oldfieldtype": "Section Break",
-   "options": "fa fa-money"
+   "options": "fa fa-money",
+   "print_hide": 1
   },
   {
    "description": "Will also apply for variants",
    "fieldname": "taxes",
    "fieldtype": "Table",
+   "hidden": 1,
    "label": "Taxes",
    "oldfieldname": "item_tax",
    "oldfieldtype": "Table",
-   "options": "Item Tax"
+   "options": "Item Tax",
+   "print_hide": 1
   },
   {
    "collapsible": 1,
    "fieldname": "inspection_criteria",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Inspection Criteria",
    "oldfieldtype": "Section Break",
-   "options": "fa fa-search"
+   "options": "fa fa-search",
+   "print_hide": 1
   },
   {
    "default": "0",
    "fieldname": "inspection_required_before_purchase",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Inspection Required before Purchase",
    "oldfieldname": "inspection_required",
-   "oldfieldtype": "Select"
+   "oldfieldtype": "Select",
+   "print_hide": 1
   },
   {
    "default": "0",
    "fieldname": "inspection_required_before_delivery",
    "fieldtype": "Check",
-   "label": "Inspection Required before Delivery"
+   "hidden": 1,
+   "label": "Inspection Required before Delivery",
+   "print_hide": 1
   },
   {
    "depends_on": "eval:(doc.inspection_required_before_purchase || doc.inspection_required_before_delivery)",
    "fieldname": "quality_inspection_template",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Quality Inspection Template",
    "options": "Quality Inspection Template",
    "print_hide": 1
@@ -887,19 +1006,23 @@
    "depends_on": "is_stock_item",
    "fieldname": "manufacturing",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Manufacturing",
    "oldfieldtype": "Section Break",
-   "options": "fa fa-cogs"
+   "options": "fa fa-cogs",
+   "print_hide": 1
   },
   {
    "fieldname": "default_bom",
    "fieldtype": "Link",
+   "hidden": 1,
    "ignore_user_permissions": 1,
    "label": "Default BOM",
    "no_copy": 1,
    "oldfieldname": "default_bom",
    "oldfieldtype": "Link",
    "options": "BOM",
+   "print_hide": 1,
    "read_only": 1
   },
   {
@@ -907,13 +1030,17 @@
    "description": "If subcontracted to a vendor",
    "fieldname": "is_sub_contracted_item",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Supply Raw Materials for Purchase",
    "oldfieldname": "is_sub_contracted_item",
-   "oldfieldtype": "Select"
+   "oldfieldtype": "Select",
+   "print_hide": 1
   },
   {
    "fieldname": "column_break_74",
-   "fieldtype": "Column Break"
+   "fieldtype": "Column Break",
+   "hidden": 1,
+   "print_hide": 1
   },
   {
    "fieldname": "customer_code",
@@ -927,15 +1054,19 @@
    "collapsible": 1,
    "fieldname": "website_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Website",
-   "options": "fa fa-globe"
+   "options": "fa fa-globe",
+   "print_hide": 1
   },
   {
    "default": "0",
    "depends_on": "eval:!doc.variant_of",
    "fieldname": "show_in_website",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Show in Website",
+   "print_hide": 1,
    "search_index": 1
   },
   {
@@ -943,15 +1074,19 @@
    "depends_on": "variant_of",
    "fieldname": "show_variant_in_website",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Show in Website (Variant)",
+   "print_hide": 1,
    "search_index": 1
   },
   {
    "depends_on": "eval: doc.show_in_website || doc.show_variant_in_website",
    "fieldname": "route",
    "fieldtype": "Small Text",
+   "hidden": 1,
    "label": "Route",
-   "no_copy": 1
+   "no_copy": 1,
+   "print_hide": 1
   },
   {
    "depends_on": "eval: doc.show_in_website || doc.show_variant_in_website",
@@ -965,48 +1100,62 @@
    "description": "Show a slideshow at the top of the page",
    "fieldname": "slideshow",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Slideshow",
-   "options": "Website Slideshow"
+   "options": "Website Slideshow",
+   "print_hide": 1
   },
   {
    "depends_on": "eval: doc.show_in_website || doc.show_variant_in_website",
    "description": "Item Image (if not slideshow)",
    "fieldname": "website_image",
    "fieldtype": "Attach",
-   "label": "Website Image"
+   "hidden": 1,
+   "label": "Website Image",
+   "print_hide": 1
   },
   {
    "fieldname": "thumbnail",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Thumbnail",
+   "print_hide": 1,
    "read_only": 1
   },
   {
    "fieldname": "cb72",
-   "fieldtype": "Column Break"
+   "fieldtype": "Column Break",
+   "hidden": 1,
+   "print_hide": 1
   },
   {
    "depends_on": "eval: doc.show_in_website || doc.show_variant_in_website",
    "description": "Show \"In Stock\" or \"Not in Stock\" based on stock available in this warehouse.",
    "fieldname": "website_warehouse",
    "fieldtype": "Link",
+   "hidden": 1,
    "ignore_user_permissions": 1,
    "label": "Website Warehouse",
-   "options": "Warehouse"
+   "options": "Warehouse",
+   "print_hide": 1
   },
   {
    "depends_on": "eval: doc.show_in_website || doc.show_variant_in_website",
    "description": "List this Item in multiple groups on the website.",
    "fieldname": "website_item_groups",
    "fieldtype": "Table",
+   "hidden": 1,
    "label": "Website Item Groups",
-   "options": "Website Item Group"
+   "options": "Website Item Group",
+   "print_hide": 1
   },
   {
    "depends_on": "eval: doc.show_in_website || doc.show_variant_in_website",
    "fieldname": "set_meta_tags",
    "fieldtype": "Button",
-   "label": "Set Meta Tags"
+   "hidden": 1,
+   "label": "Set Meta Tags",
+   "print_hide": 1
   },
   {
    "collapsible": 1,
@@ -1014,32 +1163,42 @@
    "depends_on": "eval: doc.show_in_website || doc.show_variant_in_website",
    "fieldname": "sb72",
    "fieldtype": "Section Break",
-   "label": "Website Specifications"
+   "hidden": 1,
+   "label": "Website Specifications",
+   "print_hide": 1
   },
   {
    "depends_on": "eval: doc.show_in_website || doc.show_variant_in_website",
    "fieldname": "copy_from_item_group",
    "fieldtype": "Button",
-   "label": "Copy From Item Group"
+   "hidden": 1,
+   "label": "Copy From Item Group",
+   "print_hide": 1
   },
   {
    "depends_on": "eval: doc.show_in_website || doc.show_variant_in_website",
    "fieldname": "website_specifications",
    "fieldtype": "Table",
+   "hidden": 1,
    "label": "Website Specifications",
-   "options": "Item Website Specification"
+   "options": "Item Website Specification",
+   "print_hide": 1
   },
   {
    "depends_on": "eval: doc.show_in_website || doc.show_variant_in_website",
    "fieldname": "web_long_description",
    "fieldtype": "Text Editor",
-   "label": "Website Description"
+   "hidden": 1,
+   "label": "Website Description",
+   "print_hide": 1
   },
   {
    "description": "You can use any valid Bootstrap 4 markup in this field. It will be shown on your Item Page.",
    "fieldname": "website_content",
    "fieldtype": "HTML Editor",
-   "label": "Website Content"
+   "hidden": 1,
+   "label": "Website Content",
+   "print_hide": 1
   },
   {
    "fieldname": "total_projected_qty",
@@ -1054,34 +1213,44 @@
    "depends_on": "eval:(!doc.is_item_from_hub)",
    "fieldname": "hub_publishing_sb",
    "fieldtype": "Section Break",
-   "label": "Hub Publishing Details"
+   "hidden": 1,
+   "label": "Hub Publishing Details",
+   "print_hide": 1
   },
   {
    "default": "0",
    "description": "Publish Item to hub.erpnext.com",
    "fieldname": "publish_in_hub",
    "fieldtype": "Check",
-   "label": "Publish in Hub"
+   "hidden": 1,
+   "label": "Publish in Hub",
+   "print_hide": 1
   },
   {
    "fieldname": "hub_category_to_publish",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Hub Category to Publish",
+   "print_hide": 1,
    "read_only": 1
   },
   {
    "description": "Publish \"In Stock\" or \"Not in Stock\" on Hub based on stock available in this warehouse.",
    "fieldname": "hub_warehouse",
    "fieldtype": "Link",
+   "hidden": 1,
    "ignore_user_permissions": 1,
    "label": "Hub Warehouse",
-   "options": "Warehouse"
+   "options": "Warehouse",
+   "print_hide": 1
   },
   {
    "default": "0",
    "fieldname": "synced_with_hub",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Synced With Hub",
+   "print_hide": 1,
    "read_only": 1
   },
   {
@@ -1108,13 +1277,17 @@
   {
    "fieldname": "default_item_manufacturer",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Default Item Manufacturer",
+   "print_hide": 1,
    "read_only": 1
   },
   {
    "fieldname": "default_manufacturer_part_no",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Default Manufacturer Part No",
+   "print_hide": 1,
    "read_only": 1
   },
   {
@@ -1499,6 +1672,18 @@
    "fieldname": "qty",
    "fieldtype": "Data",
    "label": "Total Quantity"
+  },
+  {
+   "fieldname": "column_break_94",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_96",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_30",
+   "fieldtype": "Column Break"
   }
  ],
  "has_web_view": 1,
@@ -1506,7 +1691,7 @@
  "idx": 2,
  "image_field": "image",
  "max_attachments": 1,
- "modified": "2021-03-12 00:23:17.076750",
+ "modified": "2021-03-12 01:05:04.581506",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Item",
