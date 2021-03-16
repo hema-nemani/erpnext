@@ -408,7 +408,7 @@
   {
    "fieldname": "shelf_life_in_days",
    "fieldtype": "Int",
-   "label": "Shelf Life In Days"
+   "label": "Shelf Life In Day"
   },
   {
    "default": "2099-12-31",
@@ -1506,7 +1506,7 @@
  "idx": 2,
  "image_field": "image",
  "max_attachments": 1,
- "modified": "2021-03-09 19:35:59.305889",
+ "modified": "2021-03-12 00:23:17.076750",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Item",
