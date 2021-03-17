@@ -17,6 +17,7 @@
   "item_name",
   "hsn_code",
   "qty",
+  "on_hand_qty",
   "item_group",
   "item_sub_sub_group_kitchen_appliances",
   "item_sub_sub_group_home_appliances",
@@ -1671,7 +1672,7 @@
   {
    "fieldname": "qty",
    "fieldtype": "Data",
-   "label": "Total Quantity"
+   "label": "Required Quantity"
   },
   {
    "fieldname": "column_break_94",
@@ -1684,6 +1685,11 @@
   {
    "fieldname": "column_break_30",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "on_hand_qty",
+   "fieldtype": "Data",
+   "label": "On Hand Qty"
   }
  ],
  "has_web_view": 1,
@@ -1691,7 +1697,7 @@
  "idx": 2,
  "image_field": "image",
  "max_attachments": 1,
- "modified": "2021-03-12 01:05:04.581506",
+ "modified": "2021-03-12 03:15:53.918464",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Item",

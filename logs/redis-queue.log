@@ -238,3 +238,31 @@
 1712:M 11 Mar 10:56:05.505 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
 1712:M 11 Mar 10:56:05.505 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
 1712:M 11 Mar 10:56:05.505 * Ready to accept connections
+1106:C 17 Mar 15:59:57.278 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1106:C 17 Mar 15:59:57.278 # Redis version=4.0.9, bits=64, commit=00000000, modified=0, pid=1106, just started
+1106:C 17 Mar 15:59:57.278 # Configuration loaded
+1106:M 17 Mar 15:59:57.282 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+1106:M 17 Mar 15:59:57.282 # Server can't set maximum open files to 10032 because of OS error: Operation not permitted.
+1106:M 17 Mar 15:59:57.282 # Current maximum open files is 4096. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+1106:M 17 Mar 15:59:57.288 * Running mode=standalone, port=11000.
+1106:M 17 Mar 15:59:57.288 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1106:M 17 Mar 15:59:57.288 # Server initialized
+1106:M 17 Mar 15:59:57.288 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+1106:M 17 Mar 15:59:57.288 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1106:M 17 Mar 15:59:57.288 * Ready to accept connections
+1106:signal-handler (1615977017) Received SIGTERM scheduling shutdown...
+1106:M 17 Mar 10:30:17.528 # User requested shutdown...
+1106:M 17 Mar 10:30:17.528 * Removing the pid file.
+1106:M 17 Mar 10:30:17.528 # Redis is now ready to exit, bye bye...
+1809:C 17 Mar 10:30:21.720 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1809:C 17 Mar 10:30:21.730 # Redis version=4.0.9, bits=64, commit=00000000, modified=0, pid=1809, just started
+1809:C 17 Mar 10:30:21.733 # Configuration loaded
+1809:M 17 Mar 10:30:21.755 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+1809:M 17 Mar 10:30:21.761 # Server can't set maximum open files to 10032 because of OS error: Operation not permitted.
+1809:M 17 Mar 10:30:21.762 # Current maximum open files is 4096. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+1809:M 17 Mar 10:30:21.766 * Running mode=standalone, port=11000.
+1809:M 17 Mar 10:30:21.768 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1809:M 17 Mar 10:30:21.768 # Server initialized
+1809:M 17 Mar 10:30:21.771 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+1809:M 17 Mar 10:30:21.771 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1809:M 17 Mar 10:30:21.772 * Ready to accept connections
