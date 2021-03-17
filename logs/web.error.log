@@ -268,3 +268,42 @@ pymysql.err.InternalError: Packet sequence number wrong - got 98 expected 1
 [2021-03-17 10:30:17 +0000] [1764] [INFO] Worker exiting (pid: 1764)
 [2021-03-17 10:30:17 +0000] [1765] [INFO] Worker exiting (pid: 1765)
 [2021-03-17 10:30:19 +0000] [1104] [INFO] Shutting down: Master
+[2021-03-17 10:30:33 +0000] [1807] [INFO] Starting gunicorn 19.10.0
+[2021-03-17 10:30:33 +0000] [1807] [INFO] Listening at: http://127.0.0.1:8000 (1807)
+[2021-03-17 10:30:33 +0000] [1807] [INFO] Using worker: sync
+[2021-03-17 10:30:33 +0000] [1866] [INFO] Booting worker with pid: 1866
+[2021-03-17 10:30:33 +0000] [1867] [INFO] Booting worker with pid: 1867
+[2021-03-17 10:56:42 +0000] [1807] [CRITICAL] WORKER TIMEOUT (pid:1866)
+[2021-03-17 10:56:42 +0000] [1807] [CRITICAL] WORKER TIMEOUT (pid:1867)
+[2021-03-17 10:56:42 +0000] [1867] [INFO] Worker exiting (pid: 1867)
+[2021-03-17 10:56:42 +0000] [1866] [INFO] Worker exiting (pid: 1866)
+[2021-03-17 10:56:42 +0000] [2397] [INFO] Booting worker with pid: 2397
+[2021-03-17 10:56:42 +0000] [2398] [INFO] Booting worker with pid: 2398
+[2021-03-17 11:13:33 +0000] [1096] [INFO] Starting gunicorn 19.10.0
+[2021-03-17 11:13:33 +0000] [1096] [INFO] Listening at: http://127.0.0.1:8000 (1096)
+[2021-03-17 11:13:33 +0000] [1096] [INFO] Using worker: sync
+[2021-03-17 11:13:33 +0000] [1728] [INFO] Booting worker with pid: 1728
+[2021-03-17 11:13:33 +0000] [1727] [INFO] Booting worker with pid: 1727
+[2021-03-17 11:13:33 +0000] [1096] [INFO] Handling signal: term
+[2021-03-17 11:13:33 +0000] [1727] [INFO] Worker exiting (pid: 1727)
+[2021-03-17 11:13:33 +0000] [1728] [INFO] Worker exiting (pid: 1728)
+[2021-03-17 11:13:34 +0000] [1096] [INFO] Shutting down: Master
+[2021-03-17 11:13:48 +0000] [1756] [INFO] Starting gunicorn 19.10.0
+[2021-03-17 11:13:48 +0000] [1756] [INFO] Listening at: http://127.0.0.1:8000 (1756)
+[2021-03-17 11:13:48 +0000] [1756] [INFO] Using worker: sync
+[2021-03-17 11:13:48 +0000] [1824] [INFO] Booting worker with pid: 1824
+[2021-03-17 11:13:48 +0000] [1825] [INFO] Booting worker with pid: 1825
+[2021-03-17 11:17:31 +0000] [1051] [INFO] Starting gunicorn 19.10.0
+[2021-03-17 11:17:31 +0000] [1051] [INFO] Listening at: http://127.0.0.1:8000 (1051)
+[2021-03-17 11:17:31 +0000] [1051] [INFO] Using worker: sync
+[2021-03-17 11:17:31 +0000] [1646] [INFO] Booting worker with pid: 1646
+[2021-03-17 11:17:31 +0000] [1647] [INFO] Booting worker with pid: 1647
+[2021-03-17 11:17:34 +0000] [1051] [INFO] Handling signal: term
+[2021-03-17 11:17:34 +0000] [1646] [INFO] Worker exiting (pid: 1646)
+[2021-03-17 11:17:34 +0000] [1647] [INFO] Worker exiting (pid: 1647)
+[2021-03-17 11:17:35 +0000] [1051] [INFO] Shutting down: Master
+[2021-03-17 11:17:47 +0000] [1776] [INFO] Starting gunicorn 19.10.0
+[2021-03-17 11:17:47 +0000] [1776] [INFO] Listening at: http://127.0.0.1:8000 (1776)
+[2021-03-17 11:17:47 +0000] [1776] [INFO] Using worker: sync
+[2021-03-17 11:17:47 +0000] [1834] [INFO] Booting worker with pid: 1834
+[2021-03-17 11:17:47 +0000] [1835] [INFO] Booting worker with pid: 1835
