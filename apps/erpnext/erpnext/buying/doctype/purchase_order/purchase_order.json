@@ -147,7 +147,9 @@
   "group_same_items",
   "language",
   "subscription_section",
-  "from_date",
+  "vendor_booking_date",
+  "booking_from_city",
+  "booking_to_city",
   "to_date",
   "column_break_97",
   "auto_repeat",
@@ -1050,23 +1052,15 @@
    "print_hide": 1
   },
   {
-   "collapsible": 1,
    "fieldname": "subscription_section",
    "fieldtype": "Section Break",
    "label": "Subscription Section"
   },
   {
    "allow_on_submit": 1,
-   "fieldname": "from_date",
-   "fieldtype": "Date",
-   "label": "From Date",
-   "no_copy": 1,
-   "print_hide": 1
-  },
-  {
-   "allow_on_submit": 1,
    "fieldname": "to_date",
    "fieldtype": "Date",
+   "hidden": 1,
    "label": "To Date",
    "no_copy": 1,
    "print_hide": 1
@@ -1251,12 +1245,30 @@
   {
    "fieldname": "section_break_64",
    "fieldtype": "Section Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "vendor_booking_date",
+   "fieldtype": "Date",
+   "label": "Vendor Booking Date",
+   "no_copy": 1,
+   "print_hide": 1
+  },
+  {
+   "fieldname": "booking_from_city",
+   "fieldtype": "Data",
+   "label": "Booking From City"
+  },
+  {
+   "fieldname": "booking_to_city",
+   "fieldtype": "Data",
+   "label": "Booking To City"
   }
  ],
  "icon": "fa fa-file-text",
  "idx": 105,
  "is_submittable": 1,
- "modified": "2021-03-12 04:52:34.795967",
+ "modified": "2021-03-17 17:12:45.932249",
  "modified_by": "Administrator",
  "module": "Buying",
  "name": "Purchase Order",
