@@ -8,8 +8,22 @@
  "field_order": [
   "barcode",
   "item_code",
-  "col_break1",
   "item_name",
+  "hsn_code",
+  "basic_price",
+  "tax_percentage",
+  "tax_amount",
+  "cost_price",
+  "mrp",
+  "col_break1",
+  "location",
+  "bay_number",
+  "bgl_selling_price_without_tax",
+  "bgl_selling_price_with_tax",
+  "qty",
+  "sm_number",
+  "entered_qty",
+  "total_mrp",
   "customer_item_code",
   "description_section",
   "description",
@@ -19,7 +33,6 @@
   "image",
   "image_view",
   "quantity_and_rate",
-  "qty",
   "stock_uom",
   "col_break2",
   "uom",
@@ -125,11 +138,12 @@
    "fieldname": "item_name",
    "fieldtype": "Data",
    "in_global_search": 1,
-   "label": "Item Name",
+   "in_list_view": 1,
+   "label": "Item Description",
    "oldfieldname": "item_name",
    "oldfieldtype": "Data",
    "print_hide": 1,
-   "reqd": 1
+   "read_only": 1
   },
   {
    "fieldname": "customer_item_code",
@@ -142,11 +156,12 @@
   {
    "fieldname": "description",
    "fieldtype": "Text Editor",
+   "hidden": 1,
    "label": "Description",
    "oldfieldname": "description",
    "oldfieldtype": "Text",
+   "print_hide": 1,
    "print_width": "200px",
-   "reqd": 1,
    "width": "200px"
   },
   {
@@ -172,38 +187,45 @@
    "fieldname": "qty",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Quantity",
+   "label": "Available Quantity",
    "oldfieldname": "qty",
-   "oldfieldtype": "Currency"
+   "oldfieldtype": "Currency",
+   "read_only": 1
   },
   {
    "fieldname": "stock_uom",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Stock UOM",
    "options": "UOM",
+   "print_hide": 1,
    "read_only": 1
   },
   {
    "fieldname": "col_break2",
-   "fieldtype": "Column Break"
+   "fieldtype": "Column Break",
+   "hidden": 1,
+   "print_hide": 1
   },
   {
    "fieldname": "uom",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "UOM",
    "options": "UOM",
-   "reqd": 1
+   "print_hide": 1
   },
   {
    "fieldname": "conversion_factor",
    "fieldtype": "Float",
+   "hidden": 1,
    "label": "UOM Conversion Factor",
-   "print_hide": 1,
-   "reqd": 1
+   "print_hide": 1
   },
   {
    "fieldname": "stock_qty",
    "fieldtype": "Float",
+   "hidden": 1,
    "label": "Qty as per Stock UOM",
    "no_copy": 1,
    "print_hide": 1,
@@ -211,11 +233,14 @@
   },
   {
    "fieldname": "section_break_17",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "print_hide": 1
   },
   {
    "fieldname": "price_list_rate",
    "fieldtype": "Currency",
+   "hidden": 1,
    "label": "Price List Rate",
    "oldfieldname": "ref_rate",
    "oldfieldtype": "Currency",
@@ -226,6 +251,7 @@
   {
    "fieldname": "base_price_list_rate",
    "fieldtype": "Currency",
+   "hidden": 1,
    "label": "Price List Rate (Company Currency)",
    "oldfieldname": "base_ref_rate",
    "oldfieldtype": "Currency",
@@ -237,12 +263,15 @@
    "collapsible": 1,
    "fieldname": "discount_and_margin",
    "fieldtype": "Section Break",
-   "label": "Discount and Margin"
+   "hidden": 1,
+   "label": "Discount and Margin",
+   "print_hide": 1
   },
   {
    "depends_on": "price_list_rate",
    "fieldname": "margin_type",
    "fieldtype": "Select",
+   "hidden": 1,
    "label": "Margin Type",
    "options": "\nPercentage\nAmount",
    "print_hide": 1
@@ -251,6 +280,7 @@
    "depends_on": "eval:doc.margin_type && doc.price_list_rate",
    "fieldname": "margin_rate_or_amount",
    "fieldtype": "Float",
+   "hidden": 1,
    "label": "Margin Rate or Amount",
    "print_hide": 1
   },
@@ -258,6 +288,7 @@
    "depends_on": "eval:doc.margin_type && doc.price_list_rate && doc.margin_rate_or_amount",
    "fieldname": "rate_with_margin",
    "fieldtype": "Currency",
+   "hidden": 1,
    "label": "Rate With Margin",
    "options": "currency",
    "print_hide": 1,
@@ -265,12 +296,15 @@
   },
   {
    "fieldname": "column_break_19",
-   "fieldtype": "Column Break"
+   "fieldtype": "Column Break",
+   "hidden": 1,
+   "print_hide": 1
   },
   {
    "depends_on": "price_list_rate",
    "fieldname": "discount_percentage",
    "fieldtype": "Percent",
+   "hidden": 1,
    "label": "Discount (%) on Price List Rate with Margin",
    "oldfieldname": "adj_rate",
    "oldfieldtype": "Float",
@@ -281,13 +315,16 @@
    "depends_on": "price_list_rate",
    "fieldname": "discount_amount",
    "fieldtype": "Currency",
+   "hidden": 1,
    "label": "Discount Amount",
-   "options": "currency"
+   "options": "currency",
+   "print_hide": 1
   },
   {
    "depends_on": "eval:doc.margin_type && doc.price_list_rate && doc.margin_rate_or_amount",
    "fieldname": "base_rate_with_margin",
    "fieldtype": "Currency",
+   "hidden": 1,
    "label": "Rate With Margin (Company Currency)",
    "options": "Company:company:default_currency",
    "print_hide": 1,
@@ -302,12 +339,13 @@
    "columns": 2,
    "fieldname": "rate",
    "fieldtype": "Currency",
+   "hidden": 1,
    "in_list_view": 1,
    "label": "Rate",
    "oldfieldname": "export_rate",
    "oldfieldtype": "Currency",
    "options": "currency",
-   "reqd": 1
+   "print_hide": 1
   },
   {
    "columns": 2,
@@ -318,34 +356,35 @@
    "oldfieldname": "export_amount",
    "oldfieldtype": "Currency",
    "options": "currency",
-   "read_only": 1,
-   "reqd": 1
+   "read_only": 1
   },
   {
    "fieldname": "col_break3",
-   "fieldtype": "Column Break"
+   "fieldtype": "Column Break",
+   "hidden": 1,
+   "print_hide": 1
   },
   {
    "fieldname": "base_rate",
    "fieldtype": "Currency",
+   "hidden": 1,
    "label": "Rate (Company Currency)",
    "oldfieldname": "basic_rate",
    "oldfieldtype": "Currency",
    "options": "Company:company:default_currency",
    "print_hide": 1,
-   "read_only": 1,
-   "reqd": 1
+   "read_only": 1
   },
   {
    "fieldname": "base_amount",
    "fieldtype": "Currency",
+   "hidden": 1,
    "label": "Amount (Company Currency)",
    "oldfieldname": "amount",
    "oldfieldtype": "Currency",
    "options": "Company:company:default_currency",
    "print_hide": 1,
-   "read_only": 1,
-   "reqd": 1
+   "read_only": 1
   },
   {
    "fieldname": "pricing_rules",
@@ -359,17 +398,21 @@
    "default": "0",
    "fieldname": "is_free_item",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Is Free Item",
    "print_hide": 1,
    "read_only": 1
   },
   {
    "fieldname": "section_break_21",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "print_hide": 1
   },
   {
    "fieldname": "net_rate",
    "fieldtype": "Currency",
+   "hidden": 1,
    "label": "Net Rate",
    "options": "currency",
    "print_hide": 1,
@@ -378,6 +421,7 @@
   {
    "fieldname": "net_amount",
    "fieldtype": "Currency",
+   "hidden": 1,
    "label": "Net Amount",
    "options": "currency",
    "print_hide": 1,
@@ -385,11 +429,14 @@
   },
   {
    "fieldname": "column_break_24",
-   "fieldtype": "Column Break"
+   "fieldtype": "Column Break",
+   "hidden": 1,
+   "print_hide": 1
   },
   {
    "fieldname": "base_net_rate",
    "fieldtype": "Currency",
+   "hidden": 1,
    "label": "Net Rate (Company Currency)",
    "options": "Company:company:default_currency",
    "print_hide": 1,
@@ -398,6 +445,7 @@
   {
    "fieldname": "base_net_amount",
    "fieldtype": "Currency",
+   "hidden": 1,
    "label": "Net Amount (Company Currency)",
    "options": "Company:company:default_currency",
    "print_hide": 1,
@@ -408,12 +456,15 @@
    "collapsible_depends_on": "eval:doc.delivered_by_supplier==1",
    "fieldname": "drop_ship",
    "fieldtype": "Section Break",
-   "label": "Drop Ship"
+   "hidden": 1,
+   "label": "Drop Ship",
+   "print_hide": 1
   },
   {
    "default": "0",
    "fieldname": "delivered_by_supplier",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Delivered By Supplier",
    "print_hide": 1,
    "read_only": 1
@@ -422,23 +473,26 @@
    "collapsible": 1,
    "fieldname": "accounting",
    "fieldtype": "Section Break",
-   "label": "Accounting Details"
+   "hidden": 1,
+   "label": "Accounting Details",
+   "print_hide": 1
   },
   {
    "fieldname": "income_account",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Income Account",
    "oldfieldname": "income_account",
    "oldfieldtype": "Link",
    "options": "Account",
    "print_hide": 1,
    "print_width": "120px",
-   "reqd": 1,
    "width": "120px"
   },
   {
    "fieldname": "expense_account",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Expense Account",
    "options": "Account",
    "print_hide": 1,
@@ -446,11 +500,14 @@
   },
   {
    "fieldname": "col_break4",
-   "fieldtype": "Column Break"
+   "fieldtype": "Column Break",
+   "hidden": 1,
+   "print_hide": 1
   },
   {
    "fieldname": "item_tax_template",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Item Tax Template",
    "options": "Item Tax Template",
    "print_hide": 1
@@ -459,69 +516,86 @@
    "default": ":Company",
    "fieldname": "cost_center",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Cost Center",
    "oldfieldname": "cost_center",
    "oldfieldtype": "Link",
    "options": "Cost Center",
    "print_hide": 1,
    "print_width": "120px",
-   "reqd": 1,
    "width": "120px"
   },
   {
    "collapsible": 1,
    "fieldname": "deferred_revenue",
    "fieldtype": "Section Break",
-   "label": "Deferred Revenue"
+   "hidden": 1,
+   "label": "Deferred Revenue",
+   "print_hide": 1
   },
   {
    "depends_on": "enable_deferred_revenue",
    "fieldname": "deferred_revenue_account",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Deferred Revenue Account",
-   "options": "Account"
+   "options": "Account",
+   "print_hide": 1
   },
   {
    "allow_on_submit": 1,
    "depends_on": "enable_deferred_revenue",
    "fieldname": "service_stop_date",
    "fieldtype": "Date",
+   "hidden": 1,
    "label": "Service Stop Date",
-   "no_copy": 1
+   "no_copy": 1,
+   "print_hide": 1
   },
   {
    "default": "0",
    "fieldname": "enable_deferred_revenue",
    "fieldtype": "Check",
-   "label": "Enable Deferred Revenue"
+   "hidden": 1,
+   "label": "Enable Deferred Revenue",
+   "print_hide": 1
   },
   {
    "fieldname": "column_break_50",
-   "fieldtype": "Column Break"
+   "fieldtype": "Column Break",
+   "hidden": 1,
+   "print_hide": 1
   },
   {
    "depends_on": "enable_deferred_revenue",
    "fieldname": "service_start_date",
    "fieldtype": "Date",
+   "hidden": 1,
    "label": "Service Start Date",
-   "no_copy": 1
+   "no_copy": 1,
+   "print_hide": 1
   },
   {
    "depends_on": "enable_deferred_revenue",
    "fieldname": "service_end_date",
    "fieldtype": "Date",
+   "hidden": 1,
    "label": "Service End Date",
-   "no_copy": 1
+   "no_copy": 1,
+   "print_hide": 1
   },
   {
    "collapsible": 1,
    "fieldname": "section_break_18",
    "fieldtype": "Section Break",
-   "label": "Item Weight Details"
+   "hidden": 1,
+   "label": "Item Weight Details",
+   "print_hide": 1
   },
   {
    "fieldname": "weight_per_unit",
    "fieldtype": "Float",
+   "hidden": 1,
    "label": "Weight Per Unit",
    "print_hide": 1,
    "read_only": 1
@@ -529,17 +603,21 @@
   {
    "fieldname": "total_weight",
    "fieldtype": "Float",
+   "hidden": 1,
    "label": "Total Weight",
    "print_hide": 1,
    "read_only": 1
   },
   {
    "fieldname": "column_break_21",
-   "fieldtype": "Column Break"
+   "fieldtype": "Column Break",
+   "hidden": 1,
+   "print_hide": 1
   },
   {
    "fieldname": "weight_uom",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Weight UOM",
    "options": "UOM",
    "print_hide": 1,
@@ -550,11 +628,14 @@
    "collapsible_depends_on": "eval:doc.serial_no || doc.batch_no",
    "fieldname": "warehouse_and_reference",
    "fieldtype": "Section Break",
-   "label": "Stock Details"
+   "hidden": 1,
+   "label": "Stock Details",
+   "print_hide": 1
   },
   {
    "fieldname": "warehouse",
    "fieldtype": "Link",
+   "hidden": 1,
    "in_list_view": 1,
    "label": "Warehouse",
    "oldfieldname": "warehouse",
@@ -576,8 +657,10 @@
    "depends_on": "eval:!doc.__islocal",
    "fieldname": "quality_inspection",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Quality Inspection",
-   "options": "Quality Inspection"
+   "options": "Quality Inspection",
+   "print_hide": 1
   },
   {
    "fieldname": "batch_no",
@@ -589,12 +672,14 @@
   },
   {
    "fieldname": "col_break5",
-   "fieldtype": "Column Break"
+   "fieldtype": "Column Break",
+   "hidden": 1
   },
   {
    "default": "0",
    "fieldname": "allow_zero_valuation_rate",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Allow Zero Valuation Rate",
    "no_copy": 1,
    "print_hide": 1
@@ -641,6 +726,7 @@
    "allow_on_submit": 1,
    "fieldname": "actual_batch_qty",
    "fieldtype": "Float",
+   "hidden": 1,
    "label": "Available Batch Qty at Warehouse",
    "no_copy": 1,
    "print_hide": 1,
@@ -652,6 +738,7 @@
    "allow_on_submit": 1,
    "fieldname": "actual_qty",
    "fieldtype": "Float",
+   "hidden": 1,
    "label": "Available Qty at Warehouse",
    "oldfieldname": "actual_qty",
    "oldfieldtype": "Currency",
@@ -662,11 +749,14 @@
    "collapsible": 1,
    "fieldname": "edit_references",
    "fieldtype": "Section Break",
-   "label": "References"
+   "hidden": 1,
+   "label": "References",
+   "print_hide": 1
   },
   {
    "fieldname": "sales_order",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Sales Order",
    "no_copy": 1,
    "oldfieldname": "sales_order",
@@ -690,11 +780,14 @@
   },
   {
    "fieldname": "column_break_74",
-   "fieldtype": "Column Break"
+   "fieldtype": "Column Break",
+   "hidden": 1,
+   "print_hide": 1
   },
   {
    "fieldname": "delivery_note",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Delivery Note",
    "no_copy": 1,
    "oldfieldname": "delivery_note",
@@ -719,6 +812,7 @@
   {
    "fieldname": "delivered_qty",
    "fieldtype": "Float",
+   "hidden": 1,
    "label": "Delivered Qty",
    "oldfieldname": "delivered_qty",
    "oldfieldtype": "Currency",
@@ -738,19 +832,24 @@
   {
    "fieldname": "asset",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Asset",
    "no_copy": 1,
-   "options": "Asset"
+   "options": "Asset",
+   "print_hide": 1
   },
   {
    "fieldname": "section_break_54",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "print_hide": 1
   },
   {
    "allow_on_submit": 1,
    "default": "0",
    "fieldname": "page_break",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Page Break",
    "no_copy": 1,
    "print_hide": 1,
@@ -760,7 +859,9 @@
    "collapsible": 1,
    "fieldname": "description_section",
    "fieldtype": "Section Break",
-   "label": "Description"
+   "hidden": 1,
+   "label": "Description",
+   "print_hide": 1
   },
   {
    "collapsible": 1,
@@ -772,40 +873,122 @@
    "collapsible": 1,
    "fieldname": "accounting_dimensions_section",
    "fieldtype": "Section Break",
-   "label": "Accounting Dimensions"
+   "hidden": 1,
+   "label": "Accounting Dimensions",
+   "print_hide": 1
   },
   {
    "fieldname": "dimension_col_break",
-   "fieldtype": "Column Break"
+   "fieldtype": "Column Break",
+   "hidden": 1,
+   "print_hide": 1
   },
   {
    "depends_on": "asset",
    "fieldname": "finance_book",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Finance Book",
-   "options": "Finance Book"
+   "options": "Finance Book",
+   "print_hide": 1
   },
   {
    "fieldname": "project",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Project",
-   "options": "Project"
+   "options": "Project",
+   "print_hide": 1
   },
   {
    "depends_on": "eval:parent.update_stock == 1",
    "fieldname": "sales_invoice_item",
    "fieldtype": "Data",
+   "hidden": 1,
    "ignore_user_permissions": 1,
    "label": "Sales Invoice Item",
    "no_copy": 1,
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "fieldname": "hsn_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "HSN Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "basic_price",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Basic Price",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tax_percentage",
+   "fieldtype": "Data",
+   "label": "Tax Percentage",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tax_amount",
+   "fieldtype": "Data",
+   "label": "Tax Amount"
+  },
+  {
+   "fieldname": "cost_price",
+   "fieldtype": "Data",
+   "label": "Cost Price",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mrp",
+   "fieldtype": "Data",
+   "label": "MRP",
+   "read_only": 1
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "bay_number",
+   "fieldtype": "Data",
+   "label": "Bay Number"
+  },
+  {
+   "fieldname": "bgl_selling_price_without_tax",
+   "fieldtype": "Data",
+   "label": "SP Without TAX",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bgl_selling_price_with_tax",
+   "fieldtype": "Data",
+   "label": "SP With TAX",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sm_number",
+   "fieldtype": "Data",
+   "label": "SM Number"
+  },
+  {
+   "fieldname": "entered_qty",
+   "fieldtype": "Data",
+   "label": "Entered Qty"
+  },
+  {
+   "fieldname": "total_mrp",
+   "fieldtype": "Data",
+   "label": "Total MRP"
   }
  ],
  "idx": 1,
  "istable": 1,
- "links": [],
- "modified": "2020-08-20 11:24:41.749986",
+ "modified": "2021-03-23 12:49:30.395504",
  "modified_by": "Administrator",
  "module": "Accounts",
  "name": "Sales Invoice Item",
