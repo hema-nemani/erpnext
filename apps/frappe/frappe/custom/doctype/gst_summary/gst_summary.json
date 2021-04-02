@@ -7,8 +7,7 @@
   "gst_percentage",
   "cgst",
   "sgst",
-  "igst",
-  "location"
+  "igst"
  ],
  "fields": [
   {
@@ -35,16 +34,10 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "IGST"
-  },
-  {
-   "fieldname": "location",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Location"
   }
  ],
  "istable": 1,
- "modified": "2021-03-29 12:30:24.353148",
+ "modified": "2021-04-01 15:59:16.056694",
  "modified_by": "Administrator",
  "module": "Custom",
  "name": "GST Summary",

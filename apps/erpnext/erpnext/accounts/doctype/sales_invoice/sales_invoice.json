@@ -68,8 +68,16 @@
   "section_break_61",
   "items",
   "section_break_63",
+  "total_items",
+  "total_qty",
+  "total_entered_qty",
+  "total_amount",
+  "column_break_67",
+  "gross_amount",
+  "total_discount",
+  "net_amount",
+  "section_break_72",
   "purchase_order_series",
-  "location",
   "gst_summary",
   "pricing_rule_details",
   "pricing_rules",
@@ -80,7 +88,6 @@
   "timesheets",
   "total_billing_amount",
   "section_break_30",
-  "total_qty",
   "base_total",
   "base_net_total",
   "column_break_32",
@@ -249,7 +256,6 @@
    "fieldname": "tax_id",
    "fieldtype": "Data",
    "label": "Tax Id",
-   "print_hide": 1,
    "read_only": 1
   },
   {
@@ -693,7 +699,9 @@
   {
    "fieldname": "total_qty",
    "fieldtype": "Float",
+   "hidden": 1,
    "label": "Total Quantity",
+   "print_hide": 1,
    "read_only": 1
   },
   {
@@ -1003,7 +1011,6 @@
   {
    "fieldname": "base_rounded_total",
    "fieldtype": "Currency",
-   "hidden": 1,
    "label": "Rounded Total (Company Currency)",
    "oldfieldname": "rounded_total",
    "oldfieldtype": "Currency",
@@ -1057,22 +1064,18 @@
    "bold": 1,
    "fieldname": "rounded_total",
    "fieldtype": "Currency",
-   "hidden": 1,
    "label": "Rounded Total",
    "oldfieldname": "rounded_total_export",
    "oldfieldtype": "Currency",
    "options": "currency",
-   "print_hide": 1,
    "read_only": 1
   },
   {
    "fieldname": "in_words",
    "fieldtype": "Data",
-   "hidden": 1,
    "label": "In Words",
    "oldfieldname": "in_words_export",
    "oldfieldtype": "Data",
-   "print_hide": 1,
    "read_only": 1
   },
   {
@@ -1763,15 +1766,53 @@
    "options": "Purchase Order"
   },
   {
-   "fieldname": "location",
+   "fieldname": "total_items",
    "fieldtype": "Data",
-   "label": "Location"
+   "label": "Total Items"
+  },
+  {
+   "fieldname": "column_break_67",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gross_amount",
+   "fieldtype": "Data",
+   "label": "Gross Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_discount",
+   "fieldtype": "Data",
+   "label": "Total Discount ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "net_amount",
+   "fieldtype": "Data",
+   "label": "Net Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Data",
+   "label": "Total Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_entered_qty",
+   "fieldtype": "Data",
+   "label": "Total Entered Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_72",
+   "fieldtype": "Section Break"
   }
  ],
  "icon": "fa fa-file-text",
  "idx": 181,
  "is_submittable": 1,
- "modified": "2021-03-29 12:22:37.036623",
+ "modified": "2021-04-02 16:03:05.120191",
  "modified_by": "Administrator",
  "module": "Accounts",
  "name": "Sales Invoice",

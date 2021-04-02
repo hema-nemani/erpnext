@@ -23,6 +23,8 @@
   "qty",
   "sm_number",
   "entered_qty",
+  "discount",
+  "total_items",
   "total_mrp",
   "customer_item_code",
   "description_section",
@@ -983,12 +985,23 @@
   {
    "fieldname": "total_mrp",
    "fieldtype": "Data",
-   "label": "Total MRP"
+   "label": "Total MRP",
+   "read_only": 1
+  },
+  {
+   "fieldname": "discount",
+   "fieldtype": "Data",
+   "label": "Discount In Percentage"
+  },
+  {
+   "fieldname": "total_items",
+   "fieldtype": "Data",
+   "label": "Total Items"
   }
  ],
  "idx": 1,
  "istable": 1,
- "modified": "2021-03-23 12:49:30.395504",
+ "modified": "2021-04-02 16:28:55.573580",
  "modified_by": "Administrator",
  "module": "Accounts",
  "name": "Sales Invoice Item",
