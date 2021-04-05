@@ -1,5 +1,4 @@
 {
- "actions": [],
  "allow_rename": 1,
  "autoname": "Prompt",
  "creation": "2013-05-24 12:15:51",
@@ -272,8 +271,7 @@
    "label": "Territory",
    "oldfieldname": "territory",
    "oldfieldtype": "Link",
-   "options": "Territory",
-   "reqd": 1
+   "options": "Territory"
   },
   {
    "fieldname": "column_break_31",
@@ -290,8 +288,7 @@
    "fieldname": "customer_group",
    "fieldtype": "Link",
    "label": "Customer Group",
-   "options": "Customer Group",
-   "reqd": 1
+   "options": "Customer Group"
   },
   {
    "fieldname": "section_break_19",
@@ -312,22 +309,19 @@
    "label": "Currency",
    "oldfieldname": "currency",
    "oldfieldtype": "Select",
-   "options": "Currency",
-   "reqd": 1
+   "options": "Currency"
   },
   {
    "fieldname": "write_off_account",
    "fieldtype": "Link",
    "label": "Write Off Account",
-   "options": "Account",
-   "reqd": 1
+   "options": "Account"
   },
   {
    "fieldname": "write_off_cost_center",
    "fieldtype": "Link",
    "label": "Write Off Cost Center",
-   "options": "Cost Center",
-   "reqd": 1
+   "options": "Cost Center"
   },
   {
    "fieldname": "account_for_change_amount",
@@ -401,8 +395,7 @@
  ],
  "icon": "icon-cog",
  "idx": 1,
- "links": [],
- "modified": "2020-10-16 04:33:57.283873",
+ "modified": "2021-04-02 18:27:40.922750",
  "modified_by": "Administrator",
  "module": "Accounts",
  "name": "POS Profile",

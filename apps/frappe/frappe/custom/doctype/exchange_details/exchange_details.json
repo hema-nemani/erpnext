@@ -1,0 +1,55 @@
+{
+ "creation": "2021-04-03 00:03:38.313215",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "items",
+  "with_details",
+  "number",
+  "item_group",
+  "number_of_kg"
+ ],
+ "fields": [
+  {
+   "fieldname": "items",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Items",
+   "options": "Item"
+  },
+  {
+   "fieldname": "with_details",
+   "fieldtype": "Data",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "number",
+   "fieldtype": "Data",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "item_group",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Group",
+   "options": "Item Group"
+  },
+  {
+   "fieldname": "number_of_kg",
+   "fieldtype": "Data",
+   "in_list_view": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-04-03 00:05:47.365254",
+ "modified_by": "Administrator",
+ "module": "Custom",
+ "name": "Exchange Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

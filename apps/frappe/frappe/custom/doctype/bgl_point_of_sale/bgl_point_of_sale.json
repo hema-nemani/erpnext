@@ -1,0 +1,321 @@
+{
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2021-04-02 19:24:35.566254",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "column_break_2",
+  "date",
+  "address_and_contact",
+  "customer_address",
+  "address_display",
+  "column_break_7",
+  "billpark",
+  "section_break_9",
+  "item_details",
+  "items",
+  "section_break_11",
+  "d_or_i",
+  "loyalty_points",
+  "earned_points",
+  "column_break_15",
+  "consumed_points",
+  "column_break_17",
+  "balance_points",
+  "section_break_18",
+  "payment_mode",
+  "total_qty",
+  "total_items",
+  "gross_amount",
+  "item_discount",
+  "sale_value",
+  "instdemo_charge",
+  "column_break_22",
+  "promo_discount",
+  "total_discount",
+  "total_refund",
+  "warranty_period",
+  "exchange_value",
+  "column_break_31",
+  "purchase_value",
+  "return_value",
+  "balance_value",
+  "net_amount",
+  "section_break_37",
+  "gst_summary",
+  "for_exchange",
+  "for_exchange_details",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Bill No",
+   "options": "BGL.-.POS.-.###"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Datetime",
+   "label": "Date And Time"
+  },
+  {
+   "fieldname": "address_and_contact",
+   "fieldtype": "Section Break",
+   "label": "Address and Contact"
+  },
+  {
+   "fetch_from": "customer.address__title",
+   "fieldname": "customer_address",
+   "fieldtype": "Link",
+   "label": "Customer Address",
+   "options": "Address"
+  },
+  {
+   "fieldname": "address_display",
+   "fieldtype": "Small Text",
+   "label": "Address",
+   "read_only": 1
+  },
+  {
+   "fieldname": "billpark",
+   "fieldtype": "Data",
+   "label": "Bill Park Or Unpark"
+  },
+  {
+   "fieldname": "item_details",
+   "fieldtype": "Link",
+   "label": "Item Details ",
+   "options": "Item"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Sales Invoice Item"
+  },
+  {
+   "default": "0",
+   "fieldname": "d_or_i",
+   "fieldtype": "Check",
+   "label": "D Or I"
+  },
+  {
+   "fieldname": "loyalty_points",
+   "fieldtype": "Section Break",
+   "label": "Loyalty Points "
+  },
+  {
+   "fieldname": "earned_points",
+   "fieldtype": "Data",
+   "label": "Earned Points"
+  },
+  {
+   "fieldname": "consumed_points",
+   "fieldtype": "Data",
+   "label": "Consumed Points"
+  },
+  {
+   "fieldname": "balance_points",
+   "fieldtype": "Data",
+   "label": "Balance Points",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "payment_mode",
+   "fieldtype": "Select",
+   "label": "Payment Mode",
+   "options": "Cheque\nCash\nOnline Transaction\nUPI Payment\nCredit Card\nDebit Card"
+  },
+  {
+   "fieldname": "gross_amount",
+   "fieldtype": "Data",
+   "label": "Gross Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sale_value",
+   "fieldtype": "Data",
+   "label": "Sale value"
+  },
+  {
+   "fieldname": "instdemo_charge",
+   "fieldtype": "Data",
+   "label": "Inst/Demo charge"
+  },
+  {
+   "fieldname": "total_refund",
+   "fieldtype": "Data",
+   "label": "Total Refund"
+  },
+  {
+   "fieldname": "return_value",
+   "fieldtype": "Data",
+   "label": "Return Value"
+  },
+  {
+   "fieldname": "exchange_value",
+   "fieldtype": "Data",
+   "label": "Exchange Value"
+  },
+  {
+   "fieldname": "warranty_period",
+   "fieldtype": "Date",
+   "label": "Warranty Period"
+  },
+  {
+   "fieldname": "purchase_value",
+   "fieldtype": "Data",
+   "label": "Purchase Value"
+  },
+  {
+   "fieldname": "balance_value",
+   "fieldtype": "Data",
+   "label": "Balance Value",
+   "read_only": 1
+  },
+  {
+   "fieldname": "net_amount",
+   "fieldtype": "Data",
+   "label": "Net Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "gst_summary",
+   "fieldtype": "Table",
+   "label": "GST Summary",
+   "options": "GST Summary"
+  },
+  {
+   "depends_on": "for_exchange",
+   "fieldname": "for_exchange_details",
+   "fieldtype": "Table",
+   "label": "For Exchange Details",
+   "options": "Exchange Details"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "BGL Point Of Sale",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_37",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_31",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_qty",
+   "fieldtype": "Data",
+   "label": "Total Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_items",
+   "fieldtype": "Data",
+   "label": "Total Items"
+  },
+  {
+   "fieldname": "item_discount",
+   "fieldtype": "Data",
+   "label": "Item Discount"
+  },
+  {
+   "fieldname": "promo_discount",
+   "fieldtype": "Data",
+   "label": "Promo Discount"
+  },
+  {
+   "fieldname": "total_discount",
+   "fieldtype": "Data",
+   "label": "Total Discount",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "for_exchange",
+   "fieldtype": "Check",
+   "label": "For Exchange"
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2021-04-03 00:10:16.688965",
+ "modified_by": "Administrator",
+ "module": "Custom",
+ "name": "BGL Point Of Sale",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

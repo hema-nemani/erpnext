@@ -1,766 +1,11 @@
-[DEBUG] 2021-03-04 07:46:16,221 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 07:47:16,781 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 07:48:17,041 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 07:49:17,277 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 07:50:17,920 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 07:51:18,232 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 07:52:18,617 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 07:53:18,946 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 07:54:19,480 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 07:55:20,325 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 07:56:21,042 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 07:57:21,285 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 07:58:22,252 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 07:59:23,009 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:00:23,506 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:01:23,827 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:02:24,180 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:03:24,542 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:04:25,074 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:05:25,882 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:06:26,473 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:07:26,813 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:08:27,310 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:09:27,741 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:10:28,768 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:11:29,079 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:12:29,451 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:13:30,030 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:14:31,149 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:15:31,756 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:16:31,969 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:17:32,302 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:18:32,923 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:19:33,750 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:20:34,103 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:21:34,674 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:22:35,557 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:23:35,907 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:24:36,392 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:25:36,746 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:26:37,207 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:27:37,593 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:28:37,999 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:29:38,741 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:30:39,838 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:31:40,603 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:32:40,995 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:33:41,363 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:34:41,867 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:35:42,310 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:36:42,799 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:37:43,239 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:38:43,985 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:39:44,378 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:40:44,856 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:41:45,604 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:42:46,485 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:43:46,764 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:44:47,213 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:45:47,705 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:46:48,475 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:47:49,012 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:48:49,393 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:49:50,140 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:50:50,731 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:51:51,404 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:52:51,904 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:53:52,491 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:54:53,351 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:55:53,677 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:56:54,114 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:57:54,811 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:58:55,108 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 08:59:55,901 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:00:56,285 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:01:57,016 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:02:58,037 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:03:58,887 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:04:59,530 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:06:00,084 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:07:00,641 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:08:00,952 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:09:01,699 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:10:02,287 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:11:02,668 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:12:03,170 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:13:03,908 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:14:04,524 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:15:04,975 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:16:05,806 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:17:06,349 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:18:06,993 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:19:07,378 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:20:08,194 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:21:08,588 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:22:09,099 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:23:09,536 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:24:09,810 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:25:10,128 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:26:10,548 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:27:10,866 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:28:11,209 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:29:11,980 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:30:12,781 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:31:13,681 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:32:14,218 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:33:14,642 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:34:15,140 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:35:15,493 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:36:16,127 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:37:16,555 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:38:17,137 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:39:17,916 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:40:18,459 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:41:18,805 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:42:19,118 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:43:19,631 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:44:20,073 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:45:20,515 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:46:20,872 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:47:21,186 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:48:21,887 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:49:22,088 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:50:22,529 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:51:22,979 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:52:23,289 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:53:23,750 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:54:24,195 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:55:24,705 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:56:25,030 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:57:25,337 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:58:25,770 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 09:59:26,302 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 10:00:27,037 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 10:01:27,720 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 10:02:28,600 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 10:03:29,114 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 10:04:29,495 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 10:05:30,349 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 10:06:31,323 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 10:07:32,012 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 10:08:32,449 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 10:09:33,043 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 10:10:34,053 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 10:11:34,542 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 10:12:35,086 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 10:13:35,374 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 10:14:35,711 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 10:15:35,941 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 10:24:51,794 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 10:25:52,222 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 10:26:52,920 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-04 10:27:53,236 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 06:45:25,251 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 06:46:25,813 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 06:47:26,082 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 06:48:26,338 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 06:49:26,767 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 06:50:27,163 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 06:51:27,503 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 06:52:28,137 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 06:53:28,720 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 06:54:29,368 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 06:55:29,932 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 06:56:30,342 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 06:57:30,732 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 06:58:31,216 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 06:59:31,569 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:00:31,803 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:01:32,283 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:02:32,711 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:03:33,012 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:04:33,449 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:05:33,783 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:06:34,189 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:07:34,438 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:08:34,862 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:09:35,539 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:10:35,967 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:11:36,492 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:12:36,775 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:13:37,554 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:14:38,152 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:15:38,527 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:16:39,065 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:17:39,467 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:18:40,271 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:19:40,846 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:20:41,397 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:21:42,157 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:22:42,921 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:23:43,375 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:24:44,005 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:25:44,489 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:26:45,524 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:27:45,852 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:28:46,230 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:29:46,548 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:30:47,261 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:31:47,655 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:32:48,112 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:33:48,524 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:34:49,242 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:35:50,098 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:36:50,417 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:37:50,863 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:38:51,389 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:39:51,969 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:40:52,263 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:41:53,104 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:42:53,643 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:43:54,072 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:44:54,587 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:45:54,899 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:46:55,535 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:47:55,817 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:48:56,211 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:49:56,680 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:50:57,217 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:51:57,729 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:52:58,182 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:53:58,739 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:54:59,394 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:56:00,254 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:57:00,936 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:58:01,409 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 07:59:01,764 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:00:02,269 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:01:02,803 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:02:03,521 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:03:03,926 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:04:04,806 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:05:05,499 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:06:05,902 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:07:06,424 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:08:07,244 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:09:07,639 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:10:08,179 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:11:08,873 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:12:09,223 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:13:09,484 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:14:10,093 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:15:10,527 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:16:11,099 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:17:11,540 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:18:11,951 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:19:12,421 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[ERROR] 2021-03-06 08:19:31,255 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+[ERROR] 2021-03-09 15:05:07,561 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
 Site: site1.local
 Form Dict: {
  "action": "Save",
  "cmd": "frappe.desk.form.save.savedocs",
- "doc": "{\"docstatus\":0,\"doctype\":\"Item\",\"name\":\"New Item 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"naming_series\":\"STO-ITEM-.YYYY.-\",\"is_item_from_hub\":0,\"disabled\":0,\"allow_alternative_item\":0,\"is_stock_item\":1,\"include_item_in_manufacturing\":1,\"is_fixed_asset\":0,\"auto_create_assets\":0,\"click_on_installation\":1,\"click_on_demo\":1,\"at_sales\":1,\"at_purchase\":1,\"buying_tax\":\"5%\",\"selling1_tax\":\"5%\",\"bgl_selling2_tax\":\"5%\",\"end_of_life\":\"2099-12-31\",\"default_material_request_type\":\"Purchase\",\"valuation_method\":\"\",\"has_batch_no\":0,\"create_new_batch\":0,\"has_expiry_date\":0,\"retain_sample\":0,\"has_serial_no\":0,\"has_variants\":0,\"variant_based_on\":\"Item Attribute\",\"is_purchase_item\":1,\"min_order_qty\":0,\"is_customer_provided_item\":0,\"delivered_by_supplier\":0,\"country_of_origin\":\"India\",\"is_sales_item\":1,\"enable_deferred_revenue\":0,\"enable_deferred_expense\":0,\"inspection_required_before_purchase\":0,\"inspection_required_before_delivery\":0,\"is_sub_contracted_item\":0,\"show_in_website\":0,\"show_variant_in_website\":0,\"publish_in_hub\":0,\"synced_with_hub\":0,\"item_code\":\"sample\",\"item_name\":\"sa\",\"description\":\"sa\",\"hsn_code\":\"Test\",\"item_group\":\"Crockery\",\"item_sub_group_for_crockery\":\"Un Fragile\",\"item_sub_sub_group_for_un_fagile\":\"TRAY & TUMBLER & BOWL\",\"stock_uom\":\"Unit\",\"make\":\"test\",\"size\":\"test\",\"model\":\"test\",\"capacity\":\"test\",\"design\":\"test\",\"aged\":\"2021-03-06 14:23:43\",\"opening_stock\":45,\"brand\":\"Pigeon\",\"valuation_rate\":null,\"standard_rate\":652,\"vendor_name\":\"Ananya\",\"vendor_location\":\"lcoal\",\"installation_time_duration\":\"2021-03-06 14:23:43\",\"demo_time_duration\":\"2021-03-06 14:23:43\",\"sales_warrenty_period\":[{\"docstatus\":0,\"doctype\":\"At Sales Table\",\"name\":\"New At Sales Table 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"description\":\"Body\",\"timeperiod\":\"24\",\"parent\":\"New Item 1\",\"parentfield\":\"sales_warrenty_period\",\"parenttype\":\"Item\",\"idx\":1,\"__unedited\":false}],\"purchase_warrenty_period\":[{\"docstatus\":0,\"doctype\":\"At Purchase Table\",\"name\":\"New At Purchase Table 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"manufacturing_date\":\"2020\",\"time_left_for_expiry\":\"24\",\"parent\":\"New Item 1\",\"parentfield\":\"purchase_warrenty_period\",\"parenttype\":\"Item\",\"idx\":1,\"__unedited\":false,\"no_of_qty\":\"6\",\"expiry_time\":2022}],\"basic_price\":\"500\",\"cost_price\":525,\"mrp_pm_downwards\":33.33333333333333,\"profit_margin\":\"50\",\"selling_price_without_tax\":750,\"selling_price_with_tax\":787.5,\"bgl_profit_margin\":\"45\",\"bgl_selling_price_without_tax\":725,\"bgl_selling_price_with_tax\":761.25,\"bgl_pm_downwards\":31.03448275862069,\"inventory_table_one\":[{\"docstatus\":0,\"doctype\":\"Inventory Table 1\",\"name\":\"New Inventory Table 1 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"location\":\"WH01\",\"parent\":\"New Item 1\",\"parentfield\":\"inventory_table_one\",\"parenttype\":\"Item\",\"idx\":1,\"__unedited\":false,\"qty\":\"65\",\"bay_number\":\"1\"}],\"inventory_table_two\":[{\"docstatus\":0,\"doctype\":\"Inventory Table 2\",\"name\":\"New Inventory Table 2 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"parent\":\"New Item 1\",\"parentfield\":\"inventory_table_two\",\"parenttype\":\"Item\",\"idx\":1,\"__unedited\":false,\"qty\":\"45\",\"aged\":\"6\"}],\"item_defaults\":[{\"docstatus\":0,\"doctype\":\"Item Default\",\"name\":\"New Item Default 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"parent\":\"New Item 1\",\"parentfield\":\"item_defaults\",\"parenttype\":\"Item\",\"idx\":1,\"__unedited\":false,\"company\":\"BGL Stores\",\"default_warehouse\":\"Finished Goods - BS\",\"default_price_list\":\"Indian Rupees\"}]}"
+ "doc": "{\"docstatus\":0,\"doctype\":\"Quotation\",\"name\":\"New Quotation 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"naming_series\":\"SAL-QTN-.YYYY.-\",\"quotation_to\":\"Customer\",\"transaction_date\":\"2021-03-11\",\"order_type\":\"Sales\",\"customer_group\":\"All Customer Groups\",\"territory\":\"All Territories\",\"currency\":\"INR\",\"selling_price_list\":\"Indian Rupees\",\"price_list_currency\":\"INR\",\"ignore_pricing_rule\":0,\"apply_discount_on\":\"Grand Total\",\"group_same_items\":0,\"status\":\"Draft\",\"conversion_rate\":1,\"plc_conversion_rate\":1,\"company\":\"BGL Stores\",\"valid_till\":\"2021-04-11\",\"base_net_total\":null,\"net_total\":null,\"base_total\":null,\"total\":null,\"total_qty\":23,\"rounding_adjustment\":null,\"grand_total\":null,\"base_grand_total\":null,\"total_taxes_and_charges\":null,\"base_total_taxes_and_charges\":null,\"base_rounding_adjustment\":null,\"rounded_total\":null,\"base_rounded_total\":null,\"in_words\":\"\",\"base_in_words\":\"\",\"base_discount_amount\":0,\"item_details\":\"CK Ware 001\",\"items\":[{\"docstatus\":0,\"doctype\":\"Item Quotation\",\"name\":\"New Item Quotation 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"parent\":\"New Quotation 1\",\"parentfield\":\"items\",\"parenttype\":\"Quotation\",\"idx\":1,\"item_code\":\"sam001\",\"item_name\":\"sample\",\"hsn_code\":\"446\",\"qty\":5,\"item_tax_percentage\":\"5%\",\"mrp\":5400,\"image\":\"/files/jos png.png\",\"enter_qty\":\"50\",\"total_amount\":270000,\"net_rate\":5400,\"amount\":27000,\"net_amount\":27000,\"total_weight\":null,\"base_price_list_rate\":5400,\"base_rate\":5400,\"base_amount\":27000,\"base_net_rate\":5400,\"base_net_amount\":27000,\"price_list_rate\":5400,\"child_docname\":\"New Item Quotation 1\",\"discount_percentage_on_rate\":[],\"discount_amount_on_rate\":[],\"discount_percentage\":0,\"rate_with_margin\":5400,\"base_rate_with_margin\":5400,\"rate\":5400},{\"docstatus\":0,\"doctype\":\"Item Quotation\",\"name\":\"New Item Quotation 3\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"parent\":\"New Quotation 1\",\"parentfield\":\"items\",\"parenttype\":\"Quotation\",\"idx\":2,\"item_code\":\"CK Ware 001\",\"item_name\":\"cookware\",\"hsn_code\":\"6464649\",\"qty\":9,\"item_tax_percentage\":\"5%\",\"mrp\":500,\"image\":\"https://images-na.ssl-images-amazon.com/images/I/51UBQPZAiVL._SX425_.jpg\",\"amount\":null,\"net_amount\":null,\"total_weight\":null,\"base_price_list_rate\":0,\"base_rate\":0,\"base_amount\":null,\"base_net_rate\":0,\"base_net_amount\":null,\"total_amount\":25000,\"enter_qty\":\"50\",\"child_docname\":\"New Item Quotation 3\",\"discount_percentage_on_rate\":[],\"discount_amount_on_rate\":[]},{\"docstatus\":0,\"doctype\":\"Item Quotation\",\"name\":\"New Item Quotation 4\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"parent\":\"New Quotation 1\",\"parentfield\":\"items\",\"parenttype\":\"Quotation\",\"idx\":3,\"item_code\":\"CK Ware 001\",\"item_name\":\"cookware\",\"hsn_code\":\"6464649\",\"qty\":9,\"item_tax_percentage\":\"5%\",\"mrp\":65,\"image\":\"https://images-na.ssl-images-amazon.com/images/I/51UBQPZAiVL._SX425_.jpg\",\"amount\":null,\"net_amount\":null,\"total_weight\":null,\"base_price_list_rate\":0,\"base_rate\":0,\"base_amount\":null,\"base_net_rate\":0,\"base_net_amount\":null,\"total_amount\":2925,\"enter_qty\":\"45\",\"child_docname\":\"New Item Quotation 4\",\"discount_percentage_on_rate\":[],\"discount_amount_on_rate\":[]}],\"total_net_weight\":0,\"party_name\":\"Prasanna\",\"customer_address\":\"Prasanna-Billing\",\"address_display\":\"1-19-158<br>Near Test<br>Vizag<br>\\nAndhra pradesh<br>535005<br>India<br>\\nPhone: 9876542<br>GST State Number : 37<br>Fax: 7979<br>Email: web@f9tech.com<br>\",\"shipping_address_name\":\"\",\"shipping_address\":null,\"contact_person\":\"Prasanna-Prasanna\",\"contact_display\":\"Prasanna\",\"contact_email\":\"web@f9tech.com\",\"contact_mobile\":\"9876543210\",\"customer_name\":\"Prasanna\",\"language\":\"en\",\"tax_category\":\"GST\",\"taxes_and_charges\":null,\"payment_terms_template\":null}"
 }
 Request Error
-Traceback (most recent call last):
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
-    doctype_python_modules[key] = frappe.get_module(module_name)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 836, in get_module
-    return importlib.import_module(modulename)
-  File "/home/frappe/frappe-bench/env/lib/python3.6/importlib/__init__.py", line 126, in import_module
-    return _bootstrap._gcd_import(name[level:], package, level)
-  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
-  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
-ModuleNotFoundError: No module named 'frappe.custom.doctype.at_sales_table.at_sales_table'
-
-During handling of the above exception, another exception occurred:
-
 Traceback (most recent call last):
   File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 67, in application
     response = frappe.api.handle()
@@ -772,63 +17,51 @@ Traceback (most recent call last):
     return frappe.call(method, **frappe.form_dict)
   File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1071, in call
     return fn(*args, **newargs)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/save.py", line 12, in savedocs
-    doc = frappe.get_doc(json.loads(doc))
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 762, in get_doc
-    doc = frappe.model.document.get_doc(*args, **kwargs)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 71, in get_doc
-    return controller(*args, **kwargs)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/website/website_generator.py", line 16, in __init__
-    super(WebsiteGenerator, self).__init__(*args, **kwargs)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 115, in __init__
-    super(Document, self).__init__(kwargs)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/base_document.py", line 66, in __init__
-    self.update(d)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/base_document.py", line 89, in update
-    self.set(key, value)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/base_document.py", line 136, in set
-    self.extend(key, value)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/base_document.py", line 173, in extend
-    self.append(key, v)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/base_document.py", line 150, in append
-    value = self._init_child(value, key)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/base_document.py", line 189, in _init_child
-    value = get_controller(value["doctype"])(value)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/base_document.py", line 48, in get_controller
-    module = load_doctype_module(doctype, module_name)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/modules/utils.py", line 206, in load_doctype_module
-    raise ImportError('Module import failed for {0} ({1})'.format(doctype, module_name + ' Error: ' + str(e)))
-ImportError: Module import failed for At Sales Table (frappe.custom.doctype.at_sales_table.at_sales_table Error: No module named 'frappe.custom.doctype.at_sales_table.at_sales_table')
-[ERROR] 2021-03-06 08:19:31,703 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
-New Exception collected with id: 2021-03-06 08:19:31.259110-10.0.2.2-b11
-[DEBUG] 2021-03-06 08:20:12,853 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:21:13,289 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[ERROR] 2021-03-06 08:21:56,187 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 296, in _save
+    self.insert()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 230, in insert
+    self.run_before_save_methods()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 896, in run_before_save_methods
+    self.run_method("validate")
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 797, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 1073, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 1056, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 791, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/selling/doctype/quotation/quotation.py", line 26, in validate
+    super(Quotation, self).validate()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/selling_controller.py", line 40, in validate
+    super(SellingController, self).validate()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/stock_controller.py", line 21, in validate
+    super(StockController, self).validate()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/accounts_controller.py", line 80, in validate
+    self.calculate_taxes_and_totals()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/accounts_controller.py", line 189, in calculate_taxes_and_totals
+    calculate_taxes_and_totals(self)
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/taxes_and_totals.py", line 17, in __init__
+    self.calculate()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/taxes_and_totals.py", line 24, in calculate
+    self._calculate()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/taxes_and_totals.py", line 38, in _calculate
+    self.calculate_item_values()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/taxes_and_totals.py", line 101, in calculate_item_values
+    if not item.rate or (item.pricing_rules and item.discount_percentage > 0):
+AttributeError: 'ItemQuotation' object has no attribute 'pricing_rules'
+[ERROR] 2021-03-09 15:18:43,928 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
 Site: site1.local
 Form Dict: {
  "action": "Save",
  "cmd": "frappe.desk.form.save.savedocs",
- "doc": "{\"docstatus\":0,\"doctype\":\"Item\",\"name\":\"New Item 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"naming_series\":\"STO-ITEM-.YYYY.-\",\"is_item_from_hub\":0,\"disabled\":0,\"allow_alternative_item\":0,\"is_stock_item\":1,\"include_item_in_manufacturing\":1,\"is_fixed_asset\":0,\"auto_create_assets\":0,\"click_on_installation\":0,\"click_on_demo\":0,\"at_sales\":1,\"at_purchase\":0,\"buying_tax\":\"5%\",\"selling1_tax\":\"5%\",\"bgl_selling2_tax\":\"5%\",\"end_of_life\":\"2099-12-31\",\"default_material_request_type\":\"Purchase\",\"valuation_method\":\"\",\"has_batch_no\":0,\"create_new_batch\":0,\"has_expiry_date\":0,\"retain_sample\":0,\"has_serial_no\":0,\"has_variants\":0,\"variant_based_on\":\"Item Attribute\",\"is_purchase_item\":1,\"min_order_qty\":0,\"is_customer_provided_item\":0,\"delivered_by_supplier\":0,\"country_of_origin\":\"India\",\"is_sales_item\":1,\"enable_deferred_revenue\":0,\"enable_deferred_expense\":0,\"inspection_required_before_purchase\":0,\"inspection_required_before_delivery\":0,\"is_sub_contracted_item\":0,\"show_in_website\":0,\"show_variant_in_website\":0,\"publish_in_hub\":0,\"synced_with_hub\":0,\"item_code\":\"test\",\"item_name\":\"testtes\",\"description\":\"test\",\"hsn_code\":\"test\",\"item_group\":\"Crockery\",\"item_sub_group_for_crockery\":\"Un Fragile\",\"item_sub_sub_group_for_un_fagile\":\"MUG\",\"stock_uom\":\"Unit\",\"standard_rate\":64,\"opening_stock\":85,\"brand\":\"Pigeon\",\"vendor_name\":\"Ananya\",\"sales_warrenty_period\":[{\"docstatus\":0,\"doctype\":\"At Sales Table\",\"name\":\"New At Sales Table 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"description\":\"Body\",\"timeperiod\":\"36\",\"parent\":\"New Item 1\",\"parentfield\":\"sales_warrenty_period\",\"parenttype\":\"Item\",\"idx\":1,\"__unedited\":false}],\"basic_price\":\"500\",\"cost_price\":525,\"mrp_pm_downwards\":81.81818181818183,\"profit_margin\":\"450\",\"selling_price_without_tax\":2750,\"selling_price_with_tax\":2887.5,\"bgl_profit_margin\":\"850\",\"bgl_selling_price_without_tax\":4750,\"bgl_selling_price_with_tax\":4987.5,\"bgl_pm_downwards\":89.47368421052632,\"inventory_table_one\":[{\"docstatus\":0,\"doctype\":\"Inventory Table 1\",\"name\":\"New Inventory Table 1 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"location\":\"WH01\",\"parent\":\"New Item 1\",\"parentfield\":\"inventory_table_one\",\"parenttype\":\"Item\",\"idx\":1,\"__unedited\":true}],\"item_defaults\":[{\"docstatus\":0,\"doctype\":\"Item Default\",\"name\":\"New Item Default 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"parent\":\"New Item 1\",\"parentfield\":\"item_defaults\",\"parenttype\":\"Item\",\"idx\":1,\"__unedited\":false,\"company\":\"BGL Stores\",\"default_warehouse\":\"Finished Goods - BS\",\"default_price_list\":\"Indian Rupees\"}]}"
+ "doc": "{\"docstatus\":0,\"doctype\":\"Quotation\",\"name\":\"New Quotation 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"naming_series\":\"SAL-QTN-.YYYY.-\",\"quotation_to\":\"Customer\",\"transaction_date\":\"2021-03-11\",\"order_type\":\"Sales\",\"customer_group\":\"All Customer Groups\",\"territory\":\"All Territories\",\"currency\":\"INR\",\"selling_price_list\":\"Indian Rupees\",\"price_list_currency\":\"INR\",\"ignore_pricing_rule\":0,\"apply_discount_on\":\"Grand Total\",\"group_same_items\":0,\"status\":\"Draft\",\"conversion_rate\":1,\"plc_conversion_rate\":1,\"company\":\"BGL Stores\",\"valid_till\":\"2021-04-11\",\"base_net_total\":27000,\"net_total\":27000,\"base_total\":27000,\"total\":27000,\"total_qty\":5,\"rounding_adjustment\":0,\"grand_total\":27000,\"base_grand_total\":27000,\"total_taxes_and_charges\":0,\"base_total_taxes_and_charges\":0,\"base_rounding_adjustment\":0,\"rounded_total\":27000,\"base_rounded_total\":27000,\"in_words\":\"\",\"base_in_words\":\"\",\"base_discount_amount\":0,\"item_details\":\"sam001\",\"items\":[{\"docstatus\":0,\"doctype\":\"Item Quotation\",\"name\":\"New Item Quotation 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"parent\":\"New Quotation 1\",\"parentfield\":\"items\",\"parenttype\":\"Quotation\",\"idx\":1,\"item_code\":\"sam001\",\"item_name\":\"sample\",\"hsn_code\":\"446\",\"qty\":5,\"item_tax_percentage\":\"5%\",\"mrp\":5400,\"image\":\"/files/jos png.png\",\"price_list_rate\":5400,\"child_docname\":\"New Item Quotation 1\",\"discount_percentage_on_rate\":[],\"discount_amount_on_rate\":[],\"discount_amount\":0,\"net_rate\":5400,\"amount\":27000,\"net_amount\":27000,\"total_weight\":null,\"base_price_list_rate\":5400,\"base_rate\":5400,\"base_amount\":27000,\"base_net_rate\":5400,\"base_net_amount\":27000,\"discount_percentage\":0,\"rate_with_margin\":5400,\"base_rate_with_margin\":5400,\"rate\":5400}],\"party_name\":\"Prasanna\",\"customer_address\":\"Prasanna-Billing\",\"address_display\":\"1-19-158<br>Near Test<br>Vizag<br>\\nAndhra pradesh<br>535005<br>India<br>\\nPhone: 9876542<br>GST State Number : 37<br>Fax: 7979<br>Email: web@f9tech.com<br>\",\"shipping_address_name\":\"\",\"shipping_address\":null,\"contact_person\":\"Prasanna-Prasanna\",\"contact_display\":\"Prasanna\",\"contact_email\":\"web@f9tech.com\",\"contact_mobile\":\"9876543210\",\"customer_name\":\"Prasanna\",\"language\":\"en\",\"tax_category\":\"GST\",\"taxes_and_charges\":null,\"payment_terms_template\":null}"
 }
 Request Error
-Traceback (most recent call last):
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
-    doctype_python_modules[key] = frappe.get_module(module_name)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 836, in get_module
-    return importlib.import_module(modulename)
-  File "/home/frappe/frappe-bench/env/lib/python3.6/importlib/__init__.py", line 126, in import_module
-    return _bootstrap._gcd_import(name[level:], package, level)
-  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
-  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
-ModuleNotFoundError: No module named 'frappe.custom.doctype.at_sales_table.at_sales_table'
-
-During handling of the above exception, another exception occurred:
-
 Traceback (most recent call last):
   File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 67, in application
     response = frappe.api.handle()
@@ -840,57 +73,53 @@ Traceback (most recent call last):
     return frappe.call(method, **frappe.form_dict)
   File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1071, in call
     return fn(*args, **newargs)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/save.py", line 12, in savedocs
-    doc = frappe.get_doc(json.loads(doc))
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 762, in get_doc
-    doc = frappe.model.document.get_doc(*args, **kwargs)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 71, in get_doc
-    return controller(*args, **kwargs)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/website/website_generator.py", line 16, in __init__
-    super(WebsiteGenerator, self).__init__(*args, **kwargs)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 115, in __init__
-    super(Document, self).__init__(kwargs)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/base_document.py", line 66, in __init__
-    self.update(d)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/base_document.py", line 89, in update
-    self.set(key, value)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/base_document.py", line 136, in set
-    self.extend(key, value)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/base_document.py", line 173, in extend
-    self.append(key, v)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/base_document.py", line 150, in append
-    value = self._init_child(value, key)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/base_document.py", line 189, in _init_child
-    value = get_controller(value["doctype"])(value)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/base_document.py", line 48, in get_controller
-    module = load_doctype_module(doctype, module_name)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/modules/utils.py", line 206, in load_doctype_module
-    raise ImportError('Module import failed for {0} ({1})'.format(doctype, module_name + ' Error: ' + str(e)))
-ImportError: Module import failed for At Sales Table (frappe.custom.doctype.at_sales_table.at_sales_table Error: No module named 'frappe.custom.doctype.at_sales_table.at_sales_table')
-[ERROR] 2021-03-06 08:21:56,642 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
-New Exception collected with id: 2021-03-06 08:21:56.189139-10.0.2.2-9e8
-[ERROR] 2021-03-06 08:22:00,649 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 296, in _save
+    self.insert()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 230, in insert
+    self.run_before_save_methods()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 896, in run_before_save_methods
+    self.run_method("validate")
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 797, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 1073, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 1056, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 791, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/selling/doctype/quotation/quotation.py", line 26, in validate
+    super(Quotation, self).validate()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/selling_controller.py", line 40, in validate
+    super(SellingController, self).validate()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/stock_controller.py", line 21, in validate
+    super(StockController, self).validate()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/accounts_controller.py", line 80, in validate
+    self.calculate_taxes_and_totals()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/accounts_controller.py", line 189, in calculate_taxes_and_totals
+    calculate_taxes_and_totals(self)
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/taxes_and_totals.py", line 17, in __init__
+    self.calculate()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/taxes_and_totals.py", line 24, in calculate
+    self._calculate()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/taxes_and_totals.py", line 38, in _calculate
+    self.calculate_item_values()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/taxes_and_totals.py", line 123, in calculate_item_values
+    item.amount = flt(item.rate * item.qty,	item.precision("amount"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/base_document.py", line 732, in precision
+    if df.fieldtype in ("Currency", "Float", "Percent"):
+AttributeError: 'NoneType' object has no attribute 'fieldtype'
+[ERROR] 2021-03-09 15:20:57,429 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
 Site: site1.local
 Form Dict: {
  "action": "Save",
  "cmd": "frappe.desk.form.save.savedocs",
- "doc": "{\"docstatus\":0,\"doctype\":\"Item\",\"name\":\"New Item 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"naming_series\":\"STO-ITEM-.YYYY.-\",\"is_item_from_hub\":0,\"disabled\":0,\"allow_alternative_item\":0,\"is_stock_item\":1,\"include_item_in_manufacturing\":1,\"is_fixed_asset\":0,\"auto_create_assets\":0,\"click_on_installation\":0,\"click_on_demo\":0,\"at_sales\":1,\"at_purchase\":0,\"buying_tax\":\"5%\",\"selling1_tax\":\"5%\",\"bgl_selling2_tax\":\"5%\",\"end_of_life\":\"2099-12-31\",\"default_material_request_type\":\"Purchase\",\"valuation_method\":\"\",\"has_batch_no\":0,\"create_new_batch\":0,\"has_expiry_date\":0,\"retain_sample\":0,\"has_serial_no\":0,\"has_variants\":0,\"variant_based_on\":\"Item Attribute\",\"is_purchase_item\":1,\"min_order_qty\":0,\"is_customer_provided_item\":0,\"delivered_by_supplier\":0,\"country_of_origin\":\"India\",\"is_sales_item\":1,\"enable_deferred_revenue\":0,\"enable_deferred_expense\":0,\"inspection_required_before_purchase\":0,\"inspection_required_before_delivery\":0,\"is_sub_contracted_item\":0,\"show_in_website\":0,\"show_variant_in_website\":0,\"publish_in_hub\":0,\"synced_with_hub\":0,\"item_code\":\"test\",\"item_name\":\"testtes\",\"description\":\"test\",\"hsn_code\":\"test\",\"item_group\":\"Crockery\",\"item_sub_group_for_crockery\":\"Un Fragile\",\"item_sub_sub_group_for_un_fagile\":\"MUG\",\"stock_uom\":\"Unit\",\"standard_rate\":64,\"opening_stock\":85,\"brand\":\"Pigeon\",\"vendor_name\":\"Ananya\",\"sales_warrenty_period\":[{\"docstatus\":0,\"doctype\":\"At Sales Table\",\"name\":\"New At Sales Table 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"description\":\"Body\",\"timeperiod\":\"36\",\"parent\":\"New Item 1\",\"parentfield\":\"sales_warrenty_period\",\"parenttype\":\"Item\",\"idx\":1,\"__unedited\":false}],\"basic_price\":\"500\",\"cost_price\":525,\"mrp_pm_downwards\":81.81818181818183,\"profit_margin\":\"450\",\"selling_price_without_tax\":2750,\"selling_price_with_tax\":2887.5,\"bgl_profit_margin\":\"850\",\"bgl_selling_price_without_tax\":4750,\"bgl_selling_price_with_tax\":4987.5,\"bgl_pm_downwards\":89.47368421052632,\"inventory_table_one\":[{\"docstatus\":0,\"doctype\":\"Inventory Table 1\",\"name\":\"New Inventory Table 1 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"location\":\"WH01\",\"parent\":\"New Item 1\",\"parentfield\":\"inventory_table_one\",\"parenttype\":\"Item\",\"idx\":1,\"__unedited\":true}],\"item_defaults\":[{\"docstatus\":0,\"doctype\":\"Item Default\",\"name\":\"New Item Default 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"parent\":\"New Item 1\",\"parentfield\":\"item_defaults\",\"parenttype\":\"Item\",\"idx\":1,\"__unedited\":false,\"company\":\"BGL Stores\",\"default_warehouse\":\"Finished Goods - BS\",\"default_price_list\":\"Indian Rupees\"}]}"
+ "doc": "{\"docstatus\":0,\"doctype\":\"Quotation\",\"name\":\"New Quotation 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"naming_series\":\"SAL-QTN-.YYYY.-\",\"quotation_to\":\"Customer\",\"transaction_date\":\"2021-03-11\",\"order_type\":\"Sales\",\"customer_group\":\"All Customer Groups\",\"territory\":\"All Territories\",\"currency\":\"INR\",\"selling_price_list\":\"Indian Rupees\",\"price_list_currency\":\"INR\",\"ignore_pricing_rule\":0,\"apply_discount_on\":\"Grand Total\",\"group_same_items\":0,\"status\":\"Draft\",\"conversion_rate\":1,\"plc_conversion_rate\":1,\"company\":\"BGL Stores\",\"valid_till\":\"2021-04-11\",\"base_net_total\":27000,\"net_total\":27000,\"base_total\":27000,\"total\":27000,\"total_qty\":5,\"rounding_adjustment\":0,\"grand_total\":27000,\"base_grand_total\":27000,\"total_taxes_and_charges\":0,\"base_total_taxes_and_charges\":0,\"base_rounding_adjustment\":0,\"rounded_total\":27000,\"base_rounded_total\":27000,\"in_words\":\"\",\"base_in_words\":\"\",\"base_discount_amount\":0,\"item_details\":\"sam001\",\"items\":[{\"docstatus\":0,\"doctype\":\"Item Quotation\",\"name\":\"New Item Quotation 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"parent\":\"New Quotation 1\",\"parentfield\":\"items\",\"parenttype\":\"Quotation\",\"idx\":1,\"item_code\":\"sam001\",\"item_name\":\"sample\",\"hsn_code\":\"446\",\"qty\":5,\"item_tax_percentage\":\"5%\",\"mrp\":5400,\"image\":\"/files/jos png.png\",\"enter_qty\":\"5\",\"total_amount\":27000,\"price_list_rate\":5400,\"child_docname\":\"New Item Quotation 1\",\"discount_percentage_on_rate\":[],\"discount_amount_on_rate\":[],\"discount_amount\":0,\"net_rate\":5400,\"amount\":27000,\"net_amount\":27000,\"total_weight\":null,\"base_price_list_rate\":5400,\"base_rate\":5400,\"base_amount\":27000,\"base_net_rate\":5400,\"base_net_amount\":27000,\"discount_percentage\":0,\"rate_with_margin\":5400,\"base_rate_with_margin\":5400,\"rate\":5400}],\"party_name\":\"Prasanna\",\"customer_address\":\"Prasanna-Billing\",\"address_display\":\"1-19-158<br>Near Test<br>Vizag<br>\\nAndhra pradesh<br>535005<br>India<br>\\nPhone: 9876542<br>GST State Number : 37<br>Fax: 7979<br>Email: web@f9tech.com<br>\",\"shipping_address_name\":\"\",\"shipping_address\":null,\"contact_person\":\"Prasanna-Prasanna\",\"contact_display\":\"Prasanna\",\"contact_email\":\"web@f9tech.com\",\"contact_mobile\":\"9876543210\",\"customer_name\":\"Prasanna\",\"language\":\"en\",\"tax_category\":\"GST\",\"taxes_and_charges\":null,\"payment_terms_template\":null}"
 }
 Request Error
-Traceback (most recent call last):
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
-    doctype_python_modules[key] = frappe.get_module(module_name)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 836, in get_module
-    return importlib.import_module(modulename)
-  File "/home/frappe/frappe-bench/env/lib/python3.6/importlib/__init__.py", line 126, in import_module
-    return _bootstrap._gcd_import(name[level:], package, level)
-  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
-  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
-ModuleNotFoundError: No module named 'frappe.custom.doctype.at_sales_table.at_sales_table'
-
-During handling of the above exception, another exception occurred:
-
 Traceback (most recent call last):
   File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 67, in application
     response = frappe.api.handle()
@@ -902,72 +131,56 @@ Traceback (most recent call last):
     return frappe.call(method, **frappe.form_dict)
   File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1071, in call
     return fn(*args, **newargs)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/save.py", line 12, in savedocs
-    doc = frappe.get_doc(json.loads(doc))
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 762, in get_doc
-    doc = frappe.model.document.get_doc(*args, **kwargs)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 71, in get_doc
-    return controller(*args, **kwargs)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/website/website_generator.py", line 16, in __init__
-    super(WebsiteGenerator, self).__init__(*args, **kwargs)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 115, in __init__
-    super(Document, self).__init__(kwargs)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/base_document.py", line 66, in __init__
-    self.update(d)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/base_document.py", line 89, in update
-    self.set(key, value)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/base_document.py", line 136, in set
-    self.extend(key, value)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/base_document.py", line 173, in extend
-    self.append(key, v)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/base_document.py", line 150, in append
-    value = self._init_child(value, key)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/base_document.py", line 189, in _init_child
-    value = get_controller(value["doctype"])(value)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/base_document.py", line 48, in get_controller
-    module = load_doctype_module(doctype, module_name)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/modules/utils.py", line 206, in load_doctype_module
-    raise ImportError('Module import failed for {0} ({1})'.format(doctype, module_name + ' Error: ' + str(e)))
-ImportError: Module import failed for At Sales Table (frappe.custom.doctype.at_sales_table.at_sales_table Error: No module named 'frappe.custom.doctype.at_sales_table.at_sales_table')
-[ERROR] 2021-03-06 08:22:00,685 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
-New Exception collected with id: 2021-03-06 08:22:00.651170-10.0.2.2-6d4
-[DEBUG] 2021-03-06 08:22:13,969 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:23:14,440 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:24:14,936 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:25:15,378 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:26:15,910 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[ERROR] 2021-03-06 08:26:53,391 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 296, in _save
+    self.insert()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 230, in insert
+    self.run_before_save_methods()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 896, in run_before_save_methods
+    self.run_method("validate")
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 797, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 1073, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 1056, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 791, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/selling/doctype/quotation/quotation.py", line 26, in validate
+    super(Quotation, self).validate()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/selling_controller.py", line 40, in validate
+    super(SellingController, self).validate()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/stock_controller.py", line 21, in validate
+    super(StockController, self).validate()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/accounts_controller.py", line 80, in validate
+    self.calculate_taxes_and_totals()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/accounts_controller.py", line 189, in calculate_taxes_and_totals
+    calculate_taxes_and_totals(self)
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/taxes_and_totals.py", line 17, in __init__
+    self.calculate()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/taxes_and_totals.py", line 24, in calculate
+    self._calculate()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/taxes_and_totals.py", line 38, in _calculate
+    self.calculate_item_values()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/taxes_and_totals.py", line 123, in calculate_item_values
+    item.amount = flt(item.rate * item.qty,	item.precision("amount"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/base_document.py", line 732, in precision
+    if df.fieldtype in ("Currency", "Float", "Percent"):
+AttributeError: 'NoneType' object has no attribute 'fieldtype'
+[ERROR] 2021-03-09 15:45:48,098 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
 Site: site1.local
 Form Dict: {
- "action": "Save",
- "cmd": "frappe.desk.form.save.savedocs",
- "doc": "{\"docstatus\":0,\"doctype\":\"Item\",\"name\":\"New Item 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"naming_series\":\"STO-ITEM-.YYYY.-\",\"is_item_from_hub\":0,\"disabled\":0,\"allow_alternative_item\":0,\"is_stock_item\":1,\"include_item_in_manufacturing\":1,\"is_fixed_asset\":0,\"auto_create_assets\":0,\"click_on_installation\":1,\"click_on_demo\":1,\"at_sales\":1,\"at_purchase\":1,\"buying_tax\":\"5%\",\"selling1_tax\":\"5%\",\"bgl_selling2_tax\":\"5%\",\"end_of_life\":\"2099-12-31\",\"default_material_request_type\":\"Purchase\",\"valuation_method\":\"\",\"has_batch_no\":0,\"create_new_batch\":0,\"has_expiry_date\":0,\"retain_sample\":0,\"has_serial_no\":0,\"has_variants\":0,\"variant_based_on\":\"Item Attribute\",\"is_purchase_item\":1,\"min_order_qty\":0,\"is_customer_provided_item\":0,\"delivered_by_supplier\":0,\"country_of_origin\":\"India\",\"is_sales_item\":1,\"enable_deferred_revenue\":0,\"enable_deferred_expense\":0,\"inspection_required_before_purchase\":0,\"inspection_required_before_delivery\":0,\"is_sub_contracted_item\":0,\"show_in_website\":0,\"show_variant_in_website\":0,\"publish_in_hub\":0,\"synced_with_hub\":0,\"sales_warrenty_period\":[{\"docstatus\":0,\"doctype\":\"At Sales\",\"name\":\"New At Sales 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"description\":\"Body\",\"timeperiod\":\"12\",\"parent\":\"New Item 1\",\"parentfield\":\"sales_warrenty_period\",\"parenttype\":\"Item\",\"idx\":1,\"__unedited\":true}],\"item_code\":\"test\",\"item_name\":\"test\",\"description\":\"test\",\"hsn_code\":\"tess\",\"item_group\":\"Kitchen Tools\",\"item_sub_sub_group_for_kitchen_tools\":\"WOODEN KITCHEN TOOL\",\"stock_uom\":\"Unit\",\"vendor_name\":\"Ananya\",\"installation_time_duration\":\"45\",\"demo_time_duration\":\"45\",\"purchase_warrenty_period\":[{\"docstatus\":0,\"doctype\":\"At Purchase Table\",\"name\":\"New At Purchase Table 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"manufacturing_date\":\"2020\",\"time_left_for_expiry\":\"12\",\"parent\":\"New Item 1\",\"parentfield\":\"purchase_warrenty_period\",\"parenttype\":\"Item\",\"idx\":1,\"__unedited\":true}],\"item_defaults\":[{\"docstatus\":0,\"doctype\":\"Item Default\",\"name\":\"New Item Default 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"parent\":\"New Item 1\",\"parentfield\":\"item_defaults\",\"parenttype\":\"Item\",\"idx\":1,\"__unedited\":false,\"company\":\"BGL Stores\"}]}"
+ "cmd": "frappe.model.rename_doc.update_document_title",
+ "docname": "Item Quotation",
+ "doctype": "DocType",
+ "merge": "0",
+ "new_name": "BGL Quotation Item",
+ "title_field": ""
 }
 Request Error
-Traceback (most recent call last):
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
-    doctype_python_modules[key] = frappe.get_module(module_name)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 836, in get_module
-    return importlib.import_module(modulename)
-  File "/home/frappe/frappe-bench/env/lib/python3.6/importlib/__init__.py", line 126, in import_module
-    return _bootstrap._gcd_import(name[level:], package, level)
-  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
-  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
-ModuleNotFoundError: No module named 'frappe.custom.doctype.at_purchase_table.at_purchase_table'
-
-During handling of the above exception, another exception occurred:
-
 Traceback (most recent call last):
   File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 67, in application
     response = frappe.api.handle()
@@ -979,683 +192,355 @@ Traceback (most recent call last):
     return frappe.call(method, **frappe.form_dict)
   File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1071, in call
     return fn(*args, **newargs)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/save.py", line 12, in savedocs
-    doc = frappe.get_doc(json.loads(doc))
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 762, in get_doc
-    doc = frappe.model.document.get_doc(*args, **kwargs)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 71, in get_doc
-    return controller(*args, **kwargs)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/website/website_generator.py", line 16, in __init__
-    super(WebsiteGenerator, self).__init__(*args, **kwargs)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 115, in __init__
-    super(Document, self).__init__(kwargs)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/base_document.py", line 66, in __init__
-    self.update(d)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/base_document.py", line 89, in update
-    self.set(key, value)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/base_document.py", line 136, in set
-    self.extend(key, value)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/base_document.py", line 173, in extend
-    self.append(key, v)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/base_document.py", line 150, in append
-    value = self._init_child(value, key)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/base_document.py", line 189, in _init_child
-    value = get_controller(value["doctype"])(value)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/base_document.py", line 48, in get_controller
-    module = load_doctype_module(doctype, module_name)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/modules/utils.py", line 206, in load_doctype_module
-    raise ImportError('Module import failed for {0} ({1})'.format(doctype, module_name + ' Error: ' + str(e)))
-ImportError: Module import failed for At Purchase Table (frappe.custom.doctype.at_purchase_table.at_purchase_table Error: No module named 'frappe.custom.doctype.at_purchase_table.at_purchase_table')
-[ERROR] 2021-03-06 08:26:53,423 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
-New Exception collected with id: 2021-03-06 08:26:53.392710-10.0.2.2-1fe
-[DEBUG] 2021-03-06 08:27:16,631 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:28:17,248 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:29:17,634 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:30:18,245 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:31:18,740 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:32:19,081 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:33:19,892 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:34:20,497 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:35:20,858 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:36:21,107 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:37:21,592 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:38:22,289 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:39:22,789 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:40:23,146 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:41:23,591 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:42:24,063 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:43:24,569 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:44:25,167 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:45:25,689 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:46:26,742 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:47:27,527 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:48:27,792 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:49:28,533 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:50:29,026 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:51:29,613 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:52:30,025 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:53:30,557 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:54:31,028 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:55:31,676 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:56:32,106 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:57:32,800 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:58:33,410 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 08:59:33,883 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 09:00:34,671 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 09:01:35,261 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 09:02:36,154 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 09:03:36,836 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 09:04:37,310 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 09:05:37,720 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 09:06:38,269 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 09:07:38,907 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 09:08:39,334 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 09:09:40,042 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 09:10:40,872 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 09:11:41,428 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 09:12:42,183 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 09:13:42,763 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 09:14:43,528 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 09:15:44,101 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 09:16:44,391 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 09:17:44,884 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 09:18:45,276 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 09:19:45,703 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 09:20:46,197 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 09:21:46,730 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 09:22:47,440 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 09:23:47,824 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 09:24:48,312 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 09:25:48,804 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 09:26:49,426 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 09:27:49,796 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-06 09:28:50,151 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-                                                                                                                                                        [DEBUG] 2021-03-08 10:17:51,453 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 10:18:51,911 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 10:19:52,873 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 10:20:53,360 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 10:21:54,036 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 10:22:54,444 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 10:23:54,966 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 10:24:55,323 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 10:25:55,991 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 10:26:57,011 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 10:27:57,209 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 10:28:57,895 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 10:29:58,252 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 10:30:59,116 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 10:31:59,646 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 10:33:00,000 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 10:34:00,640 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 10:35:00,947 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 10:36:01,409 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 10:37:01,918 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 10:38:02,527 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 10:39:03,038 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 10:40:03,479 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 10:41:04,030 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 10:42:04,560 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 10:43:05,084 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 10:44:05,686 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 10:45:06,021 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 10:46:06,708 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 10:47:07,034 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 10:48:07,531 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 10:49:08,266 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 10:50:08,660 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 10:51:09,134 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 10:52:09,905 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 10:53:10,335 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 10:54:10,903 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 10:55:11,356 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 10:56:12,093 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 10:57:12,997 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 10:58:14,054 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 10:59:14,853 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:00:15,365 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:01:15,817 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:02:16,879 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:03:17,902 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:04:19,521 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:05:20,350 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:06:21,697 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:07:22,129 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:08:22,477 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:09:22,844 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:10:23,460 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:11:23,748 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:12:24,555 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:13:24,777 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:14:25,587 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:15:25,902 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:16:26,236 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:17:26,931 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:18:27,588 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:19:28,165 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:20:28,554 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:21:29,085 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:22:29,500 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:23:29,912 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:24:30,399 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:25:30,933 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:26:31,766 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:27:32,442 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:28:32,947 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:29:33,273 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:34:04,760 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:35:05,219 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:36:05,718 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:37:06,043 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:38:06,660 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:39:06,917 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:40:10,934 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:41:11,343 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:42:11,757 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:43:12,526 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:44:12,853 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:45:13,160 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:46:13,906 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:47:14,879 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:48:15,453 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:49:15,946 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:50:16,346 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:51:16,823 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:52:17,540 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:53:17,926 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:54:18,357 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:55:18,598 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:56:18,862 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:57:19,400 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:58:20,124 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 11:59:21,078 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:00:21,525 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:01:22,195 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:02:22,967 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:03:23,426 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:04:23,914 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:05:24,781 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:06:25,261 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:07:25,760 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:08:26,426 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:09:26,872 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:10:27,272 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:11:27,931 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:12:28,547 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:13:29,388 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:14:29,770 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:15:30,110 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:16:30,494 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:17:30,852 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:18:31,224 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:19:31,794 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:20:32,589 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:21:33,363 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:22:34,370 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:23:34,835 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:24:35,306 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:25:35,523 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:26:36,440 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:27:36,970 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:28:37,491 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:29:38,035 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:30:38,525 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:31:38,920 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:32:39,490 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:33:39,939 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:34:40,349 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-                                                                                                                                                        [DEBUG] 2021-03-08 12:41:56,946 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:42:57,596 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:43:58,113 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:44:58,567 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:45:58,884 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:46:59,154 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:47:59,526 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:48:59,997 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:50:00,265 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:51:00,632 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:52:01,012 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:53:01,589 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:54:02,237 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:55:02,750 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:56:03,069 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:57:03,610 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:58:04,057 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 12:59:04,324 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-08 13:00:04,585 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-09 05:03:47,339 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-09 05:04:47,667 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
-[DEBUG] 2021-03-09 05:05:47,935 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
-Site: site1.local
-Queued events for site site1.local
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/rename_doc.py", line 20, in update_document_title
+    docname = rename_doc(doctype=doctype, old=docname, new=new_name, merge=merge)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/rename_doc.py", line 64, in rename_doc
+    rename_dynamic_links(doctype, old, new)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/rename_doc.py", line 408, in rename_dynamic_links
+    for df in get_dynamic_link_map().get(doctype, []):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/dynamic_links.py", line 45, in get_dynamic_link_map
+    links = frappe.db.sql_list("""select distinct {options} from `tab{parent}`""".format(**df))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 236, in sql_list
+    return [r[0] for r in self.sql(query, values, debug=debug)]
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 171, in sql
+    self._cursor.execute(query)
+  File "/home/frappe/frappe-bench/env/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/frappe/frappe-bench/env/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/frappe/frappe-bench/env/lib/python3.6/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/frappe/frappe-bench/env/lib/python3.6/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/home/frappe/frappe-bench/env/lib/python3.6/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/home/frappe/frappe-bench/env/lib/python3.6/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/home/frappe/frappe-bench/env/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/frappe/frappe-bench/env/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table '_1bd3e0294da19198.tabBGL Quotation Item' doesn't exist")
+[ERROR] 2021-03-09 15:48:18,447 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: site1.local
+Form Dict: {
+ "cmd": "frappe.model.rename_doc.update_document_title",
+ "docname": "Item Quotation",
+ "doctype": "DocType",
+ "merge": "0",
+ "new_name": "BGL Quotation Item",
+ "title_field": ""
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1071, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/rename_doc.py", line 20, in update_document_title
+    docname = rename_doc(doctype=doctype, old=docname, new=new_name, merge=merge)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/rename_doc.py", line 64, in rename_doc
+    rename_dynamic_links(doctype, old, new)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/rename_doc.py", line 408, in rename_dynamic_links
+    for df in get_dynamic_link_map().get(doctype, []):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/dynamic_links.py", line 45, in get_dynamic_link_map
+    links = frappe.db.sql_list("""select distinct {options} from `tab{parent}`""".format(**df))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 236, in sql_list
+    return [r[0] for r in self.sql(query, values, debug=debug)]
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 171, in sql
+    self._cursor.execute(query)
+  File "/home/frappe/frappe-bench/env/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/frappe/frappe-bench/env/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/frappe/frappe-bench/env/lib/python3.6/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/frappe/frappe-bench/env/lib/python3.6/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/home/frappe/frappe-bench/env/lib/python3.6/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/home/frappe/frappe-bench/env/lib/python3.6/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/home/frappe/frappe-bench/env/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/frappe/frappe-bench/env/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table '_1bd3e0294da19198.tabBGL Quotation Item' doesn't exist")
+[ERROR] 2021-03-09 15:52:56,431 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: site1.local
+Form Dict: {
+ "action": "Save",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"docstatus\":0,\"doctype\":\"Quotation\",\"name\":\"New Quotation 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"naming_series\":\"SAL-QTN-.YYYY.-\",\"quotation_to\":\"Customer\",\"transaction_date\":\"2021-03-11\",\"order_type\":\"Sales\",\"customer_group\":\"All Customer Groups\",\"territory\":\"All Territories\",\"currency\":\"INR\",\"selling_price_list\":\"Indian Rupees\",\"price_list_currency\":\"INR\",\"ignore_pricing_rule\":0,\"apply_discount_on\":\"Grand Total\",\"group_same_items\":0,\"status\":\"Draft\",\"conversion_rate\":1,\"plc_conversion_rate\":1,\"company\":\"BGL Stores\",\"valid_till\":\"2021-04-11\",\"base_net_total\":27000,\"net_total\":27000,\"base_total\":27000,\"total\":27000,\"total_qty\":5,\"rounding_adjustment\":0,\"grand_total\":27000,\"base_grand_total\":27000,\"total_taxes_and_charges\":0,\"base_total_taxes_and_charges\":0,\"base_rounding_adjustment\":0,\"rounded_total\":27000,\"base_rounded_total\":27000,\"in_words\":\"\",\"base_in_words\":\"\",\"base_discount_amount\":0,\"item_details\":\"sam001\",\"items\":[{\"docstatus\":0,\"doctype\":\"Item Quotation\",\"name\":\"New Item Quotation 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"is_free_item\":0,\"parent\":\"New Quotation 1\",\"parentfield\":\"items\",\"parenttype\":\"Quotation\",\"idx\":1,\"item_code\":\"sam001\",\"item_name\":\"sample\",\"hsn_code\":\"446\",\"qty\":5,\"item_tax_percentage\":\"5%\",\"mrp\":5400,\"image\":\"/files/jos png.png\",\"price_list_rate\":5400,\"child_docname\":\"New Item Quotation 1\",\"discount_percentage_on_rate\":[],\"discount_amount_on_rate\":[],\"conversion_factor\":0,\"stock_qty\":0,\"base_price_list_rate\":5400,\"margin_rate_or_amount\":0,\"rate_with_margin\":5400,\"discount_amount\":0,\"base_rate_with_margin\":5400,\"rate\":5400,\"net_rate\":5400,\"amount\":27000,\"net_amount\":27000,\"base_rate\":5400,\"base_net_rate\":5400,\"base_amount\":27000,\"base_net_amount\":27000,\"weight_per_unit\":0,\"total_weight\":0,\"discount_percentage\":0}],\"party_name\":\"Prasanna\",\"customer_address\":\"Prasanna-Billing\",\"address_display\":\"1-19-158<br>Near Test<br>Vizag<br>\\nAndhra pradesh<br>535005<br>India<br>\\nPhone: 9876542<br>GST State Number : 37<br>Fax: 7979<br>Email: web@f9tech.com<br>\",\"shipping_address_name\":\"\",\"shipping_address\":null,\"contact_person\":\"Prasanna-Prasanna\",\"contact_display\":\"Prasanna\",\"contact_email\":\"web@f9tech.com\",\"contact_mobile\":\"9876543210\",\"customer_name\":\"Prasanna\",\"language\":\"en\",\"tax_category\":\"GST\",\"taxes_and_charges\":null,\"payment_terms_template\":null}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1071, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 296, in _save
+    self.insert()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 230, in insert
+    self.run_before_save_methods()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 896, in run_before_save_methods
+    self.run_method("validate")
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 797, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 1073, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 1056, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 791, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/selling/doctype/quotation/quotation.py", line 26, in validate
+    super(Quotation, self).validate()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/selling_controller.py", line 40, in validate
+    super(SellingController, self).validate()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/stock_controller.py", line 21, in validate
+    super(StockController, self).validate()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/accounts_controller.py", line 80, in validate
+    self.calculate_taxes_and_totals()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/accounts_controller.py", line 189, in calculate_taxes_and_totals
+    calculate_taxes_and_totals(self)
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/taxes_and_totals.py", line 17, in __init__
+    self.calculate()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/taxes_and_totals.py", line 24, in calculate
+    self._calculate()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/taxes_and_totals.py", line 43, in _calculate
+    self.calculate_taxes()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/taxes_and_totals.py", line 250, in calculate_taxes
+    item_tax_map = self._load_item_tax_rate(item.item_tax_rate)
+AttributeError: 'ItemQuotation' object has no attribute 'item_tax_rate'
+[ERROR] 2021-03-09 15:55:09,163 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: site1.local
+Form Dict: {
+ "action": "Save",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"docstatus\":0,\"doctype\":\"Quotation\",\"name\":\"New Quotation 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"naming_series\":\"SAL-QTN-.YYYY.-\",\"quotation_to\":\"Customer\",\"transaction_date\":\"2021-03-11\",\"order_type\":\"Sales\",\"customer_group\":\"All Customer Groups\",\"territory\":\"All Territories\",\"currency\":\"INR\",\"selling_price_list\":\"Indian Rupees\",\"price_list_currency\":\"INR\",\"ignore_pricing_rule\":0,\"apply_discount_on\":\"Grand Total\",\"group_same_items\":0,\"status\":\"Draft\",\"conversion_rate\":1,\"plc_conversion_rate\":1,\"company\":\"BGL Stores\",\"valid_till\":\"2021-04-11\",\"base_net_total\":33500,\"net_total\":33500,\"base_total\":33500,\"total\":33500,\"total_qty\":6,\"rounding_adjustment\":0,\"grand_total\":33500,\"base_grand_total\":33500,\"total_taxes_and_charges\":0,\"base_total_taxes_and_charges\":0,\"base_rounding_adjustment\":0,\"rounded_total\":33500,\"base_rounded_total\":33500,\"in_words\":\"\",\"base_in_words\":\"\",\"base_discount_amount\":0,\"item_details\":\"sam001\",\"items\":[{\"docstatus\":0,\"doctype\":\"Item Quotation\",\"name\":\"New Item Quotation 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"is_free_item\":0,\"parent\":\"New Quotation 1\",\"parentfield\":\"items\",\"parenttype\":\"Quotation\",\"idx\":1,\"item_code\":\"sam001\",\"item_name\":\"sample\",\"hsn_code\":\"446\",\"qty\":5,\"item_tax_percentage\":\"5%\",\"mrp\":5400,\"image\":\"/files/jos png.png\",\"price_list_rate\":5400,\"child_docname\":\"New Item Quotation 1\",\"discount_percentage_on_rate\":[],\"discount_amount_on_rate\":[],\"conversion_factor\":0,\"stock_qty\":0,\"base_price_list_rate\":5400,\"margin_rate_or_amount\":0,\"rate_with_margin\":5400,\"discount_amount\":0,\"base_rate_with_margin\":5400,\"rate\":5400,\"net_rate\":5400,\"amount\":27000,\"net_amount\":27000,\"base_rate\":5400,\"base_net_rate\":5400,\"base_amount\":27000,\"base_net_amount\":27000,\"total_weight\":null,\"discount_percentage\":0,\"enter_qty\":\"50\",\"total_amount\":270000},{\"docstatus\":0,\"doctype\":\"Item Quotation\",\"name\":\"New Item Quotation 2\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"is_free_item\":0,\"parent\":\"New Quotation 1\",\"parentfield\":\"items\",\"parenttype\":\"Quotation\",\"idx\":2,\"__unedited\":false,\"item_code\":\"CK Ware\",\"barcode\":null,\"item_name\":\"Cook ware\",\"description\":\"<div><strong>Lorem Ipsum</strong>\u00a0is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled\u00a0</div>\",\"image\":\"/files/cooker.jpg\",\"warehouse\":\"Stores - BS\",\"income_account\":null,\"expense_account\":null,\"cost_center\":null,\"has_serial_no\":1,\"has_batch_no\":0,\"batch_no\":null,\"uom\":\"Box\",\"min_order_qty\":\"\",\"qty\":1,\"stock_qty\":1,\"price_list_rate\":6500,\"base_price_list_rate\":6500,\"rate\":6500,\"base_rate\":6500,\"amount\":6500,\"base_amount\":6500,\"net_rate\":6500,\"net_amount\":6500,\"discount_percentage\":0,\"supplier\":null,\"update_stock\":0,\"delivered_by_supplier\":0,\"is_fixed_asset\":0,\"weight_per_unit\":65,\"weight_uom\":\"\",\"last_purchase_rate\":0,\"transaction_date\":\"2021-03-11\",\"conversion_factor\":1,\"item_group\":\"All Item Groups\",\"barcodes\":[],\"brand\":\"Pigeon\",\"stock_uom\":\"Box\",\"manufacturer\":null,\"manufacturer_part_no\":null,\"item_tax_rate\":\"{}\",\"customer_item_code\":\"100\",\"valuation_rate\":0,\"projected_qty\":1,\"actual_qty\":0,\"reserved_qty\":0,\"child_docname\":\"New Item Quotation 2\",\"discount_percentage_on_rate\":[],\"discount_amount_on_rate\":[],\"rate_with_margin\":6500,\"base_rate_with_margin\":6500,\"mrp\":50,\"margin_rate_or_amount\":0,\"discount_amount\":0,\"base_net_rate\":6500,\"base_net_amount\":6500,\"total_weight\":65,\"total_amount\":250,\"enter_qty\":\"5\"}],\"party_name\":\"Prasanna\",\"customer_address\":\"Prasanna-Billing\",\"address_display\":\"1-19-158<br>Near Test<br>Vizag<br>\\nAndhra pradesh<br>535005<br>India<br>\\nPhone: 9876542<br>GST State Number : 37<br>Fax: 7979<br>Email: web@f9tech.com<br>\",\"shipping_address_name\":\"\",\"shipping_address\":null,\"contact_person\":\"Prasanna-Prasanna\",\"contact_display\":\"Prasanna\",\"contact_email\":\"web@f9tech.com\",\"contact_mobile\":\"9876543210\",\"customer_name\":\"Prasanna\",\"language\":\"en\",\"tax_category\":\"GST\",\"taxes_and_charges\":null,\"payment_terms_template\":null,\"total_net_weight\":null}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1071, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 296, in _save
+    self.insert()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 230, in insert
+    self.run_before_save_methods()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 896, in run_before_save_methods
+    self.run_method("validate")
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 797, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 1073, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 1056, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 791, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/selling/doctype/quotation/quotation.py", line 28, in validate
+    self.update_opportunity()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/selling/doctype/quotation/quotation.py", line 54, in update_opportunity
+    for opportunity in list(set([d.prevdoc_docname for d in self.get("items")])):
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/selling/doctype/quotation/quotation.py", line 54, in <listcomp>
+    for opportunity in list(set([d.prevdoc_docname for d in self.get("items")])):
+AttributeError: 'ItemQuotation' object has no attribute 'prevdoc_docname'
+[ERROR] 2021-03-09 15:59:21,959 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: site1.local
+Form Dict: {
+ "action": "Save",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"docstatus\":0,\"doctype\":\"Quotation\",\"name\":\"New Quotation 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"naming_series\":\"SAL-QTN-.YYYY.-\",\"quotation_to\":\"Customer\",\"transaction_date\":\"2021-03-11\",\"order_type\":\"Sales\",\"customer_group\":\"All Customer Groups\",\"territory\":\"All Territories\",\"currency\":\"INR\",\"selling_price_list\":\"Indian Rupees\",\"price_list_currency\":\"INR\",\"ignore_pricing_rule\":0,\"apply_discount_on\":\"Grand Total\",\"group_same_items\":0,\"status\":\"Draft\",\"conversion_rate\":1,\"plc_conversion_rate\":1,\"company\":\"BGL Stores\",\"valid_till\":\"2021-04-11\",\"base_net_total\":27000,\"net_total\":27000,\"base_total\":27000,\"total\":27000,\"total_qty\":5,\"rounding_adjustment\":0,\"grand_total\":27000,\"base_grand_total\":27000,\"total_taxes_and_charges\":0,\"base_total_taxes_and_charges\":0,\"base_rounding_adjustment\":0,\"rounded_total\":27000,\"base_rounded_total\":27000,\"in_words\":\"\",\"base_in_words\":\"\",\"base_discount_amount\":0,\"item_details\":\"sam001\",\"items\":[{\"docstatus\":0,\"doctype\":\"Item Quotation\",\"name\":\"New Item Quotation 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"parent\":\"New Quotation 1\",\"parentfield\":\"items\",\"parenttype\":\"Quotation\",\"idx\":1,\"item_code\":\"sam001\",\"item_name\":\"sample\",\"hsn_code\":\"446\",\"qty\":5,\"item_tax_percentage\":\"5%\",\"mrp\":5400,\"image\":\"/files/jos png.png\",\"price_list_rate\":5400,\"child_docname\":\"New Item Quotation 1\",\"discount_percentage_on_rate\":[],\"discount_amount_on_rate\":[],\"conversion_factor\":0,\"stock_qty\":0,\"base_price_list_rate\":5400,\"margin_rate_or_amount\":0,\"rate_with_margin\":5400,\"discount_amount\":0,\"base_rate_with_margin\":5400,\"rate\":5400,\"net_rate\":5400,\"amount\":27000,\"net_amount\":27000,\"total_weight\":null,\"base_rate\":5400,\"base_amount\":27000,\"base_net_rate\":5400,\"base_net_amount\":27000,\"discount_percentage\":0,\"enter_qty\":\"45\",\"total_amount\":243000}],\"party_name\":\"Prasanna\",\"customer_address\":\"Prasanna-Billing\",\"address_display\":\"1-19-158<br>Near Test<br>Vizag<br>\\nAndhra pradesh<br>535005<br>India<br>\\nPhone: 9876542<br>GST State Number : 37<br>Fax: 7979<br>Email: web@f9tech.com<br>\",\"shipping_address_name\":\"\",\"shipping_address\":null,\"contact_person\":\"Prasanna-Prasanna\",\"contact_display\":\"Prasanna\",\"contact_email\":\"web@f9tech.com\",\"contact_mobile\":\"9876543210\",\"customer_name\":\"Prasanna\",\"language\":\"en\",\"tax_category\":\"GST\",\"taxes_and_charges\":null,\"payment_terms_template\":null}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1071, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 296, in _save
+    self.insert()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 230, in insert
+    self.run_before_save_methods()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 896, in run_before_save_methods
+    self.run_method("validate")
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 797, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 1073, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 1056, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 791, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/selling/doctype/quotation/quotation.py", line 26, in validate
+    super(Quotation, self).validate()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/selling_controller.py", line 40, in validate
+    super(SellingController, self).validate()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/stock_controller.py", line 21, in validate
+    super(StockController, self).validate()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/accounts_controller.py", line 80, in validate
+    self.calculate_taxes_and_totals()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/accounts_controller.py", line 189, in calculate_taxes_and_totals
+    calculate_taxes_and_totals(self)
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/taxes_and_totals.py", line 17, in __init__
+    self.calculate()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/taxes_and_totals.py", line 24, in calculate
+    self._calculate()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/taxes_and_totals.py", line 38, in _calculate
+    self.calculate_item_values()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/taxes_and_totals.py", line 123, in calculate_item_values
+    item.amount = flt(item.rate * item.qty,	item.precision("amount"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/base_document.py", line 732, in precision
+    if df.fieldtype in ("Currency", "Float", "Percent"):
+AttributeError: 'NoneType' object has no attribute 'fieldtype'
+[ERROR] 2021-03-09 16:02:01,329 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: site1.local
+Form Dict: {
+ "action": "Save",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"docstatus\":0,\"doctype\":\"Quotation\",\"name\":\"New Quotation 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"naming_series\":\"SAL-QTN-.YYYY.-\",\"quotation_to\":\"Customer\",\"transaction_date\":\"2021-03-11\",\"order_type\":\"Sales\",\"customer_group\":\"All Customer Groups\",\"territory\":\"All Territories\",\"currency\":\"INR\",\"selling_price_list\":\"Indian Rupees\",\"price_list_currency\":\"INR\",\"ignore_pricing_rule\":0,\"apply_discount_on\":\"Grand Total\",\"group_same_items\":0,\"status\":\"Draft\",\"conversion_rate\":1,\"plc_conversion_rate\":1,\"company\":\"BGL Stores\",\"valid_till\":\"2021-04-11\",\"base_net_total\":27000,\"net_total\":27000,\"base_total\":27000,\"total\":27000,\"total_qty\":5,\"rounding_adjustment\":0,\"grand_total\":27000,\"base_grand_total\":27000,\"total_taxes_and_charges\":0,\"base_total_taxes_and_charges\":0,\"base_rounding_adjustment\":0,\"rounded_total\":27000,\"base_rounded_total\":27000,\"in_words\":\"\",\"base_in_words\":\"\",\"base_discount_amount\":0,\"item_details\":\"sam001\",\"items\":[{\"docstatus\":0,\"doctype\":\"Item Quotation\",\"name\":\"New Item Quotation 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"parent\":\"New Quotation 1\",\"parentfield\":\"items\",\"parenttype\":\"Quotation\",\"idx\":1,\"item_code\":\"sam001\",\"item_name\":\"sample\",\"hsn_code\":\"446\",\"qty\":5,\"item_tax_percentage\":\"5%\",\"mrp\":5400,\"image\":\"/files/jos png.png\",\"enter_qty\":\"50\",\"total_amount\":270000,\"price_list_rate\":5400,\"child_docname\":\"New Item Quotation 1\",\"discount_percentage_on_rate\":[],\"discount_amount_on_rate\":[],\"conversion_factor\":0,\"stock_qty\":0,\"base_price_list_rate\":5400,\"margin_rate_or_amount\":0,\"rate_with_margin\":5400,\"discount_amount\":0,\"base_rate_with_margin\":5400,\"rate\":5400,\"net_rate\":5400,\"amount\":27000,\"net_amount\":27000,\"total_weight\":null,\"base_rate\":5400,\"base_amount\":27000,\"base_net_rate\":5400,\"base_net_amount\":27000,\"discount_percentage\":0}],\"party_name\":\"Prasanna\",\"customer_address\":\"Prasanna-Billing\",\"address_display\":\"1-19-158<br>Near Test<br>Vizag<br>\\nAndhra pradesh<br>535005<br>India<br>\\nPhone: 9876542<br>GST State Number : 37<br>Fax: 7979<br>Email: web@f9tech.com<br>\",\"shipping_address_name\":\"\",\"shipping_address\":null,\"contact_person\":\"Prasanna-Prasanna\",\"contact_display\":\"Prasanna\",\"contact_email\":\"web@f9tech.com\",\"contact_mobile\":\"9876543210\",\"customer_name\":\"Prasanna\",\"language\":\"en\",\"tax_category\":\"GST\",\"taxes_and_charges\":null,\"payment_terms_template\":null}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1071, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 296, in _save
+    self.insert()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 230, in insert
+    self.run_before_save_methods()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 896, in run_before_save_methods
+    self.run_method("validate")
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 797, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 1073, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 1056, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 791, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/selling/doctype/quotation/quotation.py", line 26, in validate
+    super(Quotation, self).validate()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/selling_controller.py", line 40, in validate
+    super(SellingController, self).validate()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/stock_controller.py", line 21, in validate
+    super(StockController, self).validate()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/accounts_controller.py", line 80, in validate
+    self.calculate_taxes_and_totals()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/accounts_controller.py", line 189, in calculate_taxes_and_totals
+    calculate_taxes_and_totals(self)
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/taxes_and_totals.py", line 17, in __init__
+    self.calculate()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/taxes_and_totals.py", line 24, in calculate
+    self._calculate()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/taxes_and_totals.py", line 38, in _calculate
+    self.calculate_item_values()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/taxes_and_totals.py", line 123, in calculate_item_values
+    item.amount = flt(item.rate * item.qty,	item.precision("amount"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/base_document.py", line 732, in precision
+    if df.fieldtype in ("Currency", "Float", "Percent"):
+AttributeError: 'NoneType' object has no attribute 'fieldtype'
+[ERROR] 2021-03-09 16:13:19,072 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: site1.local
+Form Dict: {
+ "action": "Save",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"docstatus\":0,\"doctype\":\"Quotation\",\"name\":\"New Quotation 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"naming_series\":\"SAL-QTN-.YYYY.-\",\"quotation_to\":\"Customer\",\"transaction_date\":\"2021-03-11\",\"order_type\":\"Sales\",\"customer_group\":\"All Customer Groups\",\"territory\":\"All Territories\",\"currency\":\"INR\",\"selling_price_list\":\"Indian Rupees\",\"price_list_currency\":\"INR\",\"ignore_pricing_rule\":0,\"apply_discount_on\":\"Grand Total\",\"group_same_items\":0,\"status\":\"Draft\",\"conversion_rate\":1,\"plc_conversion_rate\":1,\"company\":\"BGL Stores\",\"valid_till\":\"2021-04-11\",\"base_net_total\":null,\"net_total\":null,\"base_total\":null,\"total\":null,\"total_qty\":5,\"rounding_adjustment\":null,\"grand_total\":null,\"base_grand_total\":null,\"total_taxes_and_charges\":null,\"base_total_taxes_and_charges\":null,\"base_rounding_adjustment\":null,\"rounded_total\":null,\"base_rounded_total\":null,\"in_words\":\"\",\"base_in_words\":\"\",\"base_discount_amount\":0,\"party_name\":\"Prasanna\",\"customer_address\":\"Prasanna-Billing\",\"address_display\":\"1-19-158<br>Near Test<br>Vizag<br>\\nAndhra pradesh<br>535005<br>India<br>\\nPhone: 9876542<br>GST State Number : 37<br>Fax: 7979<br>Email: web@f9tech.com<br>\",\"shipping_address_name\":\"\",\"shipping_address\":null,\"contact_person\":\"Prasanna-Prasanna\",\"contact_display\":\"Prasanna\",\"contact_email\":\"web@f9tech.com\",\"contact_mobile\":\"9876543210\",\"customer_name\":\"Prasanna\",\"language\":\"en\",\"tax_category\":\"GST\",\"taxes_and_charges\":null,\"payment_terms_template\":null,\"item_details\":\"sam001\",\"items\":[{\"docstatus\":0,\"doctype\":\"Item Quotation\",\"name\":\"New Item Quotation 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"is_free_item\":0,\"parent\":\"New Quotation 1\",\"parentfield\":\"items\",\"parenttype\":\"Quotation\",\"idx\":1,\"item_code\":\"sam001\",\"item_name\":\"sample\",\"hsn_code\":\"446\",\"qty\":5,\"item_tax_percentage\":\"5%\",\"mrp\":5400,\"image\":\"/files/jos png.png\",\"enter_qty\":\"50\",\"total_amount\":270000,\"conversion_factor\":0,\"stock_qty\":0,\"price_list_rate\":0,\"base_price_list_rate\":0,\"margin_rate_or_amount\":0,\"rate_with_margin\":0,\"discount_amount\":0,\"base_rate_with_margin\":0,\"base_rate\":0,\"base_net_rate\":0,\"base_amount\":null,\"base_net_amount\":null,\"amount\":null,\"net_amount\":null,\"total_weight\":null}]}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1071, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 296, in _save
+    self.insert()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 230, in insert
+    self.run_before_save_methods()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 896, in run_before_save_methods
+    self.run_method("validate")
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 797, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 1073, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 1056, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 791, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/selling/doctype/quotation/quotation.py", line 26, in validate
+    super(Quotation, self).validate()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/selling_controller.py", line 40, in validate
+    super(SellingController, self).validate()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/stock_controller.py", line 21, in validate
+    super(StockController, self).validate()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/accounts_controller.py", line 80, in validate
+    self.calculate_taxes_and_totals()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/accounts_controller.py", line 189, in calculate_taxes_and_totals
+    calculate_taxes_and_totals(self)
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/taxes_and_totals.py", line 17, in __init__
+    self.calculate()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/taxes_and_totals.py", line 24, in calculate
+    self._calculate()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/taxes_and_totals.py", line 38, in _calculate
+    self.calculate_item_values()
+  File "/home/frappe/frappe-bench/apps/erpnext/erpnext/controllers/taxes_and_totals.py", line 118, in calculate_item_values
+    item.net_rate = item.rate
+AttributeError: 'ItemQuotation' object has no attribute 'rate'
