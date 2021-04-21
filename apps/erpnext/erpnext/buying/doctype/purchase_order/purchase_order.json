@@ -392,12 +392,14 @@
    "collapsible": 1,
    "fieldname": "currency_and_price_list",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Currency and Price List",
    "options": "fa fa-tag"
   },
   {
    "fieldname": "currency",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Currency",
    "oldfieldname": "currency",
    "oldfieldtype": "Select",
@@ -407,6 +409,7 @@
   {
    "fieldname": "conversion_rate",
    "fieldtype": "Float",
+   "hidden": 1,
    "label": "Exchange Rate",
    "oldfieldname": "conversion_rate",
    "oldfieldtype": "Currency",
@@ -415,11 +418,14 @@
   },
   {
    "fieldname": "cb_price_list",
-   "fieldtype": "Column Break"
+   "fieldtype": "Column Break",
+   "hidden": 1,
+   "print_hide": 1
   },
   {
    "fieldname": "buying_price_list",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Price List",
    "options": "Price List",
    "print_hide": 1
@@ -427,6 +433,7 @@
   {
    "fieldname": "price_list_currency",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Price List Currency",
    "options": "Currency",
    "print_hide": 1,
@@ -435,6 +442,7 @@
   {
    "fieldname": "plc_conversion_rate",
    "fieldtype": "Float",
+   "hidden": 1,
    "label": "Price List Exchange Rate",
    "precision": "9",
    "print_hide": 1
@@ -443,6 +451,7 @@
    "default": "0",
    "fieldname": "ignore_pricing_rule",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Ignore Pricing Rule",
    "no_copy": 1,
    "permlevel": 1,
@@ -467,6 +476,7 @@
    "default": "No",
    "fieldname": "is_subcontracted",
    "fieldtype": "Select",
+   "hidden": 1,
    "in_standard_filter": 1,
    "label": "Supply Raw Materials",
    "options": "No\nYes",
@@ -1268,7 +1278,7 @@
  "icon": "fa fa-file-text",
  "idx": 105,
  "is_submittable": 1,
- "modified": "2021-03-17 17:12:45.932249",
+ "modified": "2021-04-03 01:09:16.768721",
  "modified_by": "Administrator",
  "module": "Buying",
  "name": "Purchase Order",
