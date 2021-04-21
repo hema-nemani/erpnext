@@ -1,0 +1,199 @@
+{
+ "creation": "2021-04-21 18:11:04.943480",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "barcode",
+  "item_code",
+  "item_name",
+  "hsn_code",
+  "basic_price",
+  "tax_percentage",
+  "tax_amount",
+  "cost_price",
+  "mrp",
+  "installation_time",
+  "demo_time",
+  "col_break1",
+  "location",
+  "bay_number",
+  "bgl_selling_price_without_tax",
+  "bgl_selling_price_with_tax",
+  "qty",
+  "sm_number",
+  "entered_qty",
+  "discount",
+  "item_discount_amount",
+  "net_rate",
+  "total_mrp",
+  "image_section",
+  "image",
+  "image_view"
+ ],
+ "fields": [
+  {
+   "fieldname": "barcode",
+   "fieldtype": "Data",
+   "label": "Barcode"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item",
+   "options": "Item"
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Description",
+   "read_only": 1
+  },
+  {
+   "fieldname": "hsn_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "HSN Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "basic_price",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Basic Price",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tax_percentage",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Tax Percentage",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tax_amount",
+   "fieldtype": "Data",
+   "label": "Tax Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cost_price",
+   "fieldtype": "Data",
+   "label": "Cost Price",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mrp",
+   "fieldtype": "Data",
+   "label": "MRP",
+   "read_only": 1
+  },
+  {
+   "fieldname": "col_break1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bay_number",
+   "fieldtype": "Data",
+   "label": "Bay Number",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bgl_selling_price_without_tax",
+   "fieldtype": "Data",
+   "label": "SP Without TAX",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bgl_selling_price_with_tax",
+   "fieldtype": "Data",
+   "label": "SP With TAX",
+   "read_only": 1
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "label": "Available Quantity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sm_number",
+   "fieldtype": "Data",
+   "label": "SM Number"
+  },
+  {
+   "fieldname": "entered_qty",
+   "fieldtype": "Data",
+   "label": "Entered Qty"
+  },
+  {
+   "fieldname": "discount",
+   "fieldtype": "Data",
+   "label": "Discount In Percentage"
+  },
+  {
+   "fieldname": "item_discount_amount",
+   "fieldtype": "Data",
+   "label": "Item Discount Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "net_rate",
+   "fieldtype": "Currency",
+   "label": "Net Rate",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_mrp",
+   "fieldtype": "Data",
+   "label": "Total MRP",
+   "read_only": 1
+  },
+  {
+   "fieldname": "image_section",
+   "fieldtype": "Section Break",
+   "label": "Image"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach",
+   "label": "Image"
+  },
+  {
+   "fieldname": "image_view",
+   "fieldtype": "Image",
+   "label": "Image View"
+  },
+  {
+   "fieldname": "installation_time",
+   "fieldtype": "Data",
+   "label": "Installation Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "demo_time",
+   "fieldtype": "Data",
+   "label": "Demo Time",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-04-21 18:33:53.194162",
+ "modified_by": "Administrator",
+ "module": "Custom",
+ "name": "BGL Point Of Sales Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

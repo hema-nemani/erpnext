@@ -935,7 +935,8 @@
   {
    "fieldname": "tax_amount",
    "fieldtype": "Data",
-   "label": "Tax Amount"
+   "label": "Tax Amount",
+   "read_only": 1
   },
   {
    "fieldname": "cost_price",
@@ -952,12 +953,14 @@
   {
    "fieldname": "location",
    "fieldtype": "Data",
-   "label": "Location"
+   "label": "Location",
+   "read_only": 1
   },
   {
    "fieldname": "bay_number",
    "fieldtype": "Data",
-   "label": "Bay Number"
+   "label": "Bay Number",
+   "read_only": 1
   },
   {
    "fieldname": "bgl_selling_price_without_tax",
@@ -1001,7 +1004,7 @@
  ],
  "idx": 1,
  "istable": 1,
- "modified": "2021-04-02 21:47:55.761759",
+ "modified": "2021-04-21 17:39:54.383087",
  "modified_by": "Administrator",
  "module": "Accounts",
  "name": "Sales Invoice Item",

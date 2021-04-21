@@ -12584,3 +12584,237 @@ Traceback (most recent call last):
   File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 316, in _raise_exception
     raise raise_exception(msg)
 frappe.exceptions.DoesNotExistError: Item Item not found
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 34, in getdoc
+    doc = frappe.get_doc(doctype, name)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 762, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 71, in get_doc
+    return controller(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/website/website_generator.py", line 16, in __init__
+    super(WebsiteGenerator, self).__init__(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 106, in __init__
+    self.load_from_db()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 149, in load_from_db
+    frappe.throw(_("{0} {1} not found").format(_(self.doctype), self.name), frappe.DoesNotExistError)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 377, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 356, in msgprint
+    _raise_exception()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 316, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: Item Item not found
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 34, in getdoc
+    doc = frappe.get_doc(doctype, name)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 762, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 71, in get_doc
+    return controller(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/website/website_generator.py", line 16, in __init__
+    super(WebsiteGenerator, self).__init__(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 106, in __init__
+    self.load_from_db()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 149, in load_from_db
+    frappe.throw(_("{0} {1} not found").format(_(self.doctype), self.name), frappe.DoesNotExistError)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 377, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 356, in msgprint
+    _raise_exception()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 316, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: Item Item not found
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 296, in _save
+    self.insert()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 230, in insert
+    self.run_before_save_methods()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 896, in run_before_save_methods
+    self.run_method("validate")
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 797, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 1073, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 1056, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 791, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/doctype/doctype.py", line 78, in validate
+    validate_fields(self)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/doctype/doctype.py", line 969, in validate_fields
+    check_link_table_options(meta.get("name"), d)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/doctype/doctype.py", line 727, in check_link_table_options
+    frappe.throw(_("{0}: Options required for Link or Table type field {1} in row {2}").format(docname, d.label, d.idx), DoctypeLinkError)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 377, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 356, in msgprint
+    _raise_exception()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 316, in _raise_exception
+    raise raise_exception(msg)
+frappe.core.doctype.doctype.doctype.DoctypeLinkError: BGL Point Of Sales Item: Options required for Link or Table type field Item in row 2
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1071, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 296, in _save
+    self.insert()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 230, in insert
+    self.run_before_save_methods()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 896, in run_before_save_methods
+    self.run_method("validate")
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 797, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 1073, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 1056, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 791, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/doctype/doctype.py", line 78, in validate
+    validate_fields(self)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/doctype/doctype.py", line 969, in validate_fields
+    check_link_table_options(meta.get("name"), d)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/doctype/doctype.py", line 727, in check_link_table_options
+    frappe.throw(_("{0}: Options required for Link or Table type field {1} in row {2}").format(docname, d.label, d.idx), DoctypeLinkError)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 377, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 356, in msgprint
+    _raise_exception()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 316, in _raise_exception
+    raise raise_exception(msg)
+frappe.core.doctype.doctype.doctype.DoctypeLinkError: BGL Point Of Sales Item: Options required for Link or Table type field Item in row 2
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 34, in getdoc
+    doc = frappe.get_doc(doctype, name)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 762, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 71, in get_doc
+    return controller(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/website/website_generator.py", line 16, in __init__
+    super(WebsiteGenerator, self).__init__(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 106, in __init__
+    self.load_from_db()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 149, in load_from_db
+    frappe.throw(_("{0} {1} not found").format(_(self.doctype), self.name), frappe.DoesNotExistError)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 377, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 356, in msgprint
+    _raise_exception()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 316, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: Item Item not found
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 34, in getdoc
+    doc = frappe.get_doc(doctype, name)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 762, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 71, in get_doc
+    return controller(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/website/website_generator.py", line 16, in __init__
+    super(WebsiteGenerator, self).__init__(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 106, in __init__
+    self.load_from_db()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 149, in load_from_db
+    frappe.throw(_("{0} {1} not found").format(_(self.doctype), self.name), frappe.DoesNotExistError)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 377, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 356, in msgprint
+    _raise_exception()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 316, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: Item Item not found
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 296, in _save
+    self.insert()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 230, in insert
+    self.run_before_save_methods()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 896, in run_before_save_methods
+    self.run_method("validate")
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 797, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 1073, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 1056, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 791, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/doctype/doctype.py", line 78, in validate
+    validate_fields(self)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/doctype/doctype.py", line 969, in validate_fields
+    check_link_table_options(meta.get("name"), d)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/doctype/doctype.py", line 727, in check_link_table_options
+    frappe.throw(_("{0}: Options required for Link or Table type field {1} in row {2}").format(docname, d.label, d.idx), DoctypeLinkError)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 377, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 356, in msgprint
+    _raise_exception()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 316, in _raise_exception
+    raise raise_exception(msg)
+frappe.core.doctype.doctype.doctype.DoctypeLinkError: BGL Point Of Sales Item: Options required for Link or Table type field Stock UOM in row 30
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1071, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 296, in _save
+    self.insert()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 230, in insert
+    self.run_before_save_methods()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 896, in run_before_save_methods
+    self.run_method("validate")
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 797, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 1073, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 1056, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 791, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/doctype/doctype.py", line 78, in validate
+    validate_fields(self)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/doctype/doctype.py", line 969, in validate_fields
+    check_link_table_options(meta.get("name"), d)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/doctype/doctype.py", line 727, in check_link_table_options
+    frappe.throw(_("{0}: Options required for Link or Table type field {1} in row {2}").format(docname, d.label, d.idx), DoctypeLinkError)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 377, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 356, in msgprint
+    _raise_exception()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 316, in _raise_exception
+    raise raise_exception(msg)
+frappe.core.doctype.doctype.doctype.DoctypeLinkError: BGL Point Of Sales Item: Options required for Link or Table type field Stock UOM in row 30
