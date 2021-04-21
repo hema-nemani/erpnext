@@ -68,6 +68,7 @@
   "description",
   "vendor_details",
   "vendor_name",
+  "vendor_column_break",
   "vendor_location",
   "installation_or_demo",
   "click_on_installation",
@@ -376,7 +377,9 @@
    "collapsible": 1,
    "fieldname": "section_break_11",
    "fieldtype": "Section Break",
-   "label": "Description"
+   "hidden": 1,
+   "label": "Description",
+   "print_hide": 1
   },
   {
    "fieldname": "brand",
@@ -390,10 +393,12 @@
   {
    "fieldname": "description",
    "fieldtype": "Text Editor",
+   "hidden": 1,
    "in_preview": 1,
    "label": "Description",
    "oldfieldname": "description",
-   "oldfieldtype": "Text"
+   "oldfieldtype": "Text",
+   "print_hide": 1
   },
   {
    "fieldname": "sb_barcodes",
@@ -1480,8 +1485,9 @@
   },
   {
    "fieldname": "vendor_location",
-   "fieldtype": "Data",
-   "label": "Vendor Location"
+   "fieldtype": "Select",
+   "label": "Vendor Location",
+   "options": "Vizianagaram\nVisakhapatnam\nSrikakulam"
   },
   {
    "collapsible": 1,
@@ -1498,7 +1504,7 @@
   {
    "depends_on": "click_on_installation",
    "fieldname": "installation_time_duration",
-   "fieldtype": "Data",
+   "fieldtype": "Datetime",
    "label": "Installation Time Duration"
   },
   {
@@ -1510,7 +1516,7 @@
   {
    "depends_on": "click_on_demo",
    "fieldname": "demo_time_duration",
-   "fieldtype": "Data",
+   "fieldtype": "Datetime",
    "label": "Demo Time Duration"
   },
   {
@@ -1602,11 +1608,6 @@
    "options": "5%\n12%\n18%\n24%"
   },
   {
-   "fieldname": "selling1_tax_amount",
-   "fieldtype": "Data",
-   "label": "Selling1 Tax Amount"
-  },
-  {
    "fieldname": "selling_price_with_tax",
    "fieldtype": "Data",
    "label": "Selling Price With Tax"
@@ -1690,6 +1691,15 @@
    "fieldname": "on_hand_qty",
    "fieldtype": "Data",
    "label": "On Hand Qty"
+  },
+  {
+   "fieldname": "vendor_column_break",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "selling1_tax_amount",
+   "fieldtype": "Data",
+   "label": "Selling1 Tax Amount"
   }
  ],
  "has_web_view": 1,
@@ -1697,7 +1707,7 @@
  "idx": 2,
  "image_field": "image",
  "max_attachments": 1,
- "modified": "2021-03-12 03:15:53.918464",
+ "modified": "2021-04-16 14:36:51.898827",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Item",
