@@ -9,9 +9,7 @@
   "transportation_type",
   "supplier",
   "supplier_address",
-  "address_name",
   "address_display",
-  "supplier_address_display",
   "purchase_order_items",
   "item",
   "opening_stock"
@@ -22,11 +20,6 @@
    "fieldtype": "Link",
    "label": "Customer",
    "options": "Customer"
-  },
-  {
-   "fieldname": "address_display",
-   "fieldtype": "Small Text",
-   "label": "Address Display"
   },
   {
    "fieldname": "purchase_order_items",
@@ -45,12 +38,6 @@
    "fieldtype": "Link",
    "label": "Supplier",
    "options": "Supplier"
-  },
-  {
-   "fieldname": "supplier_address_display",
-   "fieldtype": "Small Text",
-   "label": " Supplier Address Display",
-   "read_only": 1
   },
   {
    "fieldname": "item",
@@ -76,14 +63,12 @@
    "options": "Address"
   },
   {
-   "fetch_from": "supplier_address.address_title",
-   "fieldname": "address_name",
-   "fieldtype": "Link",
-   "label": "Address Name",
-   "options": "Address"
+   "fieldname": "address_display",
+   "fieldtype": "Small Text",
+   "label": "Address Display"
   }
  ],
- "modified": "2021-04-22 13:54:51.081138",
+ "modified": "2021-04-22 18:38:37.427382",
  "modified_by": "Administrator",
  "module": "Custom",
  "name": "CustomerFetch",

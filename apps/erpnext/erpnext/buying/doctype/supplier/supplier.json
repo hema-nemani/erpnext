@@ -47,6 +47,7 @@
   "release_date",
   "address_contacts",
   "address_html",
+  "primary_address",
   "column_break1",
   "contact_html",
   "default_payable_accounts",
@@ -377,12 +378,17 @@
    "fieldname": "allow_purchase_invoice_creation_without_purchase_receipt",
    "fieldtype": "Check",
    "label": "Allow Purchase Invoice Creation Without Purchase Receipt"
+  },
+  {
+   "fieldname": "primary_address",
+   "fieldtype": "Text",
+   "label": "Primary Address"
   }
  ],
  "icon": "fa fa-user",
  "idx": 370,
  "image_field": "image",
- "modified": "2021-04-22 04:29:37.442433",
+ "modified": "2021-04-22 18:29:31.944811",
  "modified_by": "Administrator",
  "module": "Buying",
  "name": "Supplier",

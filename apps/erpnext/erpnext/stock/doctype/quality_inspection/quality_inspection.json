@@ -18,10 +18,12 @@
   "items",
   "qi_items",
   "section_break_12",
+  "supplier",
   "supplier_address",
   "address_display",
   "issue_description",
   "section_break_16",
+  "qi_supplier",
   "quality_issue_supplier_address",
   "quality_issue_address_display",
   "reference_type",
@@ -298,7 +300,7 @@
    "depends_on": "eval:doc.select_item_damage == 'Return Back to Supplier';",
    "fieldname": "supplier_address",
    "fieldtype": "Link",
-   "label": "Supplier Name",
+   "label": "Supplier Address",
    "options": "Address"
   },
   {
@@ -313,7 +315,7 @@
    "fieldtype": "Section Break"
   },
   {
-   "depends_on": "eval:doc.select_item_damage=='Quality Issue';",
+   "depends_on": "eval:doc.select_item_damage=='Quality Issue' || doc.inspection_type == 'Quality Issue';",
    "fieldname": "section_break_16",
    "fieldtype": "Section Break"
   },
@@ -321,28 +323,42 @@
    "depends_on": "eval:doc.select_item_damage == 'Return Back to Supplier';",
    "fieldname": "address_display",
    "fieldtype": "Small Text",
-   "label": "Supplier Address",
+   "label": "Address Display",
    "read_only": 1
   },
   {
-   "depends_on": "eval:doc.select_item_damage=='Quality Issue';",
+   "depends_on": "eval:doc.select_item_damage=='Quality Issue' || doc.inspection_type == 'Quality Issue';",
    "fieldname": "quality_issue_supplier_address",
    "fieldtype": "Link",
-   "label": "QI Supplier",
+   "label": "QI Supplier Address",
    "options": "Address"
   },
   {
-   "depends_on": "eval:doc.select_item_damage =='Quality Issue';",
+   "depends_on": "eval:doc.select_item_damage=='Quality Issue' || doc.inspection_type == 'Quality Issue';",
    "fieldname": "quality_issue_address_display",
    "fieldtype": "Small Text",
-   "label": "QI Supplier Address",
+   "label": "QI Address Display",
    "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.select_item_damage == 'Return Back to Supplier';",
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier Name",
+   "options": "Supplier"
+  },
+  {
+   "depends_on": "eval:doc.select_item_damage=='Quality Issue' || doc.inspection_type == 'Quality Issue';",
+   "fieldname": "qi_supplier",
+   "fieldtype": "Link",
+   "label": "QI Supplier",
+   "options": "Supplier"
   }
  ],
  "icon": "fa fa-search",
  "idx": 1,
  "is_submittable": 1,
- "modified": "2021-03-09 14:51:51.057484",
+ "modified": "2021-04-22 19:26:57.089026",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Quality Inspection",

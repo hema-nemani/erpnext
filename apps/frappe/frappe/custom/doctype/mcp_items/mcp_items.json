@@ -21,7 +21,8 @@
    "fieldname": "po_qty",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "PO Qty"
+   "label": "PO Qty",
+   "read_only": 1
   },
   {
    "fieldname": "receiving_qty",
@@ -40,11 +41,12 @@
    "fieldname": "item_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Item Description "
+   "label": "Item Description ",
+   "read_only": 1
   }
  ],
  "istable": 1,
- "modified": "2021-04-22 08:56:02.450051",
+ "modified": "2021-04-22 19:38:34.677475",
  "modified_by": "Administrator",
  "module": "Custom",
  "name": "MCP Items",
