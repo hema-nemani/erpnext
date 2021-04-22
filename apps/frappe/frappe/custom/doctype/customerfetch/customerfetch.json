@@ -1,0 +1,101 @@
+{
+ "creation": "2021-04-21 19:33:34.960959",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer",
+  "address_display",
+  "transportation_type",
+  "supplier",
+  "supplier_address_display",
+  "purchase_order_items",
+  "address",
+  "display",
+  "item",
+  "opening_stock"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "address_display",
+   "fieldtype": "Small Text",
+   "label": "Address Display"
+  },
+  {
+   "fieldname": "purchase_order_items",
+   "fieldtype": "Link",
+   "label": "Purchase Order Series",
+   "options": "Purchase Order"
+  },
+  {
+   "fieldname": "transportation_type",
+   "fieldtype": "Select",
+   "label": "Transportation Type",
+   "options": "Local\nOutstation"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "supplier_address_display",
+   "fieldtype": "Small Text",
+   "label": " Supplier Address Display",
+   "read_only": 1
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Link",
+   "label": "Address",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "display",
+   "fieldtype": "Small Text",
+   "label": "Address Display"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "label": "Item",
+   "options": "Item"
+  },
+  {
+   "fetch_from": "item.opening_stock",
+   "fieldname": "opening_stock",
+   "fieldtype": "Data",
+   "label": "Opening Stock"
+  }
+ ],
+ "modified": "2021-04-22 08:41:34.782145",
+ "modified_by": "Administrator",
+ "module": "Custom",
+ "name": "CustomerFetch",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

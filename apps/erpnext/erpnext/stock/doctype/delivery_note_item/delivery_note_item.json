@@ -813,13 +813,15 @@
    "fieldname": "location",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Location"
+   "label": "Location",
+   "read_only": 1
   },
   {
    "fieldname": "bay_number",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Bay Number Or Shelf Number"
+   "label": "Bay Number Or Shelf Number",
+   "read_only": 1
   },
   {
    "fieldname": "sm_no",
@@ -864,7 +866,7 @@
  ],
  "idx": 1,
  "istable": 1,
- "modified": "2021-03-12 00:01:45.190759",
+ "modified": "2021-04-22 10:22:18.671704",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Delivery Note Item",

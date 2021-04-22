@@ -58,7 +58,7 @@
   "aged",
   "uom",
   "required_qty",
-  "on_hand_qty",
+  "qty",
   "column_break_4",
   "schedule_date",
   "expected_delivery_date",
@@ -72,7 +72,6 @@
   "column_break_14",
   "manufacturer_part_no",
   "quantity_and_rate",
-  "qty",
   "stock_uom",
   "col_break2",
   "conversion_factor",
@@ -226,11 +225,11 @@
    "bold": 1,
    "fieldname": "qty",
    "fieldtype": "Data",
-   "hidden": 1,
-   "label": "Quantity",
+   "label": "Hand On Quantity",
    "oldfieldname": "qty",
    "oldfieldtype": "Currency",
-   "print_hide": 1
+   "print_hide": 1,
+   "read_only": 1
   },
   {
    "fieldname": "stock_uom",
@@ -914,11 +913,6 @@
    "label": "Required Qty"
   },
   {
-   "fieldname": "on_hand_qty",
-   "fieldtype": "Data",
-   "label": "On Hand Qty"
-  },
-  {
    "depends_on": "eval:doc.item_group == 'Kitchen Appliances'",
    "fieldname": "item_sub_sub_group_kitchen_appliances",
    "fieldtype": "Link",
@@ -1081,7 +1075,7 @@
  ],
  "idx": 1,
  "istable": 1,
- "modified": "2021-04-21 15:03:04.960073",
+ "modified": "2021-04-22 10:33:09.625606",
  "modified_by": "Administrator",
  "module": "Buying",
  "name": "Purchase Order Item",
