@@ -5,13 +5,14 @@
  "engine": "InnoDB",
  "field_order": [
   "customer",
-  "address_display",
+  "address_display2",
   "transportation_type",
   "supplier",
+  "supplier_address",
+  "address_name",
+  "address_display",
   "supplier_address_display",
   "purchase_order_items",
-  "address",
-  "display",
   "item",
   "opening_stock"
  ],
@@ -52,17 +53,6 @@
    "read_only": 1
   },
   {
-   "fieldname": "address",
-   "fieldtype": "Link",
-   "label": "Address",
-   "options": "Supplier"
-  },
-  {
-   "fieldname": "display",
-   "fieldtype": "Small Text",
-   "label": "Address Display"
-  },
-  {
    "fieldname": "item",
    "fieldtype": "Link",
    "label": "Item",
@@ -73,9 +63,27 @@
    "fieldname": "opening_stock",
    "fieldtype": "Data",
    "label": "Opening Stock"
+  },
+  {
+   "fieldname": "address_display2",
+   "fieldtype": "Small Text",
+   "label": "Customer Address Display"
+  },
+  {
+   "fieldname": "supplier_address",
+   "fieldtype": "Link",
+   "label": "Address",
+   "options": "Address"
+  },
+  {
+   "fetch_from": "supplier_address.address_title",
+   "fieldname": "address_name",
+   "fieldtype": "Link",
+   "label": "Address Name",
+   "options": "Address"
   }
  ],
- "modified": "2021-04-22 08:41:34.782145",
+ "modified": "2021-04-22 13:54:51.081138",
  "modified_by": "Administrator",
  "module": "Custom",
  "name": "CustomerFetch",
