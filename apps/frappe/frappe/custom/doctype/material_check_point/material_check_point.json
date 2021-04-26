@@ -6,43 +6,38 @@
  "engine": "InnoDB",
  "field_order": [
   "naming_series",
+  "column_break_2",
   "transportation_type",
   "column_break_3",
-  "local_details",
-  "supplier_address",
+  "supplier",
   "address_display",
   "section_break_6",
   "purchase_order_items",
-  "column_break_8",
   "invoice_number",
+  "column_break_8",
+  "outstation_invoice_date",
+  "outstation_invoice_value",
   "mcp_items_section_section",
   "mcp_items",
-  "section_break_10",
-  "outstation_details",
   "section_break_13",
-  "outstation_supplier_address",
-  "outstation_address_display",
-  "column_break_18",
   "transporter_name",
+  "column_break_17",
   "lr_number",
-  "section_break_17",
   "booking_date",
-  "received_date",
   "column_break_20",
+  "received_date",
   "booking_from_city",
   "booking_to_city",
   "section_break_23",
   "package_information",
-  "outstation_invoice_number",
-  "outstation_invoice_date",
-  "outstation_invoice_value",
   "no_of_packs",
-  "column_break_30",
   "units_of_measure",
   "packing_type",
   "package_weight",
+  "column_break_30",
   "transporter_amount",
-  "for_others"
+  "for_others",
+  "amended_from"
  ],
  "fields": [
   {
@@ -58,11 +53,11 @@
    "options": "Local\nOutstation"
   },
   {
-   "depends_on": "eval:doc.transportation_type == 'Local'",
-   "fetch_from": "purchase_order_series.invoice_number",
+   "fetch_from": "purchase_order_items.invoice_number",
    "fieldname": "invoice_number",
    "fieldtype": "Data",
-   "label": "Invoice Number"
+   "label": "Invoice Number",
+   "read_only": 1
   },
   {
    "depends_on": "eval:doc.transportation_type == 'Local' || doc.transportation_type == 'Outstation'",
@@ -72,19 +67,10 @@
    "options": "MCP Items"
   },
   {
-   "depends_on": "eval:doc.transportation_type == 'Local' || doc.transportation_type == 'Outstation'",
    "fieldname": "purchase_order_items",
    "fieldtype": "Link",
    "label": "Purchase Order Series",
    "options": "Purchase Order"
-  },
-  {
-   "depends_on": "eval:doc.transportation_type == 'Local'",
-   "fetch_from": "purchase_order_series.supplier_location",
-   "fieldname": "supplier_address",
-   "fieldtype": "Link",
-   "label": "Supplier Address",
-   "options": "Address"
   },
   {
    "depends_on": "eval:doc.transportation_type == 'Local'",
@@ -98,47 +84,17 @@
    "fieldtype": "Section Break"
   },
   {
-   "depends_on": "eval:doc.transportation_type == 'Local'",
-   "fieldname": "local_details",
-   "fieldtype": "HTML",
-   "label": "Local Details",
-   "options": "<b>Local Details </b>"
-  },
-  {
-   "fieldname": "section_break_10",
-   "fieldtype": "Section Break"
-  },
-  {
    "depends_on": "eval:doc.transportation_type == 'Outstation'",
-   "fieldname": "outstation_details",
-   "fieldtype": "HTML",
-   "label": "Outstation Details",
-   "options": "<b>Outstation Details </b>"
-  },
-  {
-   "depends_on": "eval:doc.transportation_type == 'Outstation'",
+   "fetch_from": "purchase_order_items.lr_number",
    "fieldname": "lr_number",
    "fieldtype": "Data",
-   "label": "LR Number"
+   "label": "LR Number",
+   "read_only": 1
   },
   {
    "depends_on": "eval:doc.transportation_type == 'Outstation'",
    "fieldname": "section_break_13",
    "fieldtype": "Section Break"
-  },
-  {
-   "depends_on": "eval:doc.transportation_type == 'Outstation'",
-   "fieldname": "outstation_supplier_address",
-   "fieldtype": "Link",
-   "label": "Outstation Supplier Address",
-   "options": "Address"
-  },
-  {
-   "depends_on": "eval:doc.transportation_type == 'Outstation'",
-   "fieldname": "outstation_address_display",
-   "fieldtype": "Small Text",
-   "label": "Outstation Address Display",
-   "read_only": 1
   },
   {
    "depends_on": "eval:doc.transportation_type == 'Outstation'",
@@ -152,7 +108,8 @@
    "fetch_from": "purchase_order_items.vendor_booking_date",
    "fieldname": "booking_date",
    "fieldtype": "Data",
-   "label": "Booking Date"
+   "label": "Booking Date",
+   "read_only": 1
   },
   {
    "depends_on": "eval:doc.transportation_type == 'Outstation'",
@@ -165,24 +122,16 @@
    "fetch_from": "purchase_order_items.booking_from_city",
    "fieldname": "booking_from_city",
    "fieldtype": "Data",
-   "label": "Booking From City"
+   "label": "Booking From City",
+   "read_only": 1
   },
   {
    "depends_on": "eval:doc.transportation_type == 'Outstation'",
    "fetch_from": "purchase_order_items.booking_to_city",
    "fieldname": "booking_to_city",
    "fieldtype": "Data",
-   "label": "Booking To City"
-  },
-  {
-   "collapsible_depends_on": "eval:doc.transportation_type == 'Outstation'",
-   "fieldname": "section_break_17",
-   "fieldtype": "Section Break"
-  },
-  {
-   "depends_on": "eval:doc.transportation_type == 'Outstation'",
-   "fieldname": "column_break_20",
-   "fieldtype": "Column Break"
+   "label": "Booking To City",
+   "read_only": 1
   },
   {
    "depends_on": "eval:doc.transportation_type == 'Outstation'",
@@ -197,21 +146,19 @@
   },
   {
    "depends_on": "eval:doc.transportation_type == 'Outstation'",
-   "fieldname": "outstation_invoice_number",
-   "fieldtype": "Data",
-   "label": "Outstation Invoice No"
-  },
-  {
-   "depends_on": "eval:doc.transportation_type == 'Outstation'",
+   "fetch_from": "purchase_order_items.invoice_date",
    "fieldname": "outstation_invoice_date",
    "fieldtype": "Data",
-   "label": "Outstation Invoice Date"
+   "label": "Invoice Date",
+   "read_only": 1
   },
   {
    "depends_on": "eval:doc.transportation_type == 'Outstation'",
+   "fetch_from": "purchase_order_items.invoice_value",
    "fieldname": "outstation_invoice_value",
    "fieldtype": "Data",
-   "label": "Outstation Invoice Value"
+   "label": "Invoice Value",
+   "read_only": 1
   },
   {
    "depends_on": "eval:doc.transportation_type == 'Outstation'",
@@ -254,11 +201,7 @@
   },
   {
    "fieldname": "column_break_3",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "column_break_18",
-   "fieldtype": "Column Break"
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "transporter_amount",
@@ -271,9 +214,37 @@
    "fieldname": "for_others",
    "fieldtype": "Long Text",
    "label": "Others"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Material Check Point",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
   }
  ],
- "modified": "2021-03-17 17:48:07.585241",
+ "is_submittable": 1,
+ "modified": "2021-04-22 09:29:33.651013",
  "modified_by": "Administrator",
  "module": "Custom",
  "name": "Material Check Point",
@@ -289,6 +260,20 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "submit": 1,
    "write": 1
   }
  ],

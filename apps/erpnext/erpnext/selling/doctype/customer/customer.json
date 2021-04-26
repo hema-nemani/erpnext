@@ -299,7 +299,8 @@
    "fetch_from": "customer_primary_contact.mobile_no",
    "fieldname": "mobile_no",
    "fieldtype": "Read Only",
-   "label": "Mobile No"
+   "label": "Mobile No",
+   "unique": 1
   },
   {
    "fetch_from": "customer_primary_contact.email_id",
@@ -480,7 +481,7 @@
  "icon": "fa fa-user",
  "idx": 363,
  "image_field": "image",
- "modified": "2021-03-09 21:26:34.258114",
+ "modified": "2021-04-21 20:29:57.087150",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Customer",

@@ -10,7 +10,6 @@
   "title",
   "naming_series",
   "supplier",
-  "supplier_location",
   "get_items_from_open_material_requests",
   "supplier_name",
   "company",
@@ -42,6 +41,8 @@
   "shipping_address_display",
   "lr_number",
   "invoice_number",
+  "invoice_date",
+  "invoice_value",
   "currency_and_price_list",
   "currency",
   "conversion_rate",
@@ -536,7 +537,6 @@
   {
    "fieldname": "total_qty",
    "fieldtype": "Float",
-   "hidden": 1,
    "label": "Total Quantity",
    "read_only": 1
   },
@@ -1111,12 +1111,6 @@
    "options": "Warehouse"
   },
   {
-   "fieldname": "supplier_location",
-   "fieldtype": "Select",
-   "label": "Supplier Location",
-   "options": "Local\nOutstation"
-  },
-  {
    "depends_on": "eval:doc.supplier_location == 'Local'",
    "fieldname": "supplier_city_in_local",
    "fieldtype": "Select",
@@ -1273,12 +1267,22 @@
    "fieldname": "booking_to_city",
    "fieldtype": "Data",
    "label": "Booking To City"
+  },
+  {
+   "fieldname": "invoice_date",
+   "fieldtype": "Data",
+   "label": "Invoice Date"
+  },
+  {
+   "fieldname": "invoice_value",
+   "fieldtype": "Data",
+   "label": "Invoice Value"
   }
  ],
  "icon": "fa fa-file-text",
  "idx": 105,
  "is_submittable": 1,
- "modified": "2021-04-03 01:09:16.768721",
+ "modified": "2021-04-22 10:31:17.237736",
  "modified_by": "Administrator",
  "module": "Buying",
  "name": "Purchase Order",

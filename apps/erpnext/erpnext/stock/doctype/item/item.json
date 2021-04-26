@@ -16,8 +16,6 @@
   "variant_of",
   "item_name",
   "hsn_code",
-  "qty",
-  "on_hand_qty",
   "item_group",
   "item_sub_sub_group_kitchen_appliances",
   "item_sub_sub_group_home_appliances",
@@ -585,7 +583,8 @@
    "description": "Maximum sample quantity that can be retained",
    "fieldname": "sample_quantity",
    "fieldtype": "Int",
-   "label": "Max Sample Quantity"
+   "label": "Max Sample Quantity",
+   "print_hide": 1
   },
   {
    "fieldname": "column_break_37",
@@ -1060,7 +1059,6 @@
    "collapsible": 1,
    "fieldname": "website_section",
    "fieldtype": "Section Break",
-   "hidden": 1,
    "label": "Website",
    "options": "fa fa-globe",
    "print_hide": 1
@@ -1099,7 +1097,8 @@
    "description": "Items with higher weightage will be shown higher",
    "fieldname": "weightage",
    "fieldtype": "Int",
-   "label": "Weightage"
+   "label": "Weightage",
+   "print_hide": 1
   },
   {
    "depends_on": "eval: doc.show_in_website || doc.show_variant_in_website",
@@ -1131,7 +1130,6 @@
   {
    "fieldname": "cb72",
    "fieldtype": "Column Break",
-   "hidden": 1,
    "print_hide": 1
   },
   {
@@ -1169,7 +1167,6 @@
    "depends_on": "eval: doc.show_in_website || doc.show_variant_in_website",
    "fieldname": "sb72",
    "fieldtype": "Section Break",
-   "hidden": 1,
    "label": "Website Specifications",
    "print_hide": 1
   },
@@ -1263,15 +1260,19 @@
    "depends_on": "eval:!doc.__islocal",
    "fieldname": "over_delivery_receipt_allowance",
    "fieldtype": "Float",
+   "hidden": 1,
    "label": "Over Delivery/Receipt Allowance (%)",
    "oldfieldname": "tolerance",
-   "oldfieldtype": "Currency"
+   "oldfieldtype": "Currency",
+   "print_hide": 1
   },
   {
    "depends_on": "eval:!doc.__islocal",
    "fieldname": "over_billing_allowance",
    "fieldtype": "Float",
-   "label": "Over Billing Allowance (%)"
+   "hidden": 1,
+   "label": "Over Billing Allowance (%)",
+   "print_hide": 1
   },
   {
    "default": "0",
@@ -1484,10 +1485,10 @@
    "options": "Supplier"
   },
   {
+   "fetch_from": "vendor_name.supplier_group",
    "fieldname": "vendor_location",
-   "fieldtype": "Select",
-   "label": "Vendor Location",
-   "options": "Vizianagaram\nVisakhapatnam\nSrikakulam"
+   "fieldtype": "Data",
+   "label": "Vendor Location"
   },
   {
    "collapsible": 1,
@@ -1579,7 +1580,8 @@
   {
    "fieldname": "cost_price",
    "fieldtype": "Data",
-   "label": "Cost price"
+   "label": "Cost price",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_68",
@@ -1599,7 +1601,8 @@
   {
    "fieldname": "selling_price_without_tax",
    "fieldtype": "Data",
-   "label": "Selling Price without tax"
+   "label": "Selling Price without tax",
+   "read_only": 1
   },
   {
    "fieldname": "selling1_tax",
@@ -1610,12 +1613,14 @@
   {
    "fieldname": "selling_price_with_tax",
    "fieldtype": "Data",
-   "label": "Selling Price With Tax"
+   "label": "Selling Price With Tax",
+   "read_only": 1
   },
   {
    "fieldname": "mrp_pm_downwards",
    "fieldtype": "Data",
-   "label": "PM Downwards"
+   "label": "PM Downwards",
+   "read_only": 1
   },
   {
    "fieldname": "selling_2",
@@ -1635,7 +1640,8 @@
   {
    "fieldname": "bgl_selling_price_without_tax",
    "fieldtype": "Data",
-   "label": "BGL Selling Price Without Tax"
+   "label": "BGL Selling Price Without Tax",
+   "read_only": 1
   },
   {
    "fieldname": "bgl_selling2_tax",
@@ -1646,17 +1652,20 @@
   {
    "fieldname": "selling2_tax_amount",
    "fieldtype": "Data",
-   "label": "Selling2 Tax Amount"
+   "label": "Selling2 Tax Amount",
+   "read_only": 1
   },
   {
    "fieldname": "bgl_selling_price_with_tax",
    "fieldtype": "Data",
-   "label": "BGL Selling Price + Tax"
+   "label": "BGL Selling Price + Tax",
+   "read_only": 1
   },
   {
    "fieldname": "bgl_pm_downwards",
    "fieldtype": "Data",
-   "label": "BGL PM Downwards"
+   "label": "BGL PM Downwards",
+   "read_only": 1
   },
   {
    "fieldname": "inventory_table_one",
@@ -1671,11 +1680,6 @@
    "options": "Inventory Table 2"
   },
   {
-   "fieldname": "qty",
-   "fieldtype": "Data",
-   "label": "Required Quantity"
-  },
-  {
    "fieldname": "column_break_94",
    "fieldtype": "Column Break"
   },
@@ -1688,18 +1692,14 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "on_hand_qty",
-   "fieldtype": "Data",
-   "label": "On Hand Qty"
-  },
-  {
    "fieldname": "vendor_column_break",
    "fieldtype": "Column Break"
   },
   {
    "fieldname": "selling1_tax_amount",
    "fieldtype": "Data",
-   "label": "Selling1 Tax Amount"
+   "label": "Selling1 Tax Amount",
+   "read_only": 1
   }
  ],
  "has_web_view": 1,
@@ -1707,7 +1707,7 @@
  "idx": 2,
  "image_field": "image",
  "max_attachments": 1,
- "modified": "2021-04-16 14:36:51.898827",
+ "modified": "2021-04-22 10:18:31.776013",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Item",

@@ -33,7 +33,8 @@
    "fieldname": "balance_qty",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Balance Qty"
+   "label": "Balance Qty",
+   "read_only": 1
   },
   {
    "fieldname": "item_name",
@@ -43,7 +44,7 @@
   }
  ],
  "istable": 1,
- "modified": "2021-04-21 18:56:39.842968",
+ "modified": "2021-04-22 08:56:02.450051",
  "modified_by": "Administrator",
  "module": "Custom",
  "name": "MCP Items",
