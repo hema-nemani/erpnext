@@ -10,6 +10,7 @@
   "transportation_type",
   "column_break_3",
   "supplier",
+  "supplier_address",
   "address_display",
   "section_break_6",
   "purchase_order_items",
@@ -73,7 +74,6 @@
    "options": "Purchase Order"
   },
   {
-   "depends_on": "eval:doc.transportation_type == 'Local'",
    "fieldname": "address_display",
    "fieldtype": "Small Text",
    "label": "address_display",
@@ -241,10 +241,16 @@
   {
    "fieldname": "column_break_20",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "supplier_address",
+   "fieldtype": "Link",
+   "label": "Address",
+   "options": "Address"
   }
  ],
  "is_submittable": 1,
- "modified": "2021-04-22 09:29:33.651013",
+ "modified": "2021-04-22 13:01:18.579223",
  "modified_by": "Administrator",
  "module": "Custom",
  "name": "Material Check Point",
