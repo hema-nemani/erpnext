@@ -8,9 +8,12 @@
  "engine": "InnoDB",
  "field_order": [
   "naming_series",
-  "qi_number",
+  "supplier",
   "supplier_address",
+  "column_break_4",
   "address_display",
+  "qi_number",
+  "section_break_7",
   "grn_items",
   "amended_from"
  ],
@@ -53,10 +56,24 @@
    "options": "Goods Receipt Note",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
   }
  ],
  "is_submittable": 1,
- "modified": "2021-03-09 17:13:13.202716",
+ "modified": "2021-04-22 19:32:00.027322",
  "modified_by": "Administrator",
  "module": "Custom",
  "name": "Goods Receipt Note",

@@ -8,6 +8,7 @@
   "item_name",
   "qty",
   "standard_rate",
+  "column_break_5",
   "location",
   "bay_number",
   "print_barcodes",
@@ -31,7 +32,8 @@
    "fieldname": "qty",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Qty"
+   "label": "Qty",
+   "read_only": 1
   },
   {
    "fieldname": "location",
@@ -59,11 +61,16 @@
    "fieldname": "standard_rate",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "MRP"
+   "label": "MRP",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
   }
  ],
  "istable": 1,
- "modified": "2021-03-09 17:12:19.099407",
+ "modified": "2021-04-22 19:44:24.918580",
  "modified_by": "Administrator",
  "module": "Custom",
  "name": "GRN Items",
